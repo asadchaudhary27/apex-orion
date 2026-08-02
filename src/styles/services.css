@@ -1,0 +1,218 @@
+/* services.css */
+
+.services-page-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #020205;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.services-grain {
+  position: fixed;
+  inset: -100%;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+}
+
+/* HERO SECTION */
+.services-hero {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.services-title {
+  position: relative;
+  z-index: 30;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.9;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -5vh;
+  pointer-events: none;
+}
+
+.services-title .word {
+  display: inline-flex;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+}
+.services-title .word > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+.services-subtitle-wrap {
+  position: relative;
+  z-index: 30;
+  margin-top: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.services-subtitle {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #FF5722;
+  text-align: center;
+  text-transform: lowercase;
+  pointer-events: auto;
+}
+
+.services-subtitle .letter {
+  display: inline-block;
+  will-change: transform, opacity;
+  text-shadow: 0 0 30px rgba(255, 87, 34, 0.4);
+}
+
+/* CARDS ROW (CENTERED CLUSTER) */
+.services-cards-row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.services-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140px;
+  height: 140px;
+  margin-top: -70px;
+  margin-left: -70px;
+  border-radius: 28px;
+  overflow: hidden;
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: transform, opacity;
+  box-shadow: 0 15px 35px -10px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.services-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.services-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  background: #0a0a0a;
+}
+
+.services-card-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #FF5722;
+}
+
+.services-card-title {
+  font-size: 0.75rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* SUBLINE */
+.services-subline {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services-arrow-pill {
+  background: #FF5722;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 87, 34, 0.4);
+}
+
+.services-arrow-pill .ar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #FF5722;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.services-subline-text {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-card {
+    width: 110px;
+    height: 110px;
+    margin-top: -55px;
+    margin-left: -55px;
+    padding: 0.75rem;
+  }
+  .services-card-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 8px;
+  }
+  .services-card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .services-card-title {
+    font-size: 0.65rem;
+  }
+}
