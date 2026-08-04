@@ -40,6 +40,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     stack: ['Three.js', 'React Three Fiber', 'GSAP', 'Next.js', 'Tailwind'],
     mockupBg: 'from-purple-900/40 via-[#FF5722]/30 to-black',
     visualizationType: 'dashboard',
+    image: '/techteamdesigns.png',
     link: 'https://techteamdesigns.com',
     displayLink: 'techteamdesigns.com',
   },
