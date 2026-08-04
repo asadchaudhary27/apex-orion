@@ -307,28 +307,25 @@ export const Team: React.FC = () => {
         {/* Card row of portraits */}
         <div className="team-cards-row">
           <div ref={addToCardsRef} className="team-card team-card-1" data-rot="-9" data-depth="14">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/asad.jpg" alt="Asad Qaisar Founder & CEO" title="Asad Qaisar - Founder & CEO" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-2" data-rot="-5" data-depth="10">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/ammar.png" alt="Ammar Saleem Co-Founder & Project Manager" title="Ammar Saleem - Co-Founder & Project Manager" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-3" data-rot="-2" data-depth="8">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/sami.jpeg" alt="Sami Uthwal Lead Developer" title="Sami Uthwal - Lead Developer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-4" data-rot="3" data-depth="12">
-            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/hamza.png" alt="Hamza Nazir Graphic Designer & UIUX" title="Hamza Nazir - Graphic Designer & UI/UX" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-5" data-rot="0" data-depth="6">
-            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/muhannad.png" alt="Muhannad Asif 3D Model Designer" title="Muhannad Asif - 3D Model Designer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-6" data-rot="4" data-depth="11">
-            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/anjum.png" alt="Sir Anjum WordPress Dev & SEO Expert" title="Sir Anjum - WordPress Dev & SEO Expert" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-7" data-rot="7" data-depth="9">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
-          </div>
-          <div ref={addToCardsRef} className="team-card team-card-8" data-rot="-4" data-depth="13">
-            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=600&fit=crop&crop=faces&q=80" alt="Team member" />
+            <img src="/team/farhan.png" alt="Muhammad Farhan Content & Script Writer" title="Muhammad Farhan - Content & Script Writer" />
           </div>
         </div>
 
@@ -342,7 +339,7 @@ export const Team: React.FC = () => {
               </svg>
             </span>
           </button>
-          <div className="team-subline-text">8 people. 60+ shipped projects. Zero filler.</div>
+          <div className="team-subline-text">7 people. 60+ shipped projects. Zero filler.</div>
         </div>
       </section>
 
@@ -350,7 +347,7 @@ export const Team: React.FC = () => {
       <section className="team-section-block">
         <div className="team-head">
           <div>
-            <div className="team-eyebrow">The Crew · Eight strong</div>
+            <div className="team-eyebrow">The Crew · Seven strong</div>
             <h2>Designers, builders<br />and the <em>quietly brilliant</em>.</h2>
           </div>
           <p>Every person you see here touches every project we ship. No middle layer, no handoffs to strangers — just direct work with the people doing it.</p>
@@ -358,17 +355,16 @@ export const Team: React.FC = () => {
 
         <div className="team-grid-container">
           {[
-            { img: "1500648767791-00dcc994a43e", name: "Mateus Aldana", role: "Creative Director" },
-            { img: "1507003211169-0a1dd7228f2d", name: "Eli Ramirez", role: "Design Lead" },
-            { img: "1494790108377-be9c29b29330", name: "Naomi Park", role: "Brand Strategist" },
-            { img: "1535713875002-d1d0cf377fde", name: "Theo Vance", role: "Senior Engineer" },
-            { img: "1531123897727-8f129e1688ce", name: "Kit Bellamy", role: "Art Direction" },
-            { img: "1599566150163-29194dcaad36", name: "Ravi Saigal", role: "Motion · 3D" },
-            { img: "1438761681033-6461ffad8d80", name: "Iris Caldwell", role: "Producer" },
-            { img: "1544005313-94ddf0286df2", name: "Maya Okafor", role: "Founder · CEO" },
+            { img: "/team/asad.jpg", name: "Asad Qaisar", role: "Founder & CEO" },
+            { img: "/team/ammar.png", name: "Ammar Saleem", role: "Co-Founder & Project Manager" },
+            { img: "/team/sami.jpeg", name: "Sami Uthwal", role: "Lead Developer" },
+            { img: "/team/hamza.png", name: "Hamza Nazir", role: "Graphic Designer & UI/UX" },
+            { img: "/team/muhannad.png", name: "Muhannad Asif", role: "3D Model Designer" },
+            { img: "/team/anjum.png", name: "Sir Anjum", role: "WordPress Dev & SEO Expert" },
+            { img: "/team/farhan.png", name: "Muhammad Farhan", role: "Content & Script Writer" },
           ].map((person, idx) => (
             <div key={idx} className="team-t-card">
-              <img src={`https://images.unsplash.com/photo-${person.img}?w=400&h=540&fit=crop&crop=faces&q=80`} alt={person.name} />
+              <img src={person.img} alt={person.name} title={`${person.name} - ${person.role}`} />
               <div className="team-t-meta">
                 <div className="nm">{person.name}</div>
                 <div className="rl">{person.role}</div>
@@ -381,7 +377,7 @@ export const Team: React.FC = () => {
       {/* STATS SECTION */}
       <section className="team-stats">
         <div className="team-stats-inner">
-          <h3>Eight humans.<br />One <em>tight ship</em>.</h3>
+          <h3>Seven humans.<br />One <em>tight ship</em>.</h3>
           <div className="team-stat-block">
             <div className="num" data-count="62"><span>0</span></div>
             <div className="lbl">Projects shipped</div>
