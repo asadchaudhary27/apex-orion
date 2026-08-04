@@ -307,7 +307,7 @@ export const Team: React.FC = () => {
         {/* Card row of portraits */}
         <div className="team-cards-row">
           <div ref={addToCardsRef} className="team-card team-card-1" data-rot="-9" data-depth="14">
-            <img src="/team/hamza.png" alt="Hamza Nazir Graphic Designer & UIUX" title="Hamza Nazir - Graphic Designer & UI/UX" />
+            <img src="/team/farhan.png" alt="Muhammad Farhan Content & Script Writer" title="Muhammad Farhan - Content & Script Writer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-2" data-rot="-5" data-depth="10">
             <img src="/team/ammar.png" alt="Ammar Saleem Co-Founder & Project Manager" title="Ammar Saleem - Co-Founder & Project Manager" />
@@ -325,7 +325,7 @@ export const Team: React.FC = () => {
             <img src="/team/anjum.png" alt="Sir Anjum WordPress Dev & SEO Expert" title="Sir Anjum - WordPress Dev & SEO Expert" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-7" data-rot="7" data-depth="9">
-            <img src="/team/farhan.png" alt="Muhammad Farhan Content & Script Writer" title="Muhammad Farhan - Content & Script Writer" />
+            <img src="/team/hamza.png" alt="Hamza Nazir Graphic Designer & UIUX" title="Hamza Nazir - Graphic Designer & UI/UX" />
           </div>
         </div>
 
