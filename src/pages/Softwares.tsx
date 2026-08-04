@@ -10,6 +10,7 @@ export interface SoftwareProduct {
   priceLifetime: string;
   features: string[];
   gradient: string;
+  iconPath: string;
 }
 
 const SOFTWARES_DATA: SoftwareProduct[] = [
@@ -20,7 +21,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     priceMonthly: '$49',
     priceLifetime: '$499',
     features: ['Fleet Management', 'Booking & Reservations', 'Automated Invoicing', 'Customer Portal'],
-    gradient: 'from-orange-600 to-[#FF5722]'
+    gradient: 'from-orange-600 to-[#FF5722]',
+    iconPath: '/veloce.ico'
   },
   {
     id: 'apexpure-pos',
@@ -29,7 +31,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     priceMonthly: '$79',
     priceLifetime: '$799',
     features: ['Bottle Tracking', 'Route Optimization', 'Delivery Scheduling', 'Offline Mode Support'],
-    gradient: 'from-blue-600 to-[#06b6d4]'
+    gradient: 'from-blue-600 to-[#06b6d4]',
+    iconPath: '/apex_pure.ico'
   },
   {
     id: 'apexrestu-pos',
@@ -38,7 +41,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     priceMonthly: '$69',
     priceLifetime: '$699',
     features: ['Table Management', 'Kitchen Display System', 'Inventory Tracking', 'Multi-Store Support'],
-    gradient: 'from-rose-600 to-pink-500'
+    gradient: 'from-rose-600 to-pink-500',
+    iconPath: '/apexrestu.ico'
   }
 ];
 
@@ -110,8 +114,8 @@ export const Softwares: React.FC = () => {
                     <div
                       className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${software.gradient} p-0.5 shadow-[0_0_20px_rgba(255,87,34,0.3)]`}
                     >
-                      <div className="w-full h-full bg-black rounded-[14px] flex items-center justify-center">
-                        <Cloud className="w-7 h-7 text-[#FF5722]" />
+                      <div className="w-full h-full bg-black rounded-[14px] flex items-center justify-center p-2.5">
+                        <img src={software.iconPath} alt={`${software.name} icon`} className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
                       </div>
                     </div>
                     <div className="flex flex-col items-end gap-2">
