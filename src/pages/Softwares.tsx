@@ -1,40 +1,44 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cloud, CheckCircle2, Lock } from 'lucide-react';
+import { Cloud, CheckCircle2, Lock, Download } from 'lucide-react';
 
 export interface SoftwareProduct {
   id: string;
   name: string;
   tagline: string;
-  price: string;
+  priceMonthly: string;
+  priceLifetime: string;
   features: string[];
   gradient: string;
 }
 
 const SOFTWARES_DATA: SoftwareProduct[] = [
   {
-    id: 'apex-pos',
-    name: 'Apex POS Engine',
-    tagline: 'Enterprise-grade point of sale system for multi-location retail.',
-    price: '$499',
-    features: ['Real-time cloud sync', 'Offline mode support', 'Hardware integration', 'Unlimited staff accounts'],
+    id: 'veloce',
+    name: 'Veloce',
+    tagline: 'Comprehensive car rental management and booking system.',
+    priceMonthly: '$49',
+    priceLifetime: '$499',
+    features: ['Fleet Management', 'Booking & Reservations', 'Automated Invoicing', 'Customer Portal'],
     gradient: 'from-orange-600 to-[#FF5722]'
   },
   {
-    id: 'apex-analytics',
-    name: 'Apex Data Core',
-    tagline: 'Powerful business intelligence and analytics dashboard.',
-    price: '$299',
-    features: ['Custom reporting', 'Data visualization', 'Automated email reports', 'API Access'],
-    gradient: 'from-orange-600 to-[#FF5722]'
+    id: 'apexpure-pos',
+    name: 'ApexPure POS',
+    tagline: 'Specialized point of sale and route delivery software for water companies.',
+    priceMonthly: '$79',
+    priceLifetime: '$799',
+    features: ['Bottle Tracking', 'Route Optimization', 'Delivery Scheduling', 'Offline Mode Support'],
+    gradient: 'from-blue-600 to-[#06b6d4]'
   },
   {
-    id: 'apex-booking',
-    name: 'Apex Scheduling',
-    tagline: 'Automated appointment and booking management system.',
-    price: '$199',
-    features: ['Calendar sync', 'Payment gateway', 'SMS reminders', 'Client portal'],
-    gradient: 'from-orange-600 to-[#06b6d4]'
+    id: 'apexrestu-pos',
+    name: 'ApexRestu POS',
+    tagline: 'High-performance POS system designed exclusively for restaurants.',
+    priceMonthly: '$69',
+    priceLifetime: '$699',
+    features: ['Table Management', 'Kitchen Display System', 'Inventory Tracking', 'Multi-Store Support'],
+    gradient: 'from-rose-600 to-pink-500'
   }
 ];
 
@@ -110,9 +114,14 @@ export const Softwares: React.FC = () => {
                         <Cloud className="w-7 h-7 text-[#FF5722]" />
                       </div>
                     </div>
-                    <span className="text-xl font-bold text-white tracking-tight bg-black/[0.05] px-3 py-1 rounded-full">
-                      {software.price}
-                    </span>
+                    <div className="flex flex-col items-end gap-2">
+                      <span className="text-lg font-bold text-white tracking-tight bg-white/[0.03] border border-white/5 px-3 py-1 rounded-full shadow-sm">
+                        {software.priceLifetime} <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider ml-1">Lifetime</span>
+                      </span>
+                      <span className="text-sm font-semibold text-gray-300 tracking-tight bg-white/[0.03] border border-white/5 px-3 py-1 rounded-full shadow-sm">
+                        {software.priceMonthly} <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider ml-1">/ Month</span>
+                      </span>
+                    </div>
                   </div>
   
                   <div className="space-y-2">
@@ -134,11 +143,15 @@ export const Softwares: React.FC = () => {
                   </ul>
                 </div>
   
-                <div className="pt-8">
-                  <button className="w-full py-4 rounded-xl bg-gradient-to-r from-orange-600 to-[#FF5722] text-white font-bold text-sm shadow-[0_0_20px_rgba(255,87,34,0.3)] hover:shadow-[0_0_30px_rgba(255,87,34,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
+                <div className="pt-8 space-y-3">
+                  <button className="w-full py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-[#FF5722] text-white font-bold text-sm shadow-[0_0_20px_rgba(255,87,34,0.3)] hover:shadow-[0_0_30px_rgba(255,87,34,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
                     <Lock className="w-4 h-4" />
-                    <span>Purchase License Key</span>
+                    <span>Purchase License</span>
                   </button>
+                  <a href="#" className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-sm hover:bg-white/10 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
+                    <Download className="w-4 h-4 text-gray-400" />
+                    <span>Download (.exe)</span>
+                  </a>
                 </div>
               </div>
             </motion.div>
