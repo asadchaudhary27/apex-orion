@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Code, Smartphone, MonitorCheck, Palette, ArrowUpRight, Box, Share2, Cloud, Search, Edit3, PenTool } from 'lucide-react';
+import { Code, Smartphone, MonitorCheck, Palette, ArrowUpRight, Box, Share2, Cloud, Search, Edit3, PenTool, LayoutTemplate, Pen } from 'lucide-react';
 
 export interface ServiceCardData {
   id: string;
@@ -26,6 +26,26 @@ export const SERVICES_DATA: ServiceCardData[] = [
     glowColor: 'rgba(139,92,246,0.4)',
   },
   {
+    id: 'wordpress',
+    title: 'WordPress Solutions',
+    shortDesc: 'Custom WordPress development, theme customization, and WooCommerce integration. We build highly scalable, secure, and SEO-optimized WordPress websites tailored to your exact business needs.',
+    highlights: ['Custom Theme Dev', 'WooCommerce Integration', 'Plugin Architecture', 'Speed Optimization', 'Advanced Security'],
+    icon: LayoutTemplate,
+    gradient: 'from-blue-600 via-blue-500 to-sky-400',
+    iconColor: 'text-blue-400',
+    glowColor: 'rgba(59,130,246,0.4)',
+  },
+  {
+    id: 'graphic-design',
+    title: 'Graphic Designing',
+    shortDesc: 'Stunning visual assets that instantly capture attention. From premium branding and logo design to eye-catching social media posts and marketing collateral, we create graphics that convert.',
+    highlights: ['Brand Identity & Logos', 'Social Media Graphics', 'Marketing Materials', 'Vector Illustrations', 'Print & Digital Media'],
+    icon: Pen,
+    gradient: 'from-orange-500 via-rose-500 to-pink-500',
+    iconColor: 'text-rose-400',
+    glowColor: 'rgba(244,63,94,0.4)',
+  },
+  {
     id: 'mobile',
     title: 'Mobile Apps',
     shortDesc: 'Cross-platform mobile applications engineered for native-like performance and silky 60fps user interfaces. We use Flutter and React Native to deliver your product simultaneously on iOS and Android without compromising on quality or speed.',
@@ -34,36 +54,6 @@ export const SERVICES_DATA: ServiceCardData[] = [
     gradient: 'from-sky-500 via-blue-500 to-indigo-600',
     iconColor: 'text-sky-400',
     glowColor: 'rgba(14,165,233,0.4)',
-  },
-  {
-    id: 'pos',
-    title: 'Custom POS',
-    shortDesc: 'Modern point-of-sale systems built specifically for your business operations. Our custom POS software is incredibly fast, deeply reliable, and features real-time inventory management that works even when your internet connection drops.',
-    highlights: ['Real-time Inventory Sync', 'Offline Resilience', 'Custom Hardware Support', 'Multi-Store Management', 'Detailed Analytics Dashboard'],
-    icon: MonitorCheck,
-    gradient: 'from-orange-500 via-amber-400 to-yellow-400',
-    iconColor: 'text-orange-400',
-    glowColor: 'rgba(249,115,22,0.4)',
-  },
-  {
-    id: 'brand',
-    title: 'UI/UX & Brand',
-    shortDesc: 'We design digital experiences that feel distinctly premium and intuitive. Our design process fuses psychology with stunning visuals, incorporating glassmorphism, kinetic typography, and fluid micro-interactions to guarantee your users say "wow".',
-    highlights: ['Kinetic Design Systems', 'Fluid Micro-Interactions', 'Cohesive Brand Guidelines', 'User Journey Mapping', 'A/B Tested Layouts'],
-    icon: Palette,
-    gradient: 'from-pink-500 via-rose-500 to-red-500',
-    iconColor: 'text-pink-400',
-    glowColor: 'rgba(236,72,153,0.4)',
-  },
-  {
-    id: '3d-modeling',
-    title: '3D Modeling',
-    shortDesc: 'Bring your products to life with stunning 3D assets and environments. We create optimized, interactive WebGL experiences that run directly in the browser, allowing your customers to explore your offerings in fully immersive 3D space.',
-    highlights: ['Interactive WebGL', 'Photorealistic Renders', 'Optimized Web Assets', '3D Product Configurators', 'Three.js Integration'],
-    icon: Box,
-    gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
-    iconColor: 'text-emerald-400',
-    glowColor: 'rgba(16,185,129,0.4)',
   },
   {
     id: 'social-media',
@@ -76,14 +66,14 @@ export const SERVICES_DATA: ServiceCardData[] = [
     glowColor: 'rgba(217,70,239,0.4)',
   },
   {
-    id: 'saas',
-    title: 'SaaS Solutions',
-    shortDesc: 'Ready-to-use software products engineered for enterprise scaling. Whether you need a robust HR platform, an automated booking system, or a custom ERP, we provide battle-tested cloud infrastructure that is ready to deploy immediately.',
-    highlights: ['Plug-and-Play Setup', 'Scalable Cloud Infrastructure', 'REST/GraphQL APIs', 'Role-Based Access', 'Automated Billing'],
-    icon: Cloud,
-    gradient: 'from-cyan-500 via-teal-400 to-emerald-400',
-    iconColor: 'text-cyan-400',
-    glowColor: 'rgba(6,182,212,0.4)',
+    id: 'brand',
+    title: 'UI/UX & Brand',
+    shortDesc: 'We design digital experiences that feel distinctly premium and intuitive. Our design process fuses psychology with stunning visuals, incorporating glassmorphism, kinetic typography, and fluid micro-interactions to guarantee your users say "wow".',
+    highlights: ['Kinetic Design Systems', 'Fluid Micro-Interactions', 'Cohesive Brand Guidelines', 'User Journey Mapping', 'A/B Tested Layouts'],
+    icon: Palette,
+    gradient: 'from-pink-500 via-rose-500 to-red-500',
+    iconColor: 'text-pink-400',
+    glowColor: 'rgba(236,72,153,0.4)',
   },
   {
     id: 'seo-guest-posting',
@@ -94,6 +84,16 @@ export const SERVICES_DATA: ServiceCardData[] = [
     gradient: 'from-lime-500 via-green-500 to-emerald-600',
     iconColor: 'text-lime-400',
     glowColor: 'rgba(132,204,22,0.4)',
+  },
+  {
+    id: 'pos',
+    title: 'Custom POS',
+    shortDesc: 'Modern point-of-sale systems built specifically for your business operations. Our custom POS software is incredibly fast, deeply reliable, and features real-time inventory management that works even when your internet connection drops.',
+    highlights: ['Real-time Inventory Sync', 'Offline Resilience', 'Custom Hardware Support', 'Multi-Store Management', 'Detailed Analytics Dashboard'],
+    icon: MonitorCheck,
+    gradient: 'from-orange-500 via-amber-400 to-yellow-400',
+    iconColor: 'text-orange-400',
+    glowColor: 'rgba(249,115,22,0.4)',
   },
   {
     id: 'content-writer',
@@ -114,6 +114,26 @@ export const SERVICES_DATA: ServiceCardData[] = [
     gradient: 'from-red-500 via-rose-500 to-pink-600',
     iconColor: 'text-red-400',
     glowColor: 'rgba(239,68,68,0.4)',
+  },
+  {
+    id: 'saas',
+    title: 'SaaS Solutions',
+    shortDesc: 'Ready-to-use software products engineered for enterprise scaling. Whether you need a robust HR platform, an automated booking system, or a custom ERP, we provide battle-tested cloud infrastructure that is ready to deploy immediately.',
+    highlights: ['Plug-and-Play Setup', 'Scalable Cloud Infrastructure', 'REST/GraphQL APIs', 'Role-Based Access', 'Automated Billing'],
+    icon: Cloud,
+    gradient: 'from-cyan-500 via-teal-400 to-emerald-400',
+    iconColor: 'text-cyan-400',
+    glowColor: 'rgba(6,182,212,0.4)',
+  },
+  {
+    id: '3d-modeling',
+    title: '3D Modeling',
+    shortDesc: 'Bring your products to life with stunning 3D assets and environments. We create optimized, interactive WebGL experiences that run directly in the browser, allowing your customers to explore your offerings in fully immersive 3D space.',
+    highlights: ['Interactive WebGL', 'Photorealistic Renders', 'Optimized Web Assets', '3D Product Configurators', 'Three.js Integration'],
+    icon: Box,
+    gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
+    iconColor: 'text-emerald-400',
+    glowColor: 'rgba(16,185,129,0.4)',
   },
 ];
 
