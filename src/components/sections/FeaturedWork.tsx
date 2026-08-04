@@ -11,9 +11,11 @@ export interface FeaturedProject {
   description: string;
   metrics: string;
   stack: string[];
-  mockupBg: string;
+  mockupBg?: string;
   visualizationType: 'dashboard' | 'ecommerce' | 'terminal';
   image?: string;
+  link?: string;
+  displayLink?: string;
 }
 
 export const FEATURED_PROJECTS: FeaturedProject[] = [
@@ -24,9 +26,10 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     description: 'A multi-lingual digital platform created in 3 different languages, featuring a highly intuitive and awesome user interface for global clients.',
     metrics: '3 Languages | Seamless UI',
     stack: ['React', 'Tailwind', 'i18next', 'Framer Motion'],
-    mockupBg: 'from-[#FF5722]/30 via-orange-500/40 to-black',
     visualizationType: 'dashboard',
-    image: '/zarco-star.png',
+    image: '/zarcostar-building-llc.png',
+    link: 'https://zarcostar.ae',
+    displayLink: 'zarcostar.ae',
   },
   {
     id: 'ecommerce',
@@ -117,14 +120,27 @@ export const FeaturedWork: React.FC = () => {
               </div>
 
               <div className="pt-2">
-                <Link
-                  to="/portfolio"
-                  data-cursor="view-project"
-                  className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-semibold text-sm hover:bg-[#FF5722] hover:border-[#FF5722]/50 transition-all duration-300 shadow-lg"
-                >
-                  <span>Explore Project</span>
-                  <ExternalLink className="w-4 h-4" />
-                </Link>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-cursor="view-project"
+                    className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-semibold text-sm hover:bg-[#FF5722] hover:border-[#FF5722]/50 transition-all duration-300 shadow-lg"
+                  >
+                    <span>Visit Website</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                ) : (
+                  <Link
+                    to="/portfolio"
+                    data-cursor="view-project"
+                    className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-semibold text-sm hover:bg-[#FF5722] hover:border-[#FF5722]/50 transition-all duration-300 shadow-lg"
+                  >
+                    <span>Explore Project</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </Link>
+                )}
               </div>
             </div>
 
@@ -148,7 +164,7 @@ export const FeaturedWork: React.FC = () => {
                       <div className="w-3 h-3 rounded-full bg-green-500/80" />
                     </div>
                     <span className="text-[10px] text-gray-400 font-mono">
-                      https://app.apexorion.com/{project.id}
+                      {project.displayLink ? `https://${project.displayLink}` : `https://app.apexorion.com/${project.id}`}
                     </span>
                     <Layers className="w-4 h-4 text-[#FF5722]" />
                   </div>
