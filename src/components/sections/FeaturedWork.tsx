@@ -29,7 +29,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     visualizationType: 'dashboard',
     image: '/zarcostar-building-llc.png',
     link: 'https://zarcostar.ae',
-    displayLink: 'zarcostar.ae',
+    displayLink: 'https://zarcostar.ae',
   },
   {
     id: 'techteamdesigns',
@@ -42,17 +42,18 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     visualizationType: 'dashboard',
     image: '/techteamdesigns.png',
     link: 'https://techteamdesigns.com',
-    displayLink: 'techteamdesigns.com',
+    displayLink: 'https://techteamdesigns.com',
   },
   {
     id: 'pos',
-    title: 'Orion Cloud POS & Inventory System',
-    category: 'Custom POS System',
-    description: 'Custom retail & restaurant terminal application with offline-first transaction queues and automatic cloud synchronization.',
-    metrics: 'Zero Downtime Offline Sync',
-    stack: ['React', 'Electron', 'Node.js', 'WebSockets'],
+    title: 'ApexPure POS',
+    category: 'Offline Point of Sale System',
+    description: 'A completely offline-first desktop POS application built for Windows. Features interactive sales charts, offline database storage, and receipt PDF generation.',
+    metrics: '100% Offline Capable | Native Windows',
+    stack: ['Electron', 'React 19', 'Dexie.js', 'Vite 8', 'Zustand'],
     mockupBg: 'from-indigo-900/40 via-[#FF5722]/20 to-black',
     visualizationType: 'terminal',
+    displayLink: 'ApexPure POS.exe',
   },
 ];
 
@@ -167,7 +168,7 @@ export const FeaturedWork: React.FC = () => {
                       <div className="w-3 h-3 rounded-full bg-green-500/80" />
                     </div>
                     <span className="text-[10px] text-gray-400 font-mono">
-                      {project.displayLink ? `https://${project.displayLink}` : `https://app.apexorion.com/${project.id}`}
+                      {project.displayLink ? project.displayLink : `https://app.apexorion.com/${project.id}`}
                     </span>
                     <Layers className="w-4 h-4 text-[#FF5722]" />
                   </div>
