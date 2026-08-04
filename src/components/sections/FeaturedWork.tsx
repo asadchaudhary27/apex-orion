@@ -25,7 +25,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     category: 'Global Construction Platform',
     description: 'A multi-lingual digital platform created in 3 different languages, featuring a highly intuitive and awesome user interface for global clients.',
     metrics: '3 Languages | Seamless UI',
-    stack: ['React', 'Tailwind', 'i18next', 'Framer Motion'],
+    stack: ['React 19', 'TypeScript', 'Tailwind v4', 'Vite 6', 'Motion', 'Lenis'],
     visualizationType: 'dashboard',
     image: '/zarcostar-building-llc.png',
     link: 'https://zarcostar.ae',
