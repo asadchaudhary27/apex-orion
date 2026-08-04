@@ -339,7 +339,7 @@ export const Team: React.FC = () => {
               </svg>
             </span>
           </button>
-          <div className="team-subline-text">7 people. 60+ shipped projects. Zero filler.</div>
+          <div className="team-subline-text">7 people. 25+ shipped projects. Zero filler.</div>
         </div>
       </section>
 
@@ -379,11 +379,11 @@ export const Team: React.FC = () => {
         <div className="team-stats-inner">
           <h3>Seven humans.<br />One <em>tight ship</em>.</h3>
           <div className="team-stat-block">
-            <div className="num" data-count="62"><span>0</span></div>
+            <div className="num" data-count="25"><span>0</span></div>
             <div className="lbl">Projects shipped</div>
           </div>
           <div className="team-stat-block">
-            <div className="num" data-count="14"><span>0</span><small>yrs</small></div>
+            <div className="num" data-count="3"><span>0</span><small>yrs</small></div>
             <div className="lbl">Combined craft</div>
           </div>
           <div className="team-stat-block">
