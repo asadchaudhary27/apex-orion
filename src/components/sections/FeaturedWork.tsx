@@ -17,12 +17,12 @@ export interface FeaturedProject {
 
 export const FEATURED_PROJECTS: FeaturedProject[] = [
   {
-    id: 'fintech',
-    title: 'Apex Financial Intelligence Dashboard',
-    category: 'Fintech Analytics',
-    description: 'High-frequency transaction stream monitoring, real-time algorithmic risk reporting, and sub-second chart rendering.',
-    metrics: '< 50ms Realtime Latency',
-    stack: ['React', 'TypeScript', 'Tailwind', 'Recharts'],
+    id: 'zarco-star',
+    title: 'Zarco Star Building LLC',
+    category: 'Global Construction Platform',
+    description: 'A multi-lingual digital platform created in 3 different languages, featuring a highly intuitive and awesome user interface for global clients.',
+    metrics: '3 Languages | Seamless UI',
+    stack: ['React', 'Tailwind', 'i18next', 'Framer Motion'],
     mockupBg: 'from-[#FF5722]/30 via-orange-500/40 to-black',
     visualizationType: 'dashboard',
   },
