@@ -53,6 +53,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     stack: ['Electron', 'React 19', 'Dexie.js', 'Vite 8', 'Zustand'],
     mockupBg: 'from-indigo-900/40 via-[#FF5722]/20 to-black',
     visualizationType: 'terminal',
+    image: '/apexpure.png',
     displayLink: 'ApexPure POS.exe',
   },
 ];
