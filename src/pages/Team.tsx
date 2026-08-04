@@ -316,10 +316,10 @@ export const Team: React.FC = () => {
             <img src="/team/sami.jpeg" alt="Sami Uthwal Lead Developer" title="Sami Uthwal - Lead Developer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-4" data-rot="3" data-depth="12">
-            <img src="/team/asad.jpg" alt="Asad Qaisar Founder & CEO" title="Asad Qaisar - Founder & CEO" />
+            <img src="/team/muhannad.png" alt="Muhannad Asif 3D Model Designer" title="Muhannad Asif - 3D Model Designer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-5" data-rot="0" data-depth="6">
-            <img src="/team/muhannad.png" alt="Muhannad Asif 3D Model Designer" title="Muhannad Asif - 3D Model Designer" />
+            <img src="/team/asad.jpg" alt="Asad Qaisar Founder & CEO" title="Asad Qaisar - Founder & CEO" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-6" data-rot="4" data-depth="11">
             <img src="/team/anjum.png" alt="Sir Anjum WordPress Dev & SEO Expert" title="Sir Anjum - WordPress Dev & SEO Expert" />
