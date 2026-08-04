@@ -313,7 +313,7 @@ export const Team: React.FC = () => {
             <img src="/team/ammar.png" alt="Ammar Saleem Co-Founder & Project Manager" title="Ammar Saleem - Co-Founder & Project Manager" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-3" data-rot="-2" data-depth="8">
-            <img src="/team/sami.jpeg" alt="Sami Uthwal Lead Developer" title="Sami Uthwal - Lead Developer" />
+            <img src="/team/sami.jpeg" alt="Sami Uthwal Lead Developer & AI/ML" title="Sami Uthwal - Lead Developer & AI/ML" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-4" data-rot="3" data-depth="12">
             <img src="/team/muhannad.png" alt="Muhannad Asif 3D Model Designer" title="Muhannad Asif - 3D Model Designer" />
@@ -357,7 +357,7 @@ export const Team: React.FC = () => {
           {[
             { img: "/team/asad.jpg", name: "Asad Qaisar", role: "Founder & CEO" },
             { img: "/team/ammar.png", name: "Ammar Saleem", role: "Co-Founder & Project Manager" },
-            { img: "/team/sami.jpeg", name: "Sami Uthwal", role: "Lead Developer" },
+            { img: "/team/sami.jpeg", name: "Sami Uthwal", role: "Lead Developer & AI/ML" },
             { img: "/team/hamza.png", name: "Hamza Nazir", role: "Graphic Designer & UI/UX" },
             { img: "/team/muhannad.png", name: "Muhannad Asif", role: "3D Model Designer" },
             { img: "/team/anjum.png", name: "Sir Anjum", role: "WordPress Dev & SEO Expert" },
