@@ -13,6 +13,7 @@ export interface FeaturedProject {
   stack: string[];
   mockupBg: string;
   visualizationType: 'dashboard' | 'ecommerce' | 'terminal';
+  image?: string;
 }
 
 export const FEATURED_PROJECTS: FeaturedProject[] = [
@@ -25,6 +26,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     stack: ['React', 'Tailwind', 'i18next', 'Framer Motion'],
     mockupBg: 'from-[#FF5722]/30 via-orange-500/40 to-black',
     visualizationType: 'dashboard',
+    image: '/zarco-star.png',
   },
   {
     id: 'ecommerce',
@@ -155,59 +157,68 @@ export const FeaturedWork: React.FC = () => {
                   <div className="absolute inset-0 z-0 pt-14 px-4 pb-4">
                     <div className="w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500">
                       
-                      {project.visualizationType === 'dashboard' && (
-                        <div className="w-full h-full flex gap-3">
-                          <div className="w-1/4 h-full bg-white/[0.05] rounded-lg border border-white/10 p-3 hidden sm:flex flex-col gap-2">
-                            <div className="h-4 w-3/4 bg-white/[0.05] rounded mb-4" />
-                            {[1, 2, 3, 4].map(i => <div key={i} className="h-2 w-full bg-white/[0.03] rounded" />)}
-                          </div>
-                          <div className="flex-1 flex flex-col gap-3">
-                            <div className="grid grid-cols-3 gap-3">
-                              {[1, 2, 3].map(i => (
-                                <div key={i} className="h-12 bg-white/[0.05] rounded-lg border border-white/10 p-2 flex flex-col justify-between">
-                                  <div className="h-1.5 w-1/2 bg-white/[0.05] rounded" />
-                                  <div className="h-2 w-3/4 bg-[#FF5722]/40 rounded" />
-                                </div>
-                              ))}
-                            </div>
-                            <div className="flex-1 bg-white/[0.05] rounded-lg border border-white/10 relative overflow-hidden">
-                              <div className="absolute inset-0 bg-gradient-to-t from-[#FF5722]/20 to-transparent" style={{ clipPath: 'polygon(0 100%, 0 60%, 20% 80%, 40% 40%, 60% 50%, 80% 20%, 100% 30%, 100% 100%)'}} />
-                            </div>
-                          </div>
+                      {project.image ? (
+                        <div className="w-full h-full rounded-lg overflow-hidden border border-white/10 shadow-2xl relative">
+                           <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
+                           <img src={project.image} alt={project.title} className="w-full h-full object-cover object-top" />
                         </div>
-                      )}
-
-                      {project.visualizationType === 'ecommerce' && (
-                        <div className="w-full h-full flex flex-col gap-3">
-                          <div className="h-8 w-full bg-white/[0.05] rounded-lg border border-white/10 flex items-center px-4 justify-between">
-                            <div className="h-2 w-16 bg-white/[0.05] rounded" />
-                            <div className="flex gap-2">
-                              {[1, 2, 3].map(i => <div key={i} className="h-2 w-8 bg-white/[0.05] rounded" />)}
-                            </div>
-                          </div>
-                          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 flex-1">
-                            {[1, 2, 3, 4, 5, 6].map(i => (
-                              <div key={i} className="bg-white/[0.05] rounded-lg border border-white/10 p-2 flex flex-col gap-2">
-                                <div className="flex-1 bg-white/[0.03] rounded" />
-                                <div className="h-2 w-2/3 bg-white/[0.05] rounded" />
-                                <div className="h-2 w-1/3 bg-[#FF5722]/40 rounded" />
+                      ) : (
+                        <>
+                          {project.visualizationType === 'dashboard' && (
+                            <div className="w-full h-full flex gap-3">
+                              <div className="w-1/4 h-full bg-white/[0.05] rounded-lg border border-white/10 p-3 hidden sm:flex flex-col gap-2">
+                                <div className="h-4 w-3/4 bg-white/[0.05] rounded mb-4" />
+                                {[1, 2, 3, 4].map(i => <div key={i} className="h-2 w-full bg-white/[0.03] rounded" />)}
                               </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
+                              <div className="flex-1 flex flex-col gap-3">
+                                <div className="grid grid-cols-3 gap-3">
+                                  {[1, 2, 3].map(i => (
+                                    <div key={i} className="h-12 bg-white/[0.05] rounded-lg border border-white/10 p-2 flex flex-col justify-between">
+                                      <div className="h-1.5 w-1/2 bg-white/[0.05] rounded" />
+                                      <div className="h-2 w-3/4 bg-[#FF5722]/40 rounded" />
+                                    </div>
+                                  ))}
+                                </div>
+                                <div className="flex-1 bg-white/[0.05] rounded-lg border border-white/10 relative overflow-hidden">
+                                  <div className="absolute inset-0 bg-gradient-to-t from-[#FF5722]/20 to-transparent" style={{ clipPath: 'polygon(0 100%, 0 60%, 20% 80%, 40% 40%, 60% 50%, 80% 20%, 100% 30%, 100% 100%)'}} />
+                                </div>
+                              </div>
+                            </div>
+                          )}
 
-                      {project.visualizationType === 'terminal' && (
-                        <div className="w-full h-full bg-[#0a0a0a]/90 rounded-lg border border-white/10 p-4 font-mono text-[10px] text-green-400/70 flex flex-col gap-1 overflow-hidden">
-                          <div>{'>'} INITIALIZING POS KERNEL...</div>
-                          <div>{'>'} [OK] SECURE SOCKET LAYER ESTABLISHED</div>
-                          <div>{'>'} [OK] OFFLINE CACHE ALLOCATED (2048MB)</div>
-                          <div>{'>'} SYNCING INVENTORY DB...</div>
-                          <div className="text-white/50">  - Fetching delta... 100%</div>
-                          <div className="text-white/50">  - Applying patches... 100%</div>
-                          <div>{'>'} [OK] INVENTORY SYNC COMPLETE</div>
-                          <div className="mt-2 text-[#FF5722]">{'>'} WAITING FOR TRANSACTION... _</div>
-                        </div>
+                          {project.visualizationType === 'ecommerce' && (
+                            <div className="w-full h-full flex flex-col gap-3">
+                              <div className="h-8 w-full bg-white/[0.05] rounded-lg border border-white/10 flex items-center px-4 justify-between">
+                                <div className="h-2 w-16 bg-white/[0.05] rounded" />
+                                <div className="flex gap-2">
+                                  {[1, 2, 3].map(i => <div key={i} className="h-2 w-8 bg-white/[0.05] rounded" />)}
+                                </div>
+                              </div>
+                              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 flex-1">
+                                {[1, 2, 3, 4, 5, 6].map(i => (
+                                  <div key={i} className="bg-white/[0.05] rounded-lg border border-white/10 p-2 flex flex-col gap-2">
+                                    <div className="flex-1 bg-white/[0.03] rounded" />
+                                    <div className="h-2 w-2/3 bg-white/[0.05] rounded" />
+                                    <div className="h-2 w-1/3 bg-[#FF5722]/40 rounded" />
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {project.visualizationType === 'terminal' && (
+                            <div className="w-full h-full bg-[#0a0a0a]/90 rounded-lg border border-white/10 p-4 font-mono text-[10px] text-green-400/70 flex flex-col gap-1 overflow-hidden">
+                              <div>{'>'} INITIALIZING POS KERNEL...</div>
+                              <div>{'>'} [OK] SECURE SOCKET LAYER ESTABLISHED</div>
+                              <div>{'>'} [OK] OFFLINE CACHE ALLOCATED (2048MB)</div>
+                              <div>{'>'} SYNCING INVENTORY DB...</div>
+                              <div className="text-white/50">  - Fetching delta... 100%</div>
+                              <div className="text-white/50">  - Applying patches... 100%</div>
+                              <div>{'>'} [OK] INVENTORY SYNC COMPLETE</div>
+                              <div className="mt-2 text-[#FF5722]">{'>'} WAITING FOR TRANSACTION... _</div>
+                            </div>
+                          )}
+                        </>
                       )}
                       
                     </div>
