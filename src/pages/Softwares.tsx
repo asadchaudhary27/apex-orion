@@ -18,8 +18,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'veloce',
     name: 'Veloce',
     tagline: 'Comprehensive car rental management and booking system.',
-    priceMonthly: '$49',
-    priceLifetime: '$499',
+    priceMonthly: '$3',
+    priceLifetime: '$150',
     features: ['Fleet Management', 'Booking & Reservations', 'Automated Invoicing', 'Customer Portal'],
     gradient: 'from-orange-600 to-[#FF5722]',
     iconPath: '/veloce.ico'
@@ -28,8 +28,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'apexpure-pos',
     name: 'ApexPure POS',
     tagline: 'Specialized point of sale and route delivery software for water companies.',
-    priceMonthly: '$79',
-    priceLifetime: '$799',
+    priceMonthly: '$3',
+    priceLifetime: '$150',
     features: ['Bottle Tracking', 'Route Optimization', 'Delivery Scheduling', 'Offline Mode Support'],
     gradient: 'from-blue-600 to-[#06b6d4]',
     iconPath: '/apex_pure.ico'
@@ -38,8 +38,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'apexrestu-pos',
     name: 'ApexRestu POS',
     tagline: 'High-performance POS system designed exclusively for restaurants.',
-    priceMonthly: '$69',
-    priceLifetime: '$699',
+    priceMonthly: '$3',
+    priceLifetime: '$150',
     features: ['Table Management', 'Kitchen Display System', 'Inventory Tracking', 'Multi-Store Support'],
     gradient: 'from-rose-600 to-pink-500',
     iconPath: '/apexrestu.ico'
@@ -148,10 +148,10 @@ export const Softwares: React.FC = () => {
                 </div>
   
                 <div className="pt-8 space-y-3">
-                  <button className="w-full py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-[#FF5722] text-white font-bold text-sm shadow-[0_0_20px_rgba(255,87,34,0.3)] hover:shadow-[0_0_30px_rgba(255,87,34,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
+                  <a href={`https://wa.me/923182834735?text=Hi!%20I%20am%20interested%20in%20a%20demo%20for%20${encodeURIComponent(software.name)}.`} target="_blank" rel="noreferrer" className="w-full py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-[#FF5722] text-white font-bold text-sm shadow-[0_0_20px_rgba(255,87,34,0.3)] hover:shadow-[0_0_30px_rgba(255,87,34,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
                     <Lock className="w-4 h-4" />
-                    <span>Purchase License</span>
-                  </button>
+                    <span>Contact for Demo</span>
+                  </a>
                   <a href="#" className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-sm hover:bg-white/10 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
                     <Download className="w-4 h-4 text-gray-400" />
                     <span>Download (.exe)</span>

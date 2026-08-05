@@ -83,7 +83,7 @@ export const InteractiveTerminal: React.FC = () => {
   - Muhammad Farhan: Content & Script Writer`;
         break;
       case 'contact':
-        response = `Email: hello@apexorion.com
+        response = `Email: apexorion69@gmail.com
 Location: Faisalabad, Pakistan
 Status: Accepting new projects. Use the form below to reach out.`;
         break;

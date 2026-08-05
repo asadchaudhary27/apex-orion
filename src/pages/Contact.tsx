@@ -70,7 +70,7 @@ export const Contact: React.FC = () => {
               </div>
               <div className="space-y-1">
                 <h3 className="font-headline text-lg font-bold text-white">Direct Email Inquiry</h3>
-                <p className="text-gray-400 text-sm font-medium">contact@apexorion.com</p>
+                <p className="text-gray-400 text-sm font-medium">apexorion69@gmail.com</p>
                 <p className="text-gray-400 text-xs flex items-center space-x-1 pt-1">
                   <Clock className="w-3.5 h-3.5 text-[#FF5722]" />
                   <span>24-hour typical response time</span>
@@ -90,7 +90,7 @@ export const Contact: React.FC = () => {
                 </div>
               </div>
               <a
-                href="https://wa.me/"
+                href="https://wa.me/923182834735"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center w-full space-x-2 py-3.5 bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm font-bold rounded-xl transition-all duration-300 shadow-[0_0_15px_rgba(37,211,102,0.3)] hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] hover:scale-[1.02]"
