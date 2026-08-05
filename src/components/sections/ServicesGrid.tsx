@@ -18,8 +18,8 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'web',
     title: 'Web Development',
-    shortDesc: 'We architect and build blazing-fast, secure, and highly scalable web applications using React, Next.js, and modern serverless technologies. From complex SaaS dashboards to high-conversion corporate landing pages, we engineer solutions that dominate your market.',
-    highlights: ['Next.js & React SPAs', 'Sub-second Page Loading', 'Responsive & Accessible', 'SEO-Optimized Architecture', 'Enterprise-grade Security'],
+    shortDesc: 'We architect resilient, high-performance web applications using React and modern serverless technologies. From complex dashboards to fast-loading corporate pages, we engineer solutions designed to scale gracefully and captivate your audience.',
+    highlights: ['Next.js & React SPAs', 'Sub-second Page Loading', 'Responsive & Accessible', 'SEO-Optimized Architecture', 'Robust Architecture'],
     icon: Code,
     gradient: 'from-violet-600 via-indigo-500 to-cyan-400',
     iconColor: 'text-violet-400',
@@ -28,8 +28,8 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'wordpress',
     title: 'WordPress Solutions',
-    shortDesc: 'Custom WordPress development, theme customization, and WooCommerce integration. We build highly scalable, secure, and SEO-optimized WordPress websites tailored to your exact business needs.',
-    highlights: ['Custom Theme Dev', 'WooCommerce Integration', 'Plugin Architecture', 'Speed Optimization', 'Advanced Security'],
+    shortDesc: 'Custom WordPress development that goes beyond generic templates. We build scalable, beautifully tailored sites with deep WooCommerce integrations, focusing on speed, seamless management, and solid defense-in-depth practices.',
+    highlights: ['Custom Theme Dev', 'WooCommerce Integration', 'Plugin Architecture', 'Speed Optimization', 'Robust Hardening'],
     icon: LayoutTemplate,
     gradient: 'from-blue-600 via-blue-500 to-sky-400',
     iconColor: 'text-blue-400',
@@ -38,7 +38,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'graphic-design',
     title: 'Graphic Designing',
-    shortDesc: 'Stunning visual assets that instantly capture attention. From premium branding and logo design to eye-catching social media posts and marketing collateral, we create graphics that convert.',
+    shortDesc: 'Visual assets crafted to make a lasting impression. Whether it’s premium brand identity or eye-catching marketing collateral, our design language is engineered to communicate your value proposition instantly and elegantly.',
     highlights: ['Brand Identity & Logos', 'Social Media Graphics', 'Marketing Materials', 'Vector Illustrations', 'Print & Digital Media'],
     icon: Pen,
     gradient: 'from-orange-500 via-rose-500 to-pink-500',
@@ -48,7 +48,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'mobile',
     title: 'Mobile Apps',
-    shortDesc: 'Cross-platform mobile applications engineered for native-like performance and silky 60fps user interfaces. We use Flutter and React Native to deliver your product simultaneously on iOS and Android without compromising on quality or speed.',
+    shortDesc: 'Cross-platform mobile applications engineered for native-like fluidity. By leveraging Flutter and React Native, we deliver exceptional, responsive experiences across iOS and Android while maintaining an agile development cycle.',
     highlights: ['Flutter & React Native', 'Offline Sync Capabilities', 'iOS & Android Ready', 'Custom Animations', 'Push Notification Engines'],
     icon: Smartphone,
     gradient: 'from-sky-500 via-blue-500 to-indigo-600',
@@ -58,7 +58,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'social-media',
     title: 'Social Media Management',
-    shortDesc: 'Data-driven campaigns and brand management to completely dominate your social presence. We handle everything from content strategy and premium creative asset design to active community management and targeted paid ad scaling.',
+    shortDesc: 'Data-informed campaigns that amplify your brand\'s digital footprint. We handle everything from content strategy and creative asset design to active community engagement, turning casual scrollers into engaged followers.',
     highlights: ['Viral Growth Strategies', 'Premium Content Creation', 'Community Engagement', 'Influencer Outreach', 'ROI-Focused Campaigns'],
     icon: Share2,
     gradient: 'from-fuchsia-500 via-purple-500 to-violet-600',
@@ -68,7 +68,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'brand',
     title: 'UI/UX & Brand',
-    shortDesc: 'We design digital experiences that feel distinctly premium and intuitive. Our design process fuses psychology with stunning visuals, incorporating glassmorphism, kinetic typography, and fluid micro-interactions to guarantee your users say "wow".',
+    shortDesc: 'Digital experiences that feel distinctly premium and intuitive. Our design process fuses behavioral insights with striking visuals—utilizing sleek glassmorphism and kinetic typography to craft highly memorable user journeys.',
     highlights: ['Kinetic Design Systems', 'Fluid Micro-Interactions', 'Cohesive Brand Guidelines', 'User Journey Mapping', 'A/B Tested Layouts'],
     icon: Palette,
     gradient: 'from-pink-500 via-rose-500 to-red-500',
@@ -78,7 +78,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'search-engine-optimization',
     title: 'Search Engine Optimization (SEO)',
-    shortDesc: 'Comprehensive SEO strategies to dominate search rankings and drive massive organic traffic. We utilize technical SEO, on-page optimization, and high-quality link building to ensure your business stays at the top of search results.',
+    shortDesc: 'Strategic SEO implementations designed to steadily climb search rankings and build organic authority. We utilize rigorous technical audits and targeted on-page optimization to position your brand where it matters most.',
     highlights: ['Technical SEO Audits', 'On-Page Optimization', 'White-Hat Link Building', 'Keyword Strategy', 'Monthly Rank Reporting'],
     icon: Search,
     gradient: 'from-lime-500 via-green-500 to-emerald-600',
@@ -88,7 +88,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'pos',
     title: 'Custom POS',
-    shortDesc: 'Modern point-of-sale systems built specifically for your business operations. Our custom POS software is incredibly fast, deeply reliable, and features real-time inventory management that works even when your internet connection drops.',
+    shortDesc: 'Modern point-of-sale systems built specifically for dynamic operations. Our software is impressively fast, highly intuitive, and features resilient offline capabilities so your business keeps running seamlessly even during network hiccups.',
     highlights: ['Real-time Inventory Sync', 'Offline Resilience', 'Custom Hardware Support', 'Multi-Store Management', 'Detailed Analytics Dashboard'],
     icon: MonitorCheck,
     gradient: 'from-orange-500 via-amber-400 to-yellow-400',
@@ -98,7 +98,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'content-writer',
     title: 'Content Writer',
-    shortDesc: 'Engaging, SEO-optimized copy tailored specifically to capture your audience and convert visitors into loyal clients. We craft technical blogs, persuasive landing page copy, and compelling email sequences that speak your brand\'s voice.',
+    shortDesc: 'Engaging, strategically structured copy tailored to capture attention and drive action. We craft insightful technical blogs and persuasive landing pages that resonate perfectly with your brand\'s unique voice and ethos.',
     highlights: ['SEO Optimized Copy', 'Brand Voice Match', 'High Conversion Rates', 'Technical Blogging', 'Email Sequences'],
     icon: Edit3,
     gradient: 'from-yellow-500 via-orange-400 to-red-500',
@@ -108,7 +108,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'script-writer',
     title: 'Script Writer',
-    shortDesc: 'Compelling scripts for videos, ads, and pitches that hook attention from the absolute first second. We structure narratives that maximize audience retention and drive action, perfect for YouTube, TikTok, and high-stakes investor pitches.',
+    shortDesc: 'Compelling narratives structured to hold attention and spark curiosity. We write dynamic scripts for video ads and investor pitches that blend authentic storytelling with sharp, persuasive hooks.',
     highlights: ['Viral Video Ads', 'YouTube Scripts', 'Investor Pitch Decks', 'High Retention Hooks', 'Story-Driven Sales'],
     icon: PenTool,
     gradient: 'from-red-500 via-rose-500 to-pink-600',
@@ -118,7 +118,7 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: 'saas',
     title: 'SaaS Solutions',
-    shortDesc: 'Ready-to-use software products engineered for enterprise scaling. Whether you need a robust HR platform, an automated booking system, or a custom ERP, we provide battle-tested cloud infrastructure that is ready to deploy immediately.',
+    shortDesc: 'Cloud-native software products engineered for straightforward scaling. Whether it\'s a robust HR platform or a custom booking system, we deliver meticulously architected solutions ready to power your enterprise\'s growth.',
     highlights: ['Plug-and-Play Setup', 'Scalable Cloud Infrastructure', 'REST/GraphQL APIs', 'Role-Based Access', 'Automated Billing'],
     icon: Cloud,
     gradient: 'from-cyan-500 via-teal-400 to-emerald-400',
@@ -128,13 +128,13 @@ export const SERVICES_DATA: ServiceCardData[] = [
   {
     id: '3d-modeling',
     title: '3D Modeling',
-    shortDesc: 'Bring your products to life with stunning 3D assets and environments. We create optimized, interactive WebGL experiences that run directly in the browser, allowing your customers to explore your offerings in fully immersive 3D space.',
+    shortDesc: 'Bring your concepts to life with vivid 3D assets and environments. We create optimized, interactive WebGL experiences that run smoothly in the browser, allowing users to explore your vision in three immersive dimensions.',
     highlights: ['Interactive WebGL', 'Photorealistic Renders', 'Optimized Web Assets', '3D Product Configurators', 'Three.js Integration'],
     icon: Box,
     gradient: 'from-emerald-500 via-teal-500 to-cyan-500',
     iconColor: 'text-emerald-400',
     glowColor: 'rgba(16,185,129,0.4)',
-  },
+  }
 ];
 
 export const ServicesGrid: React.FC = () => {
