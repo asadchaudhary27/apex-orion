@@ -66,7 +66,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
               className="relative flex flex-col items-center"
             >
               <div className="absolute inset-0 bg-[#FF5722] blur-[100px] opacity-20 rounded-full" />
-              <img src="/logo_transparent.png" alt="Apex Orion Logo" className="w-32 h-32 mb-6 relative z-10 object-contain drop-shadow-lg" />
+              <img src="/logo_transparent.png" alt="Apex Orion Logo" className="w-96 h-96 mb-6 relative z-10 object-contain drop-shadow-lg" />
               <h1 className="font-headline text-5xl md:text-7xl font-bold text-white tracking-tighter relative z-10">
                 APEX <span className="text-[#FF5722]">ORION</span>
               </h1>
