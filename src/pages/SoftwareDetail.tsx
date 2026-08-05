@@ -94,7 +94,7 @@ export const SoftwareDetail: React.FC = () => {
               >
                 <GlassCard className="h-full p-8 rounded-3xl space-y-6">
                   <div className="flex items-center space-x-3 border-b border-white/10 pb-4">
-                    <span className="text-3xl">{section.emoji}</span>
+                    <section.icon className="w-8 h-8 text-[#FF5722]" />
                     <h3 className="font-headline text-xl font-bold text-white">{section.title}</h3>
                   </div>
                   <ul className="space-y-5">

@@ -1,6 +1,9 @@
+import { ElementType } from 'react';
+import { ShoppingCart, Users, Package, DollarSign, BarChart, Settings, Car, CreditCard, Shield, Utensils, TrendingUp, Menu, Truck, Calculator } from 'lucide-react';
+
 export interface SoftwareDetailSection {
   title: string;
-  emoji: string;
+  icon: ElementType;
   features: { name: string; description: string }[];
 }
 
@@ -30,7 +33,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     sections: [
       {
         title: 'Sales & Invoicing',
-        emoji: '🛒',
+        icon: ShoppingCart,
         features: [
           { name: 'Counter Sales', description: 'Fast checkout for both walk-in customers and registered account customers.' },
           { name: 'Delivery Sales', description: 'Route-based delivery screen to bulk-process deliveries for all customers on that route at once (tracking empties returned, cash collected, and credit given).' },
@@ -39,7 +42,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Customer & Accounts Management',
-        emoji: '👥',
+        icon: Users,
         features: [
           { name: 'Credit & Dues Tracking', description: 'Automatically tracks balances. If a customer pays less than the total, the remaining amount is added to their dues.' },
           { name: 'Bottle Tracking', description: 'Keeps an exact count of how many physical company bottles (empties) are currently being held by each customer.' },
@@ -48,7 +51,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Inventory & Stock Control',
-        emoji: '📦',
+        icon: Package,
         features: [
           { name: 'Full & Empty Tracking', description: 'Distinctly tracks full bottles ready for sale and empty bottles returned from customers.' },
           { name: 'Low Stock Alerts', description: 'Set custom threshold warnings (e.g., alert when 19L bottles fall below 10 units).' },
@@ -58,7 +61,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Cash & Expense Management',
-        emoji: '💵',
+        icon: DollarSign,
         features: [
           { name: 'Daily Closing', description: 'Tally up the physical cash drawer at the end of the day, compare it against system sales, subtract daily expenses, and close the shift.' },
           { name: 'Expense Tracking', description: 'Record daily business expenses (fuel, vehicle maintenance, meals) so they accurately reflect against your daily profit.' }
@@ -66,7 +69,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Advanced Reporting (Owner Only)',
-        emoji: '📊',
+        icon: BarChart,
         features: [
           { name: 'Sales & Profit Reports', description: 'Visual charts and breakdowns of total revenue versus actual profit (calculated using the Cost Price).' },
           { name: 'Dues Report', description: 'A master list of all outstanding customer balances to help with debt collection.' },
@@ -76,7 +79,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Administration & Offline Capabilities',
-        emoji: '⚙️',
+        icon: Settings,
         features: [
           { name: 'PIN-Based Login', description: 'Fast, secure login using a 4-digit PIN for staff, with role-based access control (Owners can see reports, Cashiers cannot).' },
           { name: 'Route Management', description: 'Group customers into geographical routes to make delivery dispatches easier.' },
@@ -99,7 +102,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     sections: [
       {
         title: 'Fleet Management',
-        emoji: '🚗',
+        icon: Car,
         features: [
           { name: 'Full CRUD', description: 'Add, Edit, Delete, and View vehicles with ease.' },
           { name: 'Customizable Details', description: 'Easily type or select the Category, Fuel Type, Transmission, Make, Model, Year, Seats, Daily Rate, and Mileage.' },
@@ -109,7 +112,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Customer Management',
-        emoji: '👥',
+        icon: Users,
         features: [
           { name: 'Customer Profiles', description: 'Add, Edit, and Delete clients. Store Name, Email, Phone Number, and Address.' },
           { name: 'Profile Photos', description: 'Upload profile photos (avatars) for your clients, or let the system generate colorful initials automatically.' },
@@ -118,7 +121,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Payments & Invoicing',
-        emoji: '💳',
+        icon: CreditCard,
         features: [
           { name: 'Invoice Creation', description: 'Create, Edit, and Delete bills/invoices directly in the app.' },
           { name: 'Custom Statuses', description: 'Track whether an invoice is Paid, Pending, Refunded, or Overdue.' },
@@ -127,7 +130,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Admin Settings & Customization',
-        emoji: '⚙️',
+        icon: Settings,
         features: [
           { name: 'Company Profile', description: 'Update your company name, email, phone number, operating hours, and address.' },
           { name: 'Logo Uploader', description: 'Upload your own company logo which will automatically stamp onto your generated PDFs.' },
@@ -137,7 +140,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Architecture & Security',
-        emoji: '🏗️',
+        icon: Shield,
         features: [
           { name: 'Fully Offline Capable', description: 'The software runs 100% locally on your Windows machine without needing an internet connection.' },
           { name: 'Robust Local Database', description: 'Powered by a local SQLite engine that saves directly to your user folder, ensuring lightning-fast load times and extreme privacy.' },
@@ -160,7 +163,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     sections: [
       {
         title: 'Point of Sale (POS) Interface',
-        emoji: '🍽️',
+        icon: Utensils,
         features: [
           { name: 'Order Processing', description: 'Create Dine-In, Takeaway, and Delivery orders.' },
           { name: 'Cart Management', description: 'Add items, adjust quantities, add order-specific notes, and apply item-level discounts.' },
@@ -170,7 +173,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Dashboard & Analytics',
-        emoji: '📈',
+        icon: TrendingUp,
         features: [
           { name: 'Sales Overview', description: 'View total sales, daily revenue, and active orders at a glance.' },
           { name: 'Performance Metrics', description: 'Track the most popular items, peak hours, and general business performance.' }
@@ -178,7 +181,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Menu Management',
-        emoji: '🍔',
+        icon: Menu,
         features: [
           { name: 'Product Catalog', description: 'Add, edit, and categorize menu items.' },
           { name: 'Pricing & SKUs', description: 'Manage item prices, SKUs, and availability status.' }
@@ -186,7 +189,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Stock & Inventory Management',
-        emoji: '📦',
+        icon: Package,
         features: [
           { name: 'Ingredient Tracking', description: 'Maintain a database of raw ingredients and their current stock levels.' },
           { name: 'Daily Reconciliation', description: 'Alerts and workflows to ensure stock is checked and deductions (like waste or daily usage) are recorded daily.' }
@@ -194,7 +197,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Recipe Cost Calculator',
-        emoji: '⚖️',
+        icon: Calculator,
         features: [
           { name: 'Margin Analysis', description: 'Link ingredients to specific menu items to calculate the exact cost to produce a dish.' },
           { name: 'Profitability', description: 'Automatically calculate profit margins based on the raw ingredient cost versus the selling price.' }
@@ -202,7 +205,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Rider & Delivery Management',
-        emoji: '🛵',
+        icon: Truck,
         features: [
           { name: 'Rider Profiles', description: 'Manage delivery personnel, including their contact info, vehicle details, and creation/update history.' },
           { name: 'Delivery Assignment', description: 'Assign specific delivery orders to riders and track delivery charges.' }
@@ -210,7 +213,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Expense Tracking & End of Day',
-        emoji: '💵',
+        icon: DollarSign,
         features: [
           { name: 'Daily Expenses', description: 'Log day-to-day shop expenses (e.g., utility bills, supplies, petty cash) for accurate profit calculations.' },
           { name: 'Closing Sheet', description: 'Generate a comprehensive Closing Sheet that calculates total revenue, subtracts recorded expenses, and determines final cash-in-drawer.' }
@@ -218,7 +221,7 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
       },
       {
         title: 'Advanced Shop Settings & Architecture',
-        emoji: '⚙️',
+        icon: Settings,
         features: [
           { name: 'Receipt Customization', description: 'A live-preview editor to customize exactly what prints on the thermal receipts (supports 58mm & 80mm printers).' },
           { name: 'Security & Auto-heal', description: 'Secure the system with a PIN code, perform encrypted database backups, and run automated health checks.' },
