@@ -54,31 +54,33 @@ export const InteractiveTerminal: React.FC = () => {
       case 'services':
         response = `Core Capabilities:
   [1] Web Development (React, Next.js)
-  [2] Mobile Apps (Flutter, React Native)
-  [3] Custom POS Systems
-  [4] UI/UX & Brand Design
-  [5] 3D Modeling & WebGL
-  [6] SaaS Solutions
-  [7] Social Media Management
-  [8] SEO Guest Posting`;
+  [2] WordPress Solutions
+  [3] Graphic Designing
+  [4] Mobile Apps (Flutter, React Native)
+  [5] Social Media Management
+  [6] SEO Optimization`;
         break;
       case 'projects':
         response = `Recent Deployments:
-  - Zarco Star (zarcostar.ae): Next.js global platform for HR solutions.
+  - Zarco Star (zarcostar.ae): Corporate web presence.
   - Tech Team Designs: Interactive 3D WebGL experience.
-  - Chicken Mashwi POS: Custom Arabic food point-of-sale system in Lahore.
-  - Crypto Trading Dashboard: Real-time React dashboard with WebSockets.`;
+  - ApexPure POS: Offline-first desktop point-of-sale.`;
         break;
       case 'softwares':
         response = `SaaS Products:
-  - Enterprise POS Manager: Offline-first retail management.
-  - SocialFlow: Automated social media campaign manager.
-  - SEO Analytics Pro: Custom reporting dashboard.`;
+  - Veloce: Car rental management and booking system.
+  - ApexPure POS: Specialized route delivery for water companies.
+  - ApexRestu POS: High-performance POS designed for restaurants.`;
         break;
       case 'team':
-        response = `Leadership:
-  - Asad Qaisar: Founder & CEO. Visionary leader behind Apex Orion.
-  - Elite engineering team across Pakistan.`;
+        response = `Leadership & Core Team:
+  - Asad Qaisar: Founder & CEO
+  - Ammar Saleem: Co-Founder & Project Manager
+  - Sami Uthwal: Lead Developer & AI/ML
+  - Sir Anjum: WordPress Dev & SEO Expert
+  - Muhannad Asif: 3D Model Designer
+  - Hamza Nazir: Graphic Designer & UI/UX
+  - Muhammad Farhan: Content & Script Writer`;
         break;
       case 'contact':
         response = `Email: hello@apexorion.com

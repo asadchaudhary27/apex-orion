@@ -99,7 +99,7 @@ export const Services: React.FC = () => {
         </div>
 
         <h1 className="services-title relative z-10">
-          <span className="word"><span>10</span></span>&nbsp;<span className="word"><span>Services.</span></span>
+          <span className="word"><span>6</span></span>&nbsp;<span className="word"><span>Services.</span></span>
         </h1>
 
         <div className="services-subtitle-wrap" ref={bigResultsWrapRef}>
