@@ -14,6 +14,7 @@ const Home = lazy(() => import('./pages/Home'));
 const Services = lazy(() => import('./pages/Services'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Softwares = lazy(() => import('./pages/Softwares'));
+const SoftwareDetail = lazy(() => import('./pages/SoftwareDetail'));
 const Team = lazy(() => import('./pages/Team'));
 const Contact = lazy(() => import('./pages/Contact'));
 
@@ -28,6 +29,7 @@ const AnimatedRoutes = () => {
         <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
         <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
         <Route path="/softwares" element={<PageWrapper><Softwares /></PageWrapper>} />
+        <Route path="/software/:id" element={<PageWrapper><SoftwareDetail /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="*" element={<PageWrapper><Home /></PageWrapper>} />
       </Routes>

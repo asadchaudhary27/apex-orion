@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cloud, CheckCircle2, Lock, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Cloud, CheckCircle2, Lock, Download, ArrowRight } from 'lucide-react';
 
 export interface SoftwareProduct {
   id: string;
@@ -27,7 +28,7 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
   {
     id: 'apexpure-pos',
     name: 'ApexPure POS',
-    tagline: 'Specialized point of sale and route delivery software for water companies.',
+    tagline: 'Comprehensive POS & Inventory Management for Water Delivery. Handles route deliveries, stock tracking, and customer credit with 100% offline capability.',
     priceMonthly: '$3',
     priceLifetime: '$150',
     features: ['Bottle Tracking', 'Route Optimization', 'Delivery Scheduling', 'Offline Mode Support'],
@@ -147,15 +148,21 @@ export const Softwares: React.FC = () => {
                   </ul>
                 </div>
   
-                <div className="pt-8 space-y-3">
-                  <a href={`https://wa.me/923182834735?text=Hi!%20I%20am%20interested%20in%20a%20demo%20for%20${encodeURIComponent(software.name)}.`} target="_blank" rel="noreferrer" className="w-full py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-[#FF5722] text-white font-bold text-sm shadow-[0_0_20px_rgba(255,87,34,0.3)] hover:shadow-[0_0_30px_rgba(255,87,34,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
-                    <Lock className="w-4 h-4" />
-                    <span>Contact for Demo</span>
-                  </a>
-                  <a href="#" className="w-full py-3.5 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-sm hover:bg-white/10 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
-                    <Download className="w-4 h-4 text-gray-400" />
-                    <span>Download (.exe)</span>
-                  </a>
+                <div className="pt-8 space-y-3 flex flex-col items-center">
+                  <Link to={`/software/${software.id}`} className="w-full py-3.5 rounded-xl bg-white/10 text-white font-bold text-sm hover:bg-white/20 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2">
+                    <span>More Details & Images</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <div className="grid grid-cols-2 gap-3 w-full">
+                    <a href={`https://wa.me/923182834735?text=Hi!%20I%20am%20interested%20in%20a%20demo%20for%20${encodeURIComponent(software.name)}.`} target="_blank" rel="noreferrer" className="w-full py-3 rounded-xl bg-gradient-to-r from-orange-600 to-[#FF5722] text-white font-bold text-xs sm:text-sm shadow-[0_0_20px_rgba(255,87,34,0.3)] hover:shadow-[0_0_30px_rgba(255,87,34,0.6)] hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-1.5">
+                      <Lock className="w-3.5 h-3.5" />
+                      <span>Contact</span>
+                    </a>
+                    <a href="#" className="w-full py-3 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-xs sm:text-sm hover:bg-white/10 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-1.5">
+                      <Download className="w-3.5 h-3.5 text-gray-400" />
+                      <span>Download</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
