@@ -145,5 +145,86 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
         ]
       }
     ]
+  },
+  'apexrestu-pos': {
+    id: 'apexrestu-pos',
+    name: 'ApexRestu POS',
+    tagline: 'High-performance restaurant POS featuring live recipe costing, rider management, and dynamic receipt printing.',
+    description: 'Designed exclusively for the fast-paced restaurant industry, ApexRestu streamlines your entire operation—from dynamic menu and table management to deep ingredient cost analysis and offline closing.',
+    gradient: 'from-rose-600 to-pink-500',
+    gallery: [
+      '/placeholder-restu-1.jpg',
+      '/placeholder-restu-2.jpg',
+      '/placeholder-restu-3.jpg',
+    ],
+    sections: [
+      {
+        title: 'Point of Sale (POS) Interface',
+        emoji: '🍽️',
+        features: [
+          { name: 'Order Processing', description: 'Create Dine-In, Takeaway, and Delivery orders.' },
+          { name: 'Cart Management', description: 'Add items, adjust quantities, add order-specific notes, and apply item-level discounts.' },
+          { name: 'Payment Handling', description: 'Process payments (Cash, Card, etc.), calculate change, and mark orders as paid or unpaid.' },
+          { name: 'Dynamic Receipts', description: 'Automatically generate and print fully customized receipts with dynamic headers, footers, logos, tax IDs, and optional customer/cashier details.' }
+        ]
+      },
+      {
+        title: 'Dashboard & Analytics',
+        emoji: '📈',
+        features: [
+          { name: 'Sales Overview', description: 'View total sales, daily revenue, and active orders at a glance.' },
+          { name: 'Performance Metrics', description: 'Track the most popular items, peak hours, and general business performance.' }
+        ]
+      },
+      {
+        title: 'Menu Management',
+        emoji: '🍔',
+        features: [
+          { name: 'Product Catalog', description: 'Add, edit, and categorize menu items.' },
+          { name: 'Pricing & SKUs', description: 'Manage item prices, SKUs, and availability status.' }
+        ]
+      },
+      {
+        title: 'Stock & Inventory Management',
+        emoji: '📦',
+        features: [
+          { name: 'Ingredient Tracking', description: 'Maintain a database of raw ingredients and their current stock levels.' },
+          { name: 'Daily Reconciliation', description: 'Alerts and workflows to ensure stock is checked and deductions (like waste or daily usage) are recorded daily.' }
+        ]
+      },
+      {
+        title: 'Recipe Cost Calculator',
+        emoji: '⚖️',
+        features: [
+          { name: 'Margin Analysis', description: 'Link ingredients to specific menu items to calculate the exact cost to produce a dish.' },
+          { name: 'Profitability', description: 'Automatically calculate profit margins based on the raw ingredient cost versus the selling price.' }
+        ]
+      },
+      {
+        title: 'Rider & Delivery Management',
+        emoji: '🛵',
+        features: [
+          { name: 'Rider Profiles', description: 'Manage delivery personnel, including their contact info, vehicle details, and creation/update history.' },
+          { name: 'Delivery Assignment', description: 'Assign specific delivery orders to riders and track delivery charges.' }
+        ]
+      },
+      {
+        title: 'Expense Tracking & End of Day',
+        emoji: '💵',
+        features: [
+          { name: 'Daily Expenses', description: 'Log day-to-day shop expenses (e.g., utility bills, supplies, petty cash) for accurate profit calculations.' },
+          { name: 'Closing Sheet', description: 'Generate a comprehensive Closing Sheet that calculates total revenue, subtracts recorded expenses, and determines final cash-in-drawer.' }
+        ]
+      },
+      {
+        title: 'Advanced Shop Settings & Architecture',
+        emoji: '⚙️',
+        features: [
+          { name: 'Receipt Customization', description: 'A live-preview editor to customize exactly what prints on the thermal receipts (supports 58mm & 80mm printers).' },
+          { name: 'Security & Auto-heal', description: 'Secure the system with a PIN code, perform encrypted database backups, and run automated health checks.' },
+          { name: '100% Offline Desktop App', description: 'Built with an embedded SQLite database, packaged as a standalone Windows .exe, running entirely offline.' }
+        ]
+      }
+    ]
   }
 };

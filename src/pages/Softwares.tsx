@@ -38,7 +38,7 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
   {
     id: 'apexrestu-pos',
     name: 'ApexRestu POS',
-    tagline: 'High-performance POS system designed exclusively for restaurants.',
+    tagline: 'High-performance restaurant POS featuring live recipe costing, rider management, and dynamic receipt printing.',
     priceMonthly: '$3',
     priceLifetime: '$150',
     features: ['Table Management', 'Kitchen Display System', 'Inventory Tracking', 'Multi-Store Support'],
