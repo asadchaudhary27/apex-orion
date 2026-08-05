@@ -41,8 +41,20 @@ export const ContactForm: React.FC = () => {
   });
 
   const onSubmit = (data: ContactFormData) => {
-    // Simulate real form dispatch
-    console.log('Valid Form Submitted:', data);
+    const phoneNumber = "923182834735";
+    const message = `*New Project Inquiry*
+*Name:* ${data.name}
+*Email:* ${data.email}
+*Service:* ${data.service}
+*Budget:* ${data.budget}
+
+*Details:* 
+${data.details}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
     setIsSubmitted(true);
   };
 
