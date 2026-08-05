@@ -327,6 +327,9 @@ export const Team: React.FC = () => {
           <div ref={addToCardsRef} className="team-card team-card-7" data-rot="7" data-depth="9">
             <img src="/team/hamza.png" alt="Hamza Nazir Graphic Designer & UIUX" title="Hamza Nazir - Graphic Designer & UI/UX" />
           </div>
+          <div ref={addToCardsRef} className="team-card team-card-8" data-rot="-7" data-depth="13">
+            <img src="/team/lubaina.png" alt="Lubaina Web Developer" title="Lubaina - Web Developer" />
+          </div>
         </div>
 
         <div className="team-subline" id="subline">
@@ -339,7 +342,7 @@ export const Team: React.FC = () => {
               </svg>
             </span>
           </button>
-          <div className="team-subline-text">7 people. 25+ shipped projects. Zero filler.</div>
+          <div className="team-subline-text">8 people. 25+ shipped projects. Zero filler.</div>
         </div>
       </section>
 
@@ -347,7 +350,7 @@ export const Team: React.FC = () => {
       <section className="team-section-block">
         <div className="team-head">
           <div>
-            <div className="team-eyebrow">The Crew · Seven strong</div>
+            <div className="team-eyebrow">The Crew · Eight strong</div>
             <h2>Designers, builders<br />and the <em>quietly brilliant</em>.</h2>
           </div>
           <p>Every person you see here touches every project we ship. No middle layer, no handoffs to strangers — just direct work with the people doing it.</p>
@@ -362,6 +365,7 @@ export const Team: React.FC = () => {
             { img: "/team/muhannad.png", name: "Muhannad Asif", role: "3D Model Designer" },
             { img: "/team/anjum.png", name: "Sir Anjum", role: "WordPress Dev & SEO Expert" },
             { img: "/team/farhan.png", name: "Muhammad Farhan", role: "Content & Script Writer" },
+            { img: "/team/lubaina.png", name: "Lubaina", role: "Web Developer" },
           ].map((person, idx) => (
             <div key={idx} className="team-t-card">
               <img src={person.img} alt={person.name} title={`${person.name} - ${person.role}`} />
@@ -377,7 +381,7 @@ export const Team: React.FC = () => {
       {/* STATS SECTION */}
       <section className="team-stats">
         <div className="team-stats-inner">
-          <h3>Seven humans.<br />One <em>tight ship</em>.</h3>
+          <h3>Eight humans.<br />One <em>tight ship</em>.</h3>
           <div className="team-stat-block">
             <div className="num" data-count="25"><span>0</span></div>
             <div className="lbl">Projects shipped</div>

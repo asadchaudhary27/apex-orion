@@ -80,7 +80,8 @@ export const InteractiveTerminal: React.FC = () => {
   - Sir Anjum: WordPress Dev & SEO Expert
   - Muhannad Asif: 3D Model Designer
   - Hamza Nazir: Graphic Designer & UI/UX
-  - Muhammad Farhan: Content & Script Writer`;
+  - Muhammad Farhan: Content & Script Writer
+  - Lubaina: Web Developer`;
         break;
       case 'contact':
         response = `Email: apexorion69@gmail.com
