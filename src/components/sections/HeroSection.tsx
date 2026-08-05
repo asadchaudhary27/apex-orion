@@ -9,7 +9,7 @@ const CODE_SNIPPET = `import { build } from '@apex-orion/core';
 async function executeVision() {
   const product = await build({
     vision: 'extraordinary',
-    founder: 'CEO AND FOUNDER ASAD QAISAR',
+    founders: ['Asad Qaisar (CEO)', 'Ammar Saleem (Co-Founder)'],
     performance: 'sub-second',
     stack: ['React', 'Node.js', 'Rust'],
     design: '2026_future_proof'
