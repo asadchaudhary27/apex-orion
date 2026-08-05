@@ -18,7 +18,7 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
   {
     id: 'veloce',
     name: 'Veloce',
-    tagline: 'Comprehensive car rental management and booking system.',
+    tagline: 'Ultimate car rental management software featuring offline capability, dynamic invoice generation, and comprehensive fleet tracking.',
     priceMonthly: '$3',
     priceLifetime: '$150',
     features: ['Fleet Management', 'Booking & Reservations', 'Automated Invoicing', 'Customer Portal'],

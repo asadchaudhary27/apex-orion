@@ -84,5 +84,66 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
         ]
       }
     ]
+  },
+  'veloce': {
+    id: 'veloce',
+    name: 'Veloce Car Rental',
+    tagline: 'Comprehensive car rental management and booking system.',
+    description: 'Veloce is a robust, 100% offline-capable software designed to streamline car rental businesses. From fleet tracking and customer profiles to automated invoicing and dynamic PDF generation, Veloce puts you in complete control.',
+    gradient: 'from-orange-600 to-[#FF5722]',
+    gallery: [
+      '/placeholder-veloce-1.jpg',
+      '/placeholder-veloce-2.jpg',
+      '/placeholder-veloce-3.jpg',
+    ],
+    sections: [
+      {
+        title: 'Fleet Management',
+        emoji: '🚗',
+        features: [
+          { name: 'Full CRUD', description: 'Add, Edit, Delete, and View vehicles with ease.' },
+          { name: 'Customizable Details', description: 'Easily type or select the Category, Fuel Type, Transmission, Make, Model, Year, Seats, Daily Rate, and Mileage.' },
+          { name: 'Live Status Tracking', description: 'Mark vehicles as Available, Rented, or Under Maintenance.' },
+          { name: 'Search & Filtering', description: 'Instantly filter your fleet by name, make, or status.' }
+        ]
+      },
+      {
+        title: 'Customer Management',
+        emoji: '👥',
+        features: [
+          { name: 'Customer Profiles', description: 'Add, Edit, and Delete clients. Store Name, Email, Phone Number, and Address.' },
+          { name: 'Profile Photos', description: 'Upload profile photos (avatars) for your clients, or let the system generate colorful initials automatically.' },
+          { name: 'History Tracking', description: 'View their total rentals and total money spent.' }
+        ]
+      },
+      {
+        title: 'Payments & Invoicing',
+        emoji: '💳',
+        features: [
+          { name: 'Invoice Creation', description: 'Create, Edit, and Delete bills/invoices directly in the app.' },
+          { name: 'Custom Statuses', description: 'Track whether an invoice is Paid, Pending, Refunded, or Overdue.' },
+          { name: 'Dynamic PDF Generation', description: 'One-click export to a professional PDF invoice. The PDF automatically reads your company name, address, contact info, and custom logo from your settings!' }
+        ]
+      },
+      {
+        title: 'Admin Settings & Customization',
+        emoji: '⚙️',
+        features: [
+          { name: 'Company Profile', description: 'Update your company name, email, phone number, operating hours, and address.' },
+          { name: 'Logo Uploader', description: 'Upload your own company logo which will automatically stamp onto your generated PDFs.' },
+          { name: 'Dynamic Color Themes', description: 'Change the look and feel of the entire software on the fly! Choose from Veloce Orange, Ocean Blue, Emerald Green, Royal Purple, or Crimson Red.' },
+          { name: 'Data Backups', description: 'Toggle automated local database backups to prevent data loss.' }
+        ]
+      },
+      {
+        title: 'Architecture & Security',
+        emoji: '🏗️',
+        features: [
+          { name: 'Fully Offline Capable', description: 'The software runs 100% locally on your Windows machine without needing an internet connection.' },
+          { name: 'Robust Local Database', description: 'Powered by a local SQLite engine that saves directly to your user folder, ensuring lightning-fast load times and extreme privacy.' },
+          { name: 'Standalone Installer', description: 'Delivered as a standard .exe file that can be easily installed on any modern Windows PC.' }
+        ]
+      }
+    ]
   }
 };
