@@ -114,8 +114,8 @@ export const Softwares: React.FC = () => {
                     <div
                       className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${software.gradient} p-0.5 shadow-[0_0_20px_rgba(255,87,34,0.3)]`}
                     >
-                      <div className="w-full h-full bg-black rounded-[14px] flex items-center justify-center p-2.5">
-                        <img src={software.iconPath} alt={`${software.name} icon`} className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
+                      <div className="w-full h-full bg-black rounded-[14px] flex items-center justify-center overflow-hidden">
+                        <img src={software.iconPath} alt={`${software.name} icon`} className="w-full h-full object-cover scale-[1.35] filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" />
                       </div>
                     </div>
                     <div className="flex flex-col items-end gap-2">
