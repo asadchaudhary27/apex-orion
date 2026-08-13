@@ -81,7 +81,8 @@ export const InteractiveTerminal: React.FC = () => {
   - Muhannad Asif: 3D Model Designer
   - Hamza Nazir: Graphic Designer & UI/UX
   - Muhammad Farhan: Content & Script Writer
-  - Lubaina: Web Developer`;
+  - Lubaina: Web Developer
+  - Ali Ur Rehman: React Native Developer`;
         break;
       case 'contact':
         response = `Email: apexorion69@gmail.com
