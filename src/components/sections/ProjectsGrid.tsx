@@ -18,6 +18,17 @@ export interface ProjectData {
 
 export const PROJECTS_DATA: ProjectData[] = [
   {
+    id: 'zarcostar',
+    title: 'Zarco Star Building LLC',
+    category: 'Corporate Experience',
+    description: 'A premium, high-performance corporate web presence engineered for Zarcostar UAE in 3 different languages, emphasizing digital dominance and scalability.',
+    tags: ['React', 'Next.js', 'UI/UX', 'SEO'],
+    bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
+    accentColor: 'from-amber-500 to-yellow-300',
+    imageUrl: '/zarcostar-building-llc.png',
+    link: 'https://zarcostar.ae'
+  },
+  {
     id: '3d-tile-visualizer-&-calculator',
     title: '3D Tile Visualizer & Calculator',
     category: 'Web Application',
@@ -106,17 +117,6 @@ export const PROJECTS_DATA: ProjectData[] = [
     internalLink: true
   },
 
-  {
-    id: 'zarcostar',
-    title: 'Zarco Star Building LLC',
-    category: 'Corporate Experience',
-    description: 'A premium, high-performance corporate web presence engineered for Zarcostar UAE in 3 different languages, emphasizing digital dominance and scalability.',
-    tags: ['React', 'Next.js', 'UI/UX', 'SEO'],
-    bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-amber-500 to-yellow-300',
-    imageUrl: '/zarcostar-building-llc.png',
-    link: 'https://zarcostar.ae'
-  },
   {
     id: 'tech-team-designs',
     title: 'Tech Team Designs',
@@ -216,7 +216,7 @@ export const ProjectsGrid: React.FC = () => {
                 </div>
 
                 {project.internalLink ? (
-                  <Link to={/project/} className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
+                  <Link to={`/project/${project.id}`} className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
                     <span>View Project</span>
                     <Code2 className="w-3.5 h-3.5" />
                   </Link>
