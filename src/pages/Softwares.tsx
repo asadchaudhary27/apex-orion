@@ -44,6 +44,16 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     features: ['Table Management', 'Kitchen Display System', 'Inventory Tracking', 'Multi-Store Support'],
     gradient: 'from-rose-600 to-pink-500',
     iconPath: '/apexrestu.ico'
+  },
+  {
+    id: 'apexrx-manager',
+    name: 'ApexRx Manager',
+    tagline: 'Comprehensive pharmacy & clinic management software with prescription tracking and inventory control.',
+    priceMonthly: '$3',
+    priceLifetime: '$150',
+    features: ['Prescription Management', 'Inventory Tracking', 'Patient Records', 'Supplier Management'],
+    gradient: 'from-emerald-600 to-green-400',
+    iconPath: '/tab_logo.png'
   }
 ];
 

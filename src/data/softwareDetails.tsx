@@ -95,9 +95,11 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     description: 'Veloce is a robust, 100% offline-capable software designed to streamline car rental businesses. From fleet tracking and customer profiles to automated invoicing and dynamic PDF generation, Veloce puts you in complete control.',
     gradient: 'from-orange-600 to-[#FF5722]',
     gallery: [
-      '/placeholder-veloce-1.jpg',
-      '/placeholder-veloce-2.jpg',
-      '/placeholder-veloce-3.jpg',
+      '/veloce/veloce-1.webp',
+      '/veloce/veloce-2.webp',
+      '/veloce/veloce-3.webp',
+      '/veloce/veloce-4.webp',
+      '/veloce/veloce-5.webp',
     ],
     sections: [
       {
@@ -156,9 +158,9 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     description: 'Designed exclusively for the fast-paced restaurant industry, ApexRestu streamlines your entire operation—from dynamic menu and table management to deep ingredient cost analysis and offline closing.',
     gradient: 'from-rose-600 to-pink-500',
     gallery: [
-      '/placeholder-restu-1.jpg',
-      '/placeholder-restu-2.jpg',
-      '/placeholder-restu-3.jpg',
+      '/ApexRestu POS/apexrestu-pos-1.webp',
+      '/ApexRestu POS/apexrestu-pos-2.webp',
+      '/ApexRestu POS/apexrestu-pos-3.webp',
     ],
     sections: [
       {
@@ -226,6 +228,46 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
           { name: 'Receipt Customization', description: 'A live-preview editor to customize exactly what prints on the thermal receipts (supports 58mm & 80mm printers).' },
           { name: 'Security & Auto-heal', description: 'Secure the system with a PIN code, perform encrypted database backups, and run automated health checks.' },
           { name: '100% Offline Desktop App', description: 'Built with an embedded SQLite database, packaged as a standalone Windows .exe, running entirely offline.' }
+        ]
+      }
+    ]
+  },
+  'apexrx-manager': {
+    id: 'apexrx-manager',
+    name: 'ApexRx Manager',
+    tagline: 'Comprehensive pharmacy & clinic management software with prescription tracking and inventory control.',
+    description: 'Designed exclusively for pharmacies and clinics. ApexRx Manager handles everything from inventory tracking and prescription management to supplier records and patient histories—all with complete reliability.',
+    gradient: 'from-emerald-600 to-green-400',
+    gallery: [
+      '/ApexRx manager/apexrx-manager-1.webp',
+      '/ApexRx manager/apexrx-manager-2.webp',
+      '/ApexRx manager/apexrx-manager-3.webp',
+      '/ApexRx manager/apexrx-manager-4.webp',
+      '/ApexRx manager/apexrx-manager-5.webp',
+    ],
+    sections: [
+      {
+        title: 'Prescription & Patient Management',
+        icon: Users,
+        features: [
+          { name: 'Patient Profiles', description: 'Store patient details and medical history securely.' },
+          { name: 'Prescription Tracking', description: 'Log and track prescriptions issued by doctors.' }
+        ]
+      },
+      {
+        title: 'Inventory Control',
+        icon: Package,
+        features: [
+          { name: 'Stock Tracking', description: 'Keep real-time counts of medicine inventory.' },
+          { name: 'Expiry Alerts', description: 'Receive warnings for medicines nearing expiration.' }
+        ]
+      },
+      {
+        title: 'Supplier Management',
+        icon: Truck,
+        features: [
+          { name: 'Vendor Profiles', description: 'Maintain records of suppliers and contact persons.' },
+          { name: 'Purchase Orders', description: 'Generate and track orders sent to suppliers.' }
         ]
       }
     ]
