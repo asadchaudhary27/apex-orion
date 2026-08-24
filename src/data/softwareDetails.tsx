@@ -25,10 +25,9 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     description: 'Designed specifically for water delivery and retail businesses. ApexPure handles everything from walk-in sales to route deliveries, stock tracking, and customer credit—all with 100% offline capability.',
     gradient: 'from-blue-600 to-[#06b6d4]',
     gallery: [
-      // Fallback/Placeholders until real ones are connected
-      '/placeholder-pos-1.jpg',
-      '/placeholder-pos-2.jpg',
-      '/placeholder-pos-3.jpg',
+      '/Apexpure/apexpure-1.webp',
+      '/Apexpure/apexpure-2.webp',
+      '/Apexpure/apexpure-3.webp',
     ],
     sections: [
       {
@@ -158,9 +157,9 @@ export const SOFTWARE_DETAILS: Record<string, SoftwareDetailData> = {
     description: 'Designed exclusively for the fast-paced restaurant industry, ApexRestu streamlines your entire operation—from dynamic menu and table management to deep ingredient cost analysis and offline closing.',
     gradient: 'from-rose-600 to-pink-500',
     gallery: [
-      '/ApexRestu POS/apexrestu-pos-1.webp',
-      '/ApexRestu POS/apexrestu-pos-2.webp',
-      '/ApexRestu POS/apexrestu-pos-3.webp',
+      '/Apexrestu/apexrestu-1.webp',
+      '/Apexrestu/apexrestu-2.webp',
+      '/Apexrestu/apexrestu-3.webp',
     ],
     sections: [
       {

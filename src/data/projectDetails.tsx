@@ -31,9 +31,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
     name: 'Chicken Mashwi Pos',
     description: 'Detailed showcase of Chicken Mashwi Pos.',
     gallery: [
-      '/Chicken mashwi pos/chicken-mashwi-pos-1.webp',
-      '/Chicken mashwi pos/chicken-mashwi-pos-2.webp',
-      '/Chicken mashwi pos/chicken-mashwi-pos-3.webp'
+      '/Apexrestu/apexrestu-1.webp',
+      '/Apexrestu/apexrestu-2.webp',
+      '/Apexrestu/apexrestu-3.webp'
     ]
   },
   'chicken-mashwi-web': {

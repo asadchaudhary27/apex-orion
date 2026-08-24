@@ -58,7 +58,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     tags: ["Desktop", "Electron", "POS"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
     accentColor: 'from-orange-500 to-red-400',
-    imageUrl: '/Chicken mashwi pos/chicken-mashwi-pos-1.webp',
+    imageUrl: '/Apexrestu/apexrestu-1.webp',
     internalLink: true
   },
   {
