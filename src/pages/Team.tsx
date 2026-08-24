@@ -307,31 +307,31 @@ export const Team: React.FC = () => {
         {/* Card row of portraits */}
         <div className="team-cards-row">
           <div ref={addToCardsRef} className="team-card team-card-1" data-rot="-9" data-depth="14">
-            <img src="/team/farhan.png" alt="Muhammad Farhan Content & Script Writer" title="Muhammad Farhan - Content & Script Writer" />
+            <img src="/team/farhan.webp" alt="Muhammad Farhan Content & Script Writer" title="Muhammad Farhan - Content & Script Writer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-2" data-rot="-5" data-depth="10">
-            <img src="/team/ammar.png" alt="Ammar Saleem Co-Founder & Project Manager" title="Ammar Saleem - Co-Founder & Project Manager" />
+            <img src="/team/ammar.webp" alt="Ammar Saleem Co-Founder & Project Manager" title="Ammar Saleem - Co-Founder & Project Manager" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-3" data-rot="-2" data-depth="8">
-            <img src="/team/sami.jpg" alt="Sami Uthwal Lead Developer & AI/ML" title="Sami Uthwal - Lead Developer & AI/ML" />
+            <img src="/team/sami.webp" alt="Sami Uthwal Lead Developer & AI/ML" title="Sami Uthwal - Lead Developer & AI/ML" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-4" data-rot="3" data-depth="12">
-            <img src="/team/muhannad.png" alt="Muhannad Asif 3D Model Designer" title="Muhannad Asif - 3D Model Designer" />
+            <img src="/team/muhannad.webp" alt="Muhannad Asif 3D Model Designer" title="Muhannad Asif - 3D Model Designer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-5" data-rot="0" data-depth="6">
-            <img src="/team/asad.jpg" alt="Asad Qaisar Founder & CEO" title="Asad Qaisar - Founder & CEO" />
+            <img src="/team/asad.webp" alt="Asad Qaisar Founder & CEO" title="Asad Qaisar - Founder & CEO" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-6" data-rot="4" data-depth="11">
-            <img src="/team/anjum.png" alt="Sir Anjum WordPress Dev & SEO Expert" title="Sir Anjum - WordPress Dev & SEO Expert" />
+            <img src="/team/anjum.webp" alt="Sir Anjum WordPress Dev & SEO Expert" title="Sir Anjum - WordPress Dev & SEO Expert" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-7" data-rot="7" data-depth="9">
-            <img src="/team/hamza.png" alt="Hamza Nazir Graphic Designer & UIUX" title="Hamza Nazir - Graphic Designer & UI/UX" />
+            <img src="/team/hamza.webp" alt="Hamza Nazir Graphic Designer & UIUX" title="Hamza Nazir - Graphic Designer & UI/UX" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-8" data-rot="-7" data-depth="13">
-            <img src="/team/lubaina.png" alt="Lubaina Web Developer" title="Lubaina - Web Developer" />
+            <img src="/team/lubaina.webp" alt="Lubaina Web Developer" title="Lubaina - Web Developer" />
           </div>
           <div ref={addToCardsRef} className="team-card team-card-9" data-rot="5" data-depth="7">
-            <img src="/team/ali.jpg" alt="Ali Ur Rehman React Native Developer" title="Ali Ur Rehman - React Native Developer" />
+            <img src="/team/ali.webp" alt="Ali Ur Rehman React Native Developer" title="Ali Ur Rehman - React Native Developer" />
           </div>
         </div>
 
@@ -361,15 +361,15 @@ export const Team: React.FC = () => {
 
         <div className="team-grid-container">
           {[
-            { img: "/team/asad.jpg", name: "Asad Qaisar", role: "Founder & CEO" },
-            { img: "/team/ammar.png", name: "Ammar Saleem", role: "Co-Founder & Project Manager" },
-            { img: "/team/sami.jpg", name: "Sami Uthwal", role: "Lead Developer & AI/ML" },
-            { img: "/team/hamza.png", name: "Hamza Nazir", role: "Graphic Designer & UI/UX" },
-            { img: "/team/muhannad.png", name: "Muhannad Asif", role: "3D Model Designer" },
-            { img: "/team/anjum.png", name: "Sir Anjum", role: "WordPress Dev & SEO Expert" },
-            { img: "/team/farhan.png", name: "Muhammad Farhan", role: "Content & Script Writer" },
-            { img: "/team/lubaina.png", name: "Lubaina", role: "Web Developer" },
-            { img: "/team/ali.jpg", name: "Ali Ur Rehman", role: "React Native Developer" },
+            { img: "/team/asad.webp", name: "Asad Qaisar", role: "Founder & CEO" },
+            { img: "/team/ammar.webp", name: "Ammar Saleem", role: "Co-Founder & Project Manager" },
+            { img: "/team/sami.webp", name: "Sami Uthwal", role: "Lead Developer & AI/ML" },
+            { img: "/team/hamza.webp", name: "Hamza Nazir", role: "Graphic Designer & UI/UX" },
+            { img: "/team/muhannad.webp", name: "Muhannad Asif", role: "3D Model Designer" },
+            { img: "/team/anjum.webp", name: "Sir Anjum", role: "WordPress Dev & SEO Expert" },
+            { img: "/team/farhan.webp", name: "Muhammad Farhan", role: "Content & Script Writer" },
+            { img: "/team/lubaina.webp", name: "Lubaina", role: "Web Developer" },
+            { img: "/team/ali.webp", name: "Ali Ur Rehman", role: "React Native Developer" },
           ].map((person, idx) => (
             <div key={idx} className="team-t-card">
               <img src={person.img} alt={person.name} title={`${person.name} - ${person.role}`} />
