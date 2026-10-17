@@ -1,11 +1,13 @@
 {
-  "name": "apex-orion-website",
+  "name": "apexoriontech-website",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node --experimental-strip-types scripts/generate-seo-assets.mjs && node --experimental-strip-types scripts/prerender.mjs",
+    "generate:seo": "node --experimental-strip-types scripts/generate-seo-assets.mjs",
+    "prerender": "node --experimental-strip-types scripts/prerender.mjs",
     "lint": "tsc --noEmit",
     "preview": "vite preview"
   },

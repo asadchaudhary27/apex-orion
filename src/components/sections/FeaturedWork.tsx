@@ -26,6 +26,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     description: 'A multi-lingual digital platform created in 3 different languages, featuring a highly intuitive and awesome user interface for global clients.',
     metrics: '3 Languages | Seamless UI',
     stack: ['React 19', 'TypeScript', 'Tailwind v4', 'Vite 6', 'Motion', 'Lenis'],
+    mockupBg: 'from-zinc-950 via-[#FF5722]/20 to-black',
     visualizationType: 'dashboard',
     image: '/zarcostar-building-llc.png',
     link: 'https://zarcostar.ae',
@@ -38,23 +39,24 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     description: 'A fully immersive 3D website featuring interactive 3D design cards, smooth scroll animations, and a cutting-edge creative portfolio.',
     metrics: '60 FPS 3D Rendering | WebGL',
     stack: ['Three.js', 'React Three Fiber', 'GSAP', 'Next.js', 'Tailwind'],
-    mockupBg: 'from-purple-900/40 via-[#FF5722]/30 to-black',
+    mockupBg: 'from-zinc-900/90 via-[#FF5722]/20 to-black',
     visualizationType: 'dashboard',
     image: '/techteamdesigns.png',
     link: 'https://techteamdesigns.com',
     displayLink: 'https://techteamdesigns.com',
   },
   {
-    id: 'pos',
-    title: 'ApexPure POS',
-    category: 'Offline Point of Sale System',
-    description: 'A completely offline-first desktop POS application built for Windows. Features interactive sales charts, offline database storage, and receipt PDF generation.',
-    metrics: '100% Offline Capable | Native Windows',
-    stack: ['Electron', 'React 19', 'Dexie.js', 'Vite 8', 'Zustand'],
-    mockupBg: 'from-indigo-900/40 via-[#FF5722]/20 to-black',
-    visualizationType: 'terminal',
-    image: '/apexpure.png',
-    displayLink: 'ApexPure POS.exe',
+    id: '3d-tile-visualizer',
+    title: '3D Tile Visualizer & Calculator',
+    category: 'Interactive 3D Web Application',
+    description: 'A cutting-edge WebGL 3D architectural visualizer allowing contractors and homeowners to map room surface areas, preview textures in real time, and calculate instant material costs.',
+    metrics: 'Real-Time 3D WebGL | Sub-Second Math Engine',
+    stack: ['Three.js', 'React', 'TypeScript', 'WebGL', 'Tailwind CSS'],
+    mockupBg: 'from-black via-[#FF5722]/15 to-zinc-950',
+    visualizationType: 'dashboard',
+    image: '/3d tile visualizer & calculator/3d-tile-visualizer-&-calculator-1.webp',
+    link: '/project/3d-tile-visualizer-&-calculator',
+    displayLink: 'app.apexoriontech.com/3d-tile-calc',
   },
 ];
 
@@ -72,7 +74,7 @@ export const FeaturedWork: React.FC = () => {
           </h2>
         </div>
         <Link
-          to="/portfolio"
+          to="/projects"
           className="inline-flex items-center space-x-2 text-sm font-semibold text-[#FF5722] hover:text-white transition-colors"
         >
           <span>View All Projects in Portfolio &rarr;</span>
@@ -107,8 +109,8 @@ export const FeaturedWork: React.FC = () => {
               </div>
 
               {/* Metric Tag */}
-              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
-                <CheckCircle2 className="w-4 h-4" />
+              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-[#FF5722]/10 border border-[#FF5722]/20 text-orange-400 text-xs font-semibold font-mono">
+                <CheckCircle2 className="w-4 h-4 text-[#FF5722]" />
                 <span>{project.metrics}</span>
               </div>
 
@@ -117,7 +119,7 @@ export const FeaturedWork: React.FC = () => {
                 {project.stack.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 rounded-lg bg-white/[0.05] border border-white/10 text-xs font-medium text-gray-400"
+                    className="px-3 py-1 rounded-lg bg-white/[0.05] border border-white/10 text-xs font-medium text-gray-400 font-mono"
                   >
                     {tech}
                   </span>
@@ -138,7 +140,7 @@ export const FeaturedWork: React.FC = () => {
                   </a>
                 ) : (
                   <Link
-                    to="/portfolio"
+                    to={project.link || '/projects'}
                     data-cursor="view-project"
                     className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-semibold text-sm hover:bg-[#FF5722] hover:border-[#FF5722]/50 transition-all duration-300 shadow-lg"
                   >
@@ -153,7 +155,7 @@ export const FeaturedWork: React.FC = () => {
             <div className={`lg:col-span-7 ${idx % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
               <GlassCard
                 variant="hover-glow"
-                glowColor="cyan"
+                glowColor="orange"
                 data-cursor="view-project"
                 className="relative overflow-hidden p-4 sm:p-6 rounded-3xl group shadow-2xl"
               >

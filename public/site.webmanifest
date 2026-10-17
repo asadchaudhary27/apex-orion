@@ -1,0 +1,21 @@
+{
+  "name": "ApexOrion Tech - Custom Software & Web Agency",
+  "short_name": "ApexOrion",
+  "description": "Enterprise software engineering agency delivering high-performance web applications, mobile apps, SaaS, and custom POS systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#FF5722",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

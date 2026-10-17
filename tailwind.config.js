@@ -8,19 +8,25 @@ export default {
     extend: {
       colors: {
         'deep-space': '#050505',
+        'obsidian': '#080808',
         'crisp-white': '#F5F5F5',
         'orbital-orange': '#FF5722',
-        'glass-bg': 'rgba(255, 255, 255, 0.05)',
-        'glass-border': 'rgba(255, 255, 255, 0.10)',
+        'cyber-orange': '#FF5722',
+        'glass-bg': 'rgba(255, 255, 255, 0.03)',
+        'glass-border': 'rgba(255, 255, 255, 0.08)',
       },
       fontFamily: {
         headline: ['"Space Grotesk"', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        display: ['"Space Grotesk"', 'sans-serif'],
+        body: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+        tech: ['"JetBrains Mono"', 'monospace'],
       },
       boxShadow: {
-        'orange-glow': '0 0 25px rgba(255, 87, 34, 0.4)',
-        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+        'orange-glow': '0 0 30px rgba(255, 87, 34, 0.35)',
+        'cyber-glow': '0 0 35px rgba(255, 87, 34, 0.45)',
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.4)',
       },
       backdropBlur: {
         xs: '2px',

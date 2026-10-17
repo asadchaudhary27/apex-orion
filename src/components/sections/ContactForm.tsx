@@ -9,7 +9,20 @@ import GlassCard from '../common/GlassCard';
 export const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters long' }),
   email: z.string().email({ message: 'Please enter a valid email address' }),
-  service: z.enum(['Web Development', 'Mobile App Development', 'Custom POS Systems', '3D Web Experiences', 'UI/UX Design', 'Custom'], {
+  service: z.enum([
+    'Web Development',
+    'WordPress Solutions',
+    'Custom POS Systems',
+    'Mobile Apps',
+    'SaaS Solutions',
+    '3D Modeling & WebGL',
+    'UI/UX & Brand Design',
+    'Graphic Designing',
+    'SEO Optimization',
+    'Social Media Management',
+    'Content & Script Writing',
+    'Custom Engineering'
+  ], {
     errorMap: () => ({ message: 'Please select a service needed' }),
   }),
   budget: z.enum(['$100 – $500', '$500 – $1k', '$1k – $5k', '$5k – $10k', '$10k+'], {
@@ -35,12 +48,21 @@ export const ContactForm: React.FC = () => {
       name: '',
       email: '',
       service: 'Web Development',
-      budget: '$100 – $500',
+      budget: '$1k – $5k',
       details: '',
     },
   });
 
   const onSubmit = (data: ContactFormData) => {
+    // Preserve inquiry in localStorage so leads are never lost
+    try {
+      const existingInquiries = JSON.parse(localStorage.getItem('apex_inquiries') || '[]');
+      existingInquiries.push({ ...data, timestamp: new Date().toISOString() });
+      localStorage.setItem('apex_inquiries', JSON.stringify(existingInquiries));
+    } catch {
+      // Safe fallback if storage blocked
+    }
+
     const phoneNumber = "923182834735";
     const message = `*New Project Inquiry*
 *Name:* ${data.name}
@@ -68,7 +90,7 @@ ${data.details}`;
       return `${baseStyle} border-red-500/80 ring-1 ring-red-500/50 shadow-[0_0_15px_rgba(239,68,68,0.3)] bg-red-950/10`;
     }
     if (isTouched && !isError) {
-      return `${baseStyle} border-emerald-500/80 ring-1 ring-emerald-500/50 shadow-[0_0_15px_rgba(16,185,129,0.3)] bg-emerald-950/10`;
+      return `${baseStyle} border-[#FF5722]/80 ring-1 ring-[#FF5722]/50 shadow-[0_0_15px_rgba(255,87,34,0.3)] bg-[#FF5722]/5`;
     }
     return `${baseStyle} border-white/10 hover:border-white/20 focus:border-[#FF5722]/50 focus:ring-1 focus:ring-[#FF5722] bg-black/[0.03]`;
   };
@@ -89,12 +111,12 @@ ${data.details}`;
 
   if (isSubmitted) {
     return (
-      <GlassCard variant="hover-glow" glowColor="cyan" className="p-8 sm:p-12 text-center space-y-6 rounded-3xl overflow-hidden relative">
+      <GlassCard variant="hover-glow" glowColor="orange" className="p-8 sm:p-12 text-center space-y-6 rounded-3xl overflow-hidden relative">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ type: "spring", bounce: 0.5, duration: 0.8 }}
-          className="w-20 h-20 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto shadow-[0_0_30px_rgba(16,185,129,0.5)]"
+          className="w-20 h-20 rounded-full bg-[#FF5722]/20 border border-[#FF5722]/40 text-[#FF5722] flex items-center justify-center mx-auto shadow-[0_0_30px_rgba(255,87,34,0.5)]"
         >
           <CheckCircle2 className="w-10 h-10" />
         </motion.div>
@@ -114,7 +136,7 @@ ${data.details}`;
           transition={{ delay: 0.3 }}
           className="text-gray-400 text-sm sm:text-base max-w-md mx-auto leading-relaxed"
         >
-          Thank you for reaching out. The Apex Orion engineering team will review your project details and get back to you within 24 hours.
+          Thank you for reaching out. The ApexOrion Tech engineering team will review your project details and get back to you within 24 hours.
         </motion.p>
 
         <motion.button
@@ -165,7 +187,7 @@ ${data.details}`;
             <input
               id="name"
               type="text"
-              placeholder="Alpha / Asad"
+              placeholder="John Doe / Company Name"
               {...register('name')}
               className={`w-full py-3.5 rounded-xl text-white placeholder-gray-600 transition-all duration-300 outline-none ${getInputStyle(
                 'name'
@@ -225,13 +247,19 @@ ${data.details}`;
                 )}`}
               >
                 <option value="Web Development" className="bg-black text-white py-2">Web Development</option>
-                <option value="Mobile App Development" className="bg-black text-white py-2">Mobile App Development</option>
+                <option value="WordPress Solutions" className="bg-black text-white py-2">WordPress Solutions</option>
                 <option value="Custom POS Systems" className="bg-black text-white py-2">Custom POS Systems</option>
-                <option value="3D Web Experiences" className="bg-black text-white py-2">3D Web Experiences</option>
-                <option value="UI/UX Design" className="bg-black text-white py-2">UI/UX Design</option>
-                <option value="Custom" className="bg-black text-white py-2">Custom</option>
+                <option value="Mobile Apps" className="bg-black text-white py-2">Mobile Applications</option>
+                <option value="SaaS Solutions" className="bg-black text-white py-2">SaaS Solutions</option>
+                <option value="3D Modeling & WebGL" className="bg-black text-white py-2">3D Modeling & WebGL</option>
+                <option value="UI/UX & Brand Design" className="bg-black text-white py-2">UI/UX & Brand Design</option>
+                <option value="Graphic Designing" className="bg-black text-white py-2">Graphic Designing</option>
+                <option value="SEO Optimization" className="bg-black text-white py-2">Search Engine Optimization (SEO)</option>
+                <option value="Social Media Management" className="bg-black text-white py-2">Social Media Management</option>
+                <option value="Content & Script Writing" className="bg-black text-white py-2">Content & Script Writing</option>
+                <option value="Custom Engineering" className="bg-black text-white py-2">Custom Engineering</option>
               </select>
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none w-0 h-0 border-l-[5px] border-r-[5px] border-t-[5px] border-transparent border-t-gray-500 group-focus-within:border-t-#FF5722" />
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none w-0 h-0 border-l-[5px] border-r-[5px] border-t-[5px] border-transparent border-t-gray-500 group-focus-within:border-t-[#FF5722]" />
             </div>
             <AnimatePresence>
               {errors.service && (
@@ -263,7 +291,7 @@ ${data.details}`;
                 <option value="$10k+" className="bg-black text-white py-2">$10k+</option>
                 <option value="Want to negotiate" className="bg-black text-white py-2">Want to negotiate</option>
               </select>
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none w-0 h-0 border-l-[5px] border-r-[5px] border-t-[5px] border-transparent border-t-gray-500 group-focus-within:border-t-#FF5722" />
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none w-0 h-0 border-l-[5px] border-r-[5px] border-t-[5px] border-transparent border-t-gray-500 group-focus-within:border-t-[#FF5722]" />
             </div>
             <AnimatePresence>
               {errors.budget && (

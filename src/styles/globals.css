@@ -14,13 +14,13 @@
   body {
     background-color: #000000;
     color: #F5F5F5;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    /* Prevent FOUC (flash of unstyled content) */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   /* Ensure all top-level app containers stay dark */
@@ -29,33 +29,49 @@
     min-height: 100vh;
   }
 
+  /* Tech Display Headlines */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  /* Developer & Terminal Code Accents */
+  code, kbd, samp, pre, .font-mono, [data-tech] {
+    font-family: 'JetBrains Mono', monospace;
   }
 }
 
 @layer utilities {
   .glass-panel {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
   
   .glass-panel-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .glass-panel-hover:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(6, 182, 212, 0.4);
-    box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 87, 34, 0.45);
+    box-shadow: 0 0 35px rgba(255, 87, 34, 0.25);
+  }
+
+  /* Unified Cyber-Tech Glows */
+  .tech-glow-orange {
+    box-shadow: 0 0 30px rgba(255, 87, 34, 0.3);
+  }
+
+  .tech-border-gradient {
+    border-image: linear-gradient(to right, rgba(255, 87, 34, 0.6), rgba(255, 138, 101, 0.2)) 1;
   }
 }
 
 /* Fallback for browsers without backdrop-filter support */
 @supports not (backdrop-filter: blur(1px)) {
   .glass-fallback {
-    background-color: rgba(18, 18, 18, 0.92) !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    background-color: rgba(14, 14, 14, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
   }
 }

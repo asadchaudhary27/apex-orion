@@ -14,6 +14,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Team', href: '/team' },
   { label: 'Projects', href: '/projects' },
   { label: 'Softwares', href: '/softwares' },
+  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -74,7 +75,7 @@ export const Navbar: React.FC = () => {
             "flex items-center justify-center transition-all duration-500",
             isScrolled ? "w-32 h-8 sm:w-40 sm:h-10" : "w-40 h-10 sm:w-48 sm:h-12"
           )}>
-            <img src="/logo_transparent.png" alt="Apex Orion Logo" className="w-full h-full object-contain" />
+            <img src="/logo_transparent.png" alt="ApexOrion Tech Logo" className="w-full h-full object-contain" />
           </div>
         </Link>
 

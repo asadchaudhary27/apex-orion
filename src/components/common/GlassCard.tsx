@@ -27,16 +27,16 @@ export const GlassCard: React.FC<GlassCardProps> = ({
   }[blurAmount];
 
   const variantClasses = {
-    default: 'bg-black/[0.03] border-black/10 shadow-2xl',
-    'hover-glow': 'bg-black/[0.03] border-black/10 hover:border-cyan-500/50/50 hover:bg-black/[0.08] hover:shadow-[0_0_30px_rgba(6,182,212,0.25)] transition-all duration-300',
-    interactive: 'bg-black/[0.03] border-black/10 hover:border-black/20 hover:bg-black/[0.05] active:scale-[0.99] transition-all duration-200 cursor-pointer',
-    'solid-dark': 'bg-slate-50/80 border-black/10 backdrop-blur-md',
+    default: 'bg-black/[0.03] border-white/10 shadow-2xl',
+    'hover-glow': 'bg-black/[0.03] border-white/10 hover:border-[#FF5722]/50 hover:bg-black/[0.08] hover:shadow-[0_0_30px_rgba(255,87,34,0.3)] transition-all duration-300',
+    interactive: 'bg-black/[0.03] border-white/10 hover:border-[#FF5722]/40 hover:bg-black/[0.05] active:scale-[0.99] transition-all duration-200 cursor-pointer',
+    'solid-dark': 'bg-[#0a0a0a]/90 border-white/10 backdrop-blur-md',
   }[variant];
 
   const glowClasses = {
-    cyan: 'before:absolute before:-inset-px before:rounded-2xl before:bg-gradient-to-b before:from-cyan-600/20 before:to-transparent before:-z-10',
-    orange: 'before:absolute before:-inset-px before:rounded-2xl before:bg-gradient-to-b before:from-indigo-600/20 before:to-transparent before:-z-10',
-    white: 'before:absolute before:-inset-px before:rounded-2xl before:bg-gradient-to-b before:from-white/20 before:to-transparent before:-z-10',
+    cyan: 'before:absolute before:-inset-px before:rounded-2xl before:bg-gradient-to-b before:from-[#FF5722]/20 before:to-transparent before:-z-10',
+    orange: 'before:absolute before:-inset-px before:rounded-2xl before:bg-gradient-to-b before:from-[#FF5722]/25 before:to-transparent before:-z-10',
+    white: 'before:absolute before:-inset-px before:rounded-2xl before:bg-gradient-to-b before:from-white/15 before:to-transparent before:-z-10',
     none: '',
   }[glowColor];
 

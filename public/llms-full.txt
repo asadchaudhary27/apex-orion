@@ -1,0 +1,75 @@
+# ApexOrion Tech — Comprehensive Knowledge Base & Agency Specification
+
+## Entity Overview
+- **Legal & Brand Name**: ApexOrion Tech
+- **Industry**: Software Development, Cloud Computing, Point of Sale (POS) Systems, SaaS Architecture, UI/UX Design
+- **Domain**: https://apexoriontech.com/
+- **Headquarters**: Faisalabad, Punjab, Pakistan (Postal Code 38000)
+- **Serving Regions**: Global (USA, UK, UAE, Saudi Arabia, Pakistan, Canada, Australia, Germany)
+- **Primary Languages**: English (Global), Urdu (Local)
+- **Founders**:
+  - Asad Qaisar (Founder & Chief Executive Officer)
+  - Ammar Saleem (Co-Founder & Project Manager)
+- **Direct Phone / WhatsApp**: +92 318 2834735
+- **Official Inquiries Email**: apexorion69@gmail.com
+
+## Technical Stack & Capabilities
+- **Frontend Frameworks**: React 18, Next.js, TypeScript, Tailwind CSS, GSAP, Framer Motion, Three.js / WebGL
+- **Backend & Database Systems**: Node.js, Express, Python (FastAPI, Django), Rust, PostgreSQL, MongoDB, SQLite, Redis
+- **Mobile Development**: React Native, Flutter, Swift, Kotlin
+- **Desktop & Offline Software**: Electron, Tauri, SQLite local embedded caching
+- **DevOps & Cloud**: Docker, Kubernetes, AWS, Google Cloud Platform, Vercel, Cloudflare, CI/CD automated pipelines
+
+## Service Portfolio
+1. **Custom Web Application Development**: High-scale enterprise web apps, client portals, internal dashboards, and real-time collaboration tools.
+2. **Offline-First Point of Sale (POS)**: Industry-specific software designed to operate without Internet interruption with automated sync on reconnection.
+3. **Mobile App Engineering**: Cross-platform iOS and Android apps with native device integration and offline persistence.
+4. **SaaS Architecture & Development**: Turnkey SaaS platforms with multi-tenant tenancy, subscription billing, and user management.
+5. **3D Web Experiences & WebGL**: Interactive 3D product visualizers, architectural tile calculators, and spatial landing pages.
+6. **UI/UX & Brand Design**: Full design systems, typography hierarchy, high-conversion dark-mode interfaces, and interactive Figma prototypes.
+7. **Technical SEO & Core Web Vitals**: International SEO architecture, structured data schemas, crawl budget optimization, and sub-second page loads.
+8. **WordPress & Headless CMS**: Custom theme development, WooCommerce customization, and decoupled headless architectures.
+
+## Flagship Software Products
+### 1. ApexPure POS
+- **Category**: Water Plant & Delivery Management System
+- **Key Features**: Bottle return tracking, daily route optimization, driver manifests, customer credit ledgers, and 100% offline desktop billing.
+- **URL**: https://apexoriontech.com/software/apexpure-pos
+
+### 2. Veloce
+- **Category**: Car Rental & Fleet Operations Platform
+- **Key Features**: Dynamic vehicle availability calendars, driver license verification, damage inspection reports, automated invoicing, and maintenance scheduling.
+- **URL**: https://apexoriontech.com/software/veloce
+
+### 3. ApexRestu POS
+- **Category**: Restaurant & Hospitality POS
+- **Key Features**: Kitchen Display System (KDS), table floor plans, live recipe ingredient costing, delivery rider dispatch, and thermal receipt printing.
+- **URL**: https://apexoriontech.com/software/apexrestu-pos
+
+### 4. ApexRx Manager
+- **Category**: Pharmacy & Clinical Records System
+- **Key Features**: Drug expiration alerts, barcode inventory scanning, doctor prescription storage, and daily profit/loss reports.
+- **URL**: https://apexoriontech.com/software/apexrx-manager
+
+### 5. Bespoke Custom Software Development
+- **Category**: Tailored Enterprise Desktop, Web & Mobile Systems
+- **Key Features**: 100% bespoke business logic, offline-first SQLite speed, dynamic thermal invoicing & PDF engines, digital scale (kanta) drivers, biometric authentication, and multi-branch cloud sync.
+- **URL**: https://apexoriontech.com/software/custom-software
+
+## Case Studies & Deployments
+- **Zarco Star (UAE)**: High-performance corporate presence for Dubai-based industrial machinery supplier.
+- **Acme Skill**: E-learning LMS and certificate verification platform.
+- **Chicken Mashwi POS & Web**: Omnichannel POS and online ordering ecosystem for casual dining franchise.
+- **Eduka**: Educational management system for K-12 and university departments.
+- **Marhaba Home**: Luxury e-commerce store with real-time stock sync.
+- **3D Tile Visualizer & Calculator**: WebGL-powered 3D bathroom and floor tile layout generator.
+
+## URLs & Sitemap
+- Home: https://apexoriontech.com/
+- Services: https://apexoriontech.com/services
+- Projects: https://apexoriontech.com/projects
+- Softwares: https://apexoriontech.com/softwares
+- Team: https://apexoriontech.com/team
+- Contact: https://apexoriontech.com/contact
+- Sitemap: https://apexoriontech.com/sitemap.xml
+- Robots: https://apexoriontech.com/robots.txt

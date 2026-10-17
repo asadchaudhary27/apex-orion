@@ -10,7 +10,7 @@ interface TerminalOutput {
 export const InteractiveTerminal: React.FC = () => {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<TerminalOutput[]>([
-    { id: '1', type: 'output', content: 'Apex Orion OS v2.0.26 initialized.' },
+    { id: '1', type: 'output', content: 'ApexOrion Tech OS v2.0.26 initialized.' },
     { id: '2', type: 'output', content: 'Type "help" to see available commands.' }
   ]);
   
@@ -39,7 +39,7 @@ export const InteractiveTerminal: React.FC = () => {
     switch (lowerCmd) {
       case 'help':
         response = `Available commands:
-  about      - Learn about Apex Orion
+  about      - Learn about ApexOrion Tech
   services   - View our core capabilities
   projects   - View our latest works
   softwares  - View our SaaS products
@@ -49,7 +49,7 @@ export const InteractiveTerminal: React.FC = () => {
   sudo       - Execute command as superuser`;
         break;
       case 'about':
-        response = 'Apex Orion is an elite software engineering agency based in Faisalabad, Pakistan. We specialize in high-performance web applications, custom POS systems, and premium UI/UX design. We build what others can\'t compile.';
+        response = 'ApexOrion Tech is an elite software engineering agency based in Faisalabad, Pakistan. We specialize in high-performance web applications, custom POS systems, and premium UI/UX design. We build what others can\'t compile.';
         break;
       case 'services':
         response = `Core Capabilities:
@@ -64,7 +64,7 @@ export const InteractiveTerminal: React.FC = () => {
         response = `Recent Deployments:
   - Zarco Star (zarcostar.ae): Corporate web presence.
   - Tech Team Designs: Interactive 3D WebGL experience.
-  - ApexPure POS: Offline-first desktop point-of-sale.`;
+  - 3D Tile Visualizer & Calculator: WebGL 3D architectural visualizer.`;
         break;
       case 'softwares':
         response = `SaaS Products:
@@ -98,7 +98,7 @@ Status: Accepting new projects. Use the form below to reach out.`;
         isError = true;
         break;
       case 'pwd':
-        response = '/home/user/apex-orion';
+        response = '/home/user/apexoriontech';
         break;
       case 'whoami':
         response = 'visionary_client';
@@ -147,7 +147,7 @@ Status: Accepting new projects. Use the form below to reach out.`;
           </div>
           <div className="flex items-center space-x-2 text-gray-400 text-xs font-mono">
             <Terminal className="w-3.5 h-3.5 text-[#FF5722]" />
-            <span>guest@apex-orion: ~</span>
+            <span>guest@apexoriontech: ~</span>
           </div>
           <div className="flex space-x-3 text-gray-500">
             <Minus className="w-4 h-4 cursor-pointer hover:text-white transition-colors" />
@@ -166,7 +166,7 @@ Status: Accepting new projects. Use the form below to reach out.`;
               <div key={item.id} className="whitespace-pre-wrap leading-relaxed">
                 {item.type === 'input' && (
                   <div className="flex text-gray-300">
-                    <span className="text-[#FF5722] mr-3 flex-shrink-0">guest@apex-orion:~$</span>
+                    <span className="text-[#FF5722] mr-3 flex-shrink-0">guest@apexoriontech:~$</span>
                     <span>{item.content}</span>
                   </div>
                 )}
@@ -181,7 +181,7 @@ Status: Accepting new projects. Use the form below to reach out.`;
           </div>
 
           <div className="flex items-center text-gray-300 mt-3 relative">
-            <span className="text-[#FF5722] mr-3 flex-shrink-0">guest@apex-orion:~$</span>
+            <span className="text-[#FF5722] mr-3 flex-shrink-0">guest@apexoriontech:~$</span>
             <input
               ref={inputRef}
               type="text"

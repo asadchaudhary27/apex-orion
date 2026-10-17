@@ -6,7 +6,7 @@ const TESTIMONIALS = [
   {
     name: 'Sarah Jenkins',
     role: 'CTO, OmniTech Solutions',
-    content: 'Apex Orion completely transformed our digital infrastructure. Their engineering speed and attention to detail in the dark mode UI resulted in a 40% increase in user retention.',
+    content: 'ApexOrion Tech completely transformed our digital infrastructure. Their engineering speed and attention to detail in the dark mode UI resulted in a 40% increase in user retention.',
     rating: 5,
   },
   {
@@ -18,7 +18,7 @@ const TESTIMONIALS = [
   {
     name: 'David Chen',
     role: 'VP of Product, FinStream',
-    content: 'We needed a high-frequency trading dashboard that wouldn\'t lag under load. Apex Orion engineered a sub-second React architecture that exceeded all our performance benchmarks.',
+    content: 'We needed a high-frequency trading dashboard that wouldn\'t lag under load. ApexOrion Tech engineered a sub-second React architecture that exceeded all our performance benchmarks.',
     rating: 5,
   }
 ];
@@ -55,7 +55,7 @@ export const Testimonials: React.FC = () => {
             <div className="relative z-10 flex flex-col h-full justify-between space-y-6">
               <div className="flex space-x-1">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-cyan-400 text-[#FF5722]" />
+                  <Star key={i} className="w-4 h-4 fill-[#FF5722] text-[#FF5722]" />
                 ))}
               </div>
               

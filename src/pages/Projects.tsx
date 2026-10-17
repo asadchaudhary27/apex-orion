@@ -4,10 +4,35 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles, Code2 } from 'lucide-react';
 import ProjectsGrid from '../components/sections/ProjectsGrid';
 import GlassCard from '../components/common/GlassCard';
+import SEO from '../components/common/SEO';
+
+const PROJECTS_SCHEMA = {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://apexoriontech.com/'
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Projects',
+      item: 'https://apexoriontech.com/projects'
+    }
+  ]
+};
 
 export const Projects: React.FC = () => {
   return (
     <div className="pt-28 pb-20 space-y-16 sm:space-y-20 overflow-hidden">
+      <SEO
+        title="Featured Client Projects & Engineering Case Studies"
+        description="Explore real-world software deployments, corporate web platforms, 3D visualizers, and POS solutions engineered by ApexOrion Tech."
+        canonical="/projects"
+        schema={PROJECTS_SCHEMA}
+      />
       {/* Hero Section */}
       <section className="relative px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center space-y-6 pt-12">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[radial-gradient(ellipse_at_center,rgba(255,87,34,0.15),transparent_70%)] rounded-full pointer-events-none" />

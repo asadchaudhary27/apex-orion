@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-20 h-20 flex items-center justify-center">
-                <img src="/logo_transparent.png" alt="Apex Orion Logo" className="w-full h-full object-contain" />
+                <img src="/logo_transparent.png" alt="ApexOrion Tech Logo" className="w-full h-full object-contain" />
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
@@ -91,6 +91,16 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/locations" className="hover:text-[#FF5722] transition-colors">
+                  Locations (Global Hubs)
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="hover:text-white transition-colors">
+                  Blog & Insights
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="hover:text-white transition-colors">
                   Contact
                 </Link>
@@ -120,7 +130,7 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services#design" className="hover:text-white transition-colors">
+                <Link to="/services#brand" className="hover:text-white transition-colors">
                   UI/UX & Branding
                 </Link>
               </li>
@@ -146,9 +156,59 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Sleek Global Engineering Hubs Bar */}
+        <div className="py-6 border-b border-white/10">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            {/* Top Famous Hubs */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs">
+              <div className="flex items-center space-x-2 mr-1">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF5722] opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF5722]" />
+                </span>
+                <span className="font-semibold text-white uppercase tracking-wider text-[11px] font-mono">
+                  Global Hubs:
+                </span>
+              </div>
+              <Link to="/locations/us/new-york" className="text-gray-300 hover:text-[#FF5722] transition-colors">
+                New York
+              </Link>
+              <span className="text-white/20 select-none">•</span>
+              <Link to="/locations/uk/london" className="text-gray-300 hover:text-[#FF5722] transition-colors">
+                London
+              </Link>
+              <span className="text-white/20 select-none">•</span>
+              <Link to="/locations/ae/dubai" className="text-gray-300 hover:text-[#FF5722] transition-colors">
+                Dubai
+              </Link>
+              <span className="text-white/20 select-none">•</span>
+              <Link to="/locations/ca/toronto" className="text-gray-300 hover:text-[#FF5722] transition-colors">
+                Toronto
+              </Link>
+              <span className="text-white/20 select-none">•</span>
+              <Link to="/locations/au/sydney" className="text-gray-300 hover:text-[#FF5722] transition-colors">
+                Sydney
+              </Link>
+              <span className="text-white/20 select-none">•</span>
+              <Link to="/locations/de/berlin" className="text-gray-300 hover:text-[#FF5722] transition-colors">
+                Berlin
+              </Link>
+            </div>
+
+            {/* Elegant Tech Pill Link */}
+            <Link
+              to="/locations"
+              className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/[0.04] hover:bg-[#FF5722]/10 border border-white/10 hover:border-[#FF5722]/40 text-[#FF5722] text-xs font-mono transition-all duration-300 group shadow-sm hover:shadow-[0_0_20px_rgba(255,87,34,0.2)] w-fit flex-shrink-0"
+            >
+              <span>View All 32 Global Engineering Hubs</span>
+              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </Link>
+          </div>
+        </div>
+
         {/* Bottom Section */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} Apex Orion. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ApexOrion Tech. All rights reserved.</p>
           <div className="flex items-center space-x-6 mt-4 sm:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy

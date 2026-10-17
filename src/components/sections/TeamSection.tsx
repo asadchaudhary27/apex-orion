@@ -33,7 +33,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     tagline: 'Crafting kinetic visual identities & pixel-perfect frontends.',
     bio: 'Pioneering Gen-Z visual aesthetics, glassmorphic interfaces, and seamless multi-device user experiences with micro-interactions.',
     skills: ['UI/UX Design', 'Framer Motion', 'Brand Identity', 'Frontend Motion'],
-    avatarGradient: 'from-[#FF5722] via-orange-500 to-rose-600',
+    avatarGradient: 'from-[#FF5722] via-orange-500 to-amber-500',
     github: 'https://github.com',
     linkedin: 'https://linkedin.com',
     twitter: 'https://twitter.com',
@@ -45,17 +45,17 @@ export const TeamSection: React.FC = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       {/* Section Header & Quote */}
       <div className="text-center max-w-3xl mx-auto space-y-6">
-        <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#FF5722]/10 border border-[#FF5722]/50/30 text-[#FF5722] text-xs font-semibold uppercase tracking-widest">
+        <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#FF5722]/10 border border-[#FF5722]/30 text-[#FF5722] text-xs font-semibold uppercase tracking-widest font-mono">
           <Sparkles className="w-4 h-4" />
           <span>Leadership & Engineering</span>
         </div>
 
         <h2 className="font-headline text-3xl sm:text-5xl font-bold text-white tracking-tight">
-          The Powerhouse Behind <span className="text-[#FF5722]">Apex Orion</span>
+          The Powerhouse Behind <span className="text-[#FF5722]">ApexOrion Tech</span>
         </h2>
 
         {/* Featured Quote Callout */}
-        <GlassCard variant="hover-glow" glowColor="cyan" className="p-6 sm:p-8 max-w-2xl mx-auto relative overflow-hidden">
+        <GlassCard variant="hover-glow" glowColor="orange" className="p-6 sm:p-8 max-w-2xl mx-auto relative overflow-hidden">
           <Quote className="w-10 h-10 text-[#FF5722]/30 absolute top-3 left-3 -scale-x-100" />
           <p className="font-headline text-lg sm:text-xl font-bold text-white relative z-10 italic">
             "Led by Alpha & Asad. Lightning-fast delivery. Zero compromises."
@@ -118,7 +118,7 @@ export const TeamSection: React.FC = () => {
                     {member.skills.map((skill, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 rounded-lg bg-black/[0.03] border border-white/10 text-xs font-medium text-gray-600 flex items-center space-x-1"
+                        className="px-3 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-xs font-medium text-gray-300 font-mono flex items-center space-x-1"
                       >
                         <Code2 className="w-3 h-3 text-[#FF5722]" />
                         <span>{skill}</span>

@@ -19,22 +19,21 @@ export interface TechItem {
   name: string;
   category: string;
   icon: React.ReactNode;
-  color: string;
 }
 
 export const TECH_ITEMS: TechItem[] = [
-  { name: 'React', category: 'Frontend', icon: <Code2 className="w-6 h-6" />, color: 'text-[#61DAFB]' },
-  { name: 'Next.js', category: 'Framework', icon: <Triangle className="w-6 h-6" />, color: 'text-gray-100' },
-  { name: 'Tailwind CSS', category: 'Styling', icon: <Palette className="w-6 h-6" />, color: 'text-[#38B2AC]' },
-  { name: 'TypeScript', category: 'Language', icon: <Braces className="w-6 h-6" />, color: 'text-[#3178C6]' },
-  { name: 'Vercel', category: 'Cloud', icon: <Cloud className="w-6 h-6" />, color: 'text-gray-100' },
-  { name: 'Node.js', category: 'Backend', icon: <Server className="w-6 h-6" />, color: 'text-[#339933]' },
-  { name: 'Python', category: 'AI & Data', icon: <BrainCircuit className="w-6 h-6" />, color: 'text-[#3776AB]' },
-  { name: 'Flutter', category: 'Mobile', icon: <Smartphone className="w-6 h-6" />, color: 'text-[#02569B]' },
-  { name: 'Docker', category: 'DevOps', icon: <Container className="w-6 h-6" />, color: 'text-[#2496ED]' },
-  { name: 'PostgreSQL', category: 'Database', icon: <Database className="w-6 h-6" />, color: 'text-[#336791]' },
-  { name: 'GraphQL', category: 'API', icon: <Network className="w-6 h-6" />, color: 'text-[#E10098]' },
-  { name: 'Zod', category: 'Validation', icon: <ShieldCheck className="w-6 h-6" />, color: 'text-[#3E67B1]' },
+  { name: 'React', category: 'Frontend', icon: <Code2 className="w-5 h-5" /> },
+  { name: 'Next.js', category: 'Framework', icon: <Triangle className="w-5 h-5" /> },
+  { name: 'Tailwind CSS', category: 'Styling', icon: <Palette className="w-5 h-5" /> },
+  { name: 'TypeScript', category: 'Language', icon: <Braces className="w-5 h-5" /> },
+  { name: 'Vercel', category: 'Edge Cloud', icon: <Cloud className="w-5 h-5" /> },
+  { name: 'Node.js', category: 'Backend', icon: <Server className="w-5 h-5" /> },
+  { name: 'Python', category: 'AI & Data', icon: <BrainCircuit className="w-5 h-5" /> },
+  { name: 'Flutter', category: 'Mobile OS', icon: <Smartphone className="w-5 h-5" /> },
+  { name: 'Docker', category: 'DevOps', icon: <Container className="w-5 h-5" /> },
+  { name: 'PostgreSQL', category: 'Database', icon: <Database className="w-5 h-5" /> },
+  { name: 'GraphQL', category: 'API Layer', icon: <Network className="w-5 h-5" /> },
+  { name: 'Zod', category: 'Validation', icon: <ShieldCheck className="w-5 h-5" /> },
 ];
 
 export const TechMarquee: React.FC = () => {
@@ -44,31 +43,32 @@ export const TechMarquee: React.FC = () => {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-6">
-        <p className="text-xs font-semibold uppercase tracking-widest text-white">
-          Engineered with Modern Stacks
-        </p>
+        <span className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/10 text-xs font-mono text-gray-400 uppercase tracking-widest">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#FF5722]" />
+          <span>Production-Grade Technology Arsenal</span>
+        </span>
       </div>
 
-      <GlassCard variant="default" className="py-6 px-4 overflow-hidden relative shadow-2xl border-black/10">
+      <GlassCard variant="default" className="py-6 px-4 overflow-hidden relative shadow-2xl border-white/10 bg-[#0c0c0c]/90">
         {/* Gradient edge fades */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#0c0c0c] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#0c0c0c] to-transparent z-10 pointer-events-none" />
 
         {/* Marquee Track */}
-        <div className="flex w-max space-x-6 animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused]">
+        <div className="flex w-max space-x-4 sm:space-x-6 animate-[marquee_30s_linear_infinite] hover:[animation-play-state:paused]">
           {displayItems.map((tech, idx) => (
             <div
               key={`${tech.name}-${idx}`}
-              className="flex items-center space-x-3 px-5 py-2.5 rounded-xl bg-black/[0.03] border border-black/10 hover:border-[#FF5722]/50 hover:bg-black/[0.05] transition-all duration-300 group cursor-default"
+              className="flex items-center space-x-3 px-4 sm:px-5 py-2.5 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#FF5722]/50 hover:bg-[#FF5722]/10 transition-all duration-300 group cursor-default shadow-sm hover:shadow-[0_0_20px_rgba(255,87,34,0.2)]"
             >
-              <span className={`${tech.color} group-hover:scale-110 transition-transform flex items-center justify-center`}>
+              <span className="text-gray-400 group-hover:text-[#FF5722] group-hover:scale-110 transition-all flex items-center justify-center">
                 {tech.icon}
               </span>
               <div className="text-left">
-                <span className={`block text-sm font-semibold text-white group-hover:${tech.color} transition-colors`}>
+                <span className="block text-sm font-semibold text-white group-hover:text-[#FF5722] transition-colors font-headline">
                   {tech.name}
                 </span>
-                <span className="block text-[10px] text-gray-400 font-medium">
+                <span className="block text-[10px] text-gray-500 font-mono tracking-wider">
                   {tech.category}
                 </span>
               </div>

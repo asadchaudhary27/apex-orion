@@ -14,6 +14,7 @@ export interface ProjectData {
   imageUrl: string;
   link?: string;
   internalLink?: boolean;
+  customLink?: string;
 }
 
 export const PROJECTS_DATA: ProjectData[] = [
@@ -24,7 +25,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'A premium, high-performance corporate web presence engineered for Zarcostar UAE in 3 different languages, emphasizing digital dominance and scalability.',
     tags: ['React', 'Next.js', 'UI/UX', 'SEO'],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-amber-500 to-yellow-300',
+    accentColor: 'from-amber-500 to-orange-400',
     imageUrl: '/zarcostar-building-llc.png',
     link: 'https://zarcostar.ae'
   },
@@ -35,7 +36,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'An interactive 3D visualizer and calculator for tiles.',
     tags: ["React", "3D", "WebGL"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-teal-500 to-emerald-300',
+    accentColor: 'from-[#FF5722] to-amber-300',
     imageUrl: '/3d tile visualizer & calculator/3d-tile-visualizer-&-calculator-1.webp',
     internalLink: true
   },
@@ -46,7 +47,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Professional learning and skills development platform.',
     tags: ["React", "UI/UX", "Education"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-purple-500 to-pink-300',
+    accentColor: 'from-amber-600 to-orange-400',
     imageUrl: '/Acme skill/acme-skill-1.webp',
     internalLink: true
   },
@@ -57,7 +58,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Customized point-of-sale system for Chicken Mashwi.',
     tags: ["Desktop", "Electron", "POS"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-orange-500 to-red-400',
+    accentColor: 'from-[#FF5722] to-amber-500',
     imageUrl: '/Apexrestu/apexrestu-1.webp',
     internalLink: true
   },
@@ -68,7 +69,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Online food ordering and digital menu platform for Chicken Mashwi.',
     tags: ["React", "E-commerce"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-red-500 to-orange-300',
+    accentColor: 'from-orange-600 to-amber-400',
     imageUrl: '/Chicken mashwi web/chicken-mashwi-web-1.webp',
     internalLink: true
   },
@@ -79,7 +80,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Modern educational management system and portal.',
     tags: ["EdTech", "React", "Dashboard"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-blue-500 to-cyan-300',
+    accentColor: 'from-[#FF5722] to-orange-400',
     imageUrl: '/eduka/eduka-1.webp',
     internalLink: true
   },
@@ -90,7 +91,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Premium real estate and property showcase platform.',
     tags: ["Real Estate", "Next.js"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-stone-500 to-gray-300',
+    accentColor: 'from-zinc-700 via-[#FF5722]/40 to-amber-500/50',
     imageUrl: '/Marhaba Home/marhaba-home-1.webp',
     internalLink: true
   },
@@ -101,7 +102,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Appetizing food delivery platform for Oye Biryani.',
     tags: ["Restaurant", "Delivery"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-amber-600 to-yellow-400',
+    accentColor: 'from-amber-500 to-orange-500',
     imageUrl: '/oye biryani/oye-biryani-1.webp',
     internalLink: true
   },
@@ -112,11 +113,10 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'Business management and analytics dashboard.',
     tags: ["Analytics", "Dashboard"],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-indigo-500 to-blue-400',
+    accentColor: 'from-orange-600 to-amber-300',
     imageUrl: '/pollus/pollus-1.webp',
     internalLink: true
   },
-
   {
     id: 'tech-team-designs',
     title: 'Tech Team Designs',
@@ -124,7 +124,7 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'An immersive, interactive 3D website engineered for Tech Team Designs Solutions, featuring 3D design cards and smooth scroll animations.',
     tags: ['React', 'Three.js', 'WebGL', 'Framer Motion'],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-blue-600 to-indigo-400',
+    accentColor: 'from-[#FF5722] to-amber-400',
     imageUrl: '/techteamdesigns.png',
     link: 'https://techteamdesigns.com'
   },
@@ -135,8 +135,9 @@ export const PROJECTS_DATA: ProjectData[] = [
     description: 'A completely offline-first desktop POS application built for Windows. Features interactive sales charts, offline database storage, and receipt generation.',
     tags: ['Electron', 'React', 'Dexie.js', 'Zustand'],
     bentoSpan: 'col-span-1 lg:col-span-1 row-span-1',
-    accentColor: 'from-orange-500 to-red-500',
+    accentColor: 'from-[#FF5722] to-amber-600',
     imageUrl: '/apexpure.png',
+    customLink: '/software/apexpure-pos'
   },
 ];
 
@@ -155,8 +156,12 @@ export const ProjectsGrid: React.FC = () => {
             className={project.bentoSpan}
           >
             <div className="p-6 h-full flex flex-col justify-between group cursor-pointer border-white/10 hover:border-[#FF5722]/40 transition-colors relative bg-black/40 border rounded-2xl">
-              {project.link ? (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 block" />
+              {project.customLink ? (
+                <Link to={project.customLink} className="absolute inset-0 z-10 block" aria-label={`View ${project.title}`} />
+              ) : project.link ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 block" aria-label={`Open ${project.title}`} />
+              ) : project.internalLink ? (
+                <Link to={`/project/${project.id}`} className="absolute inset-0 z-10 block" aria-label={`View ${project.title}`} />
               ) : null}
               <div className="space-y-6">
                 {/* Header: Category & Icon */}
@@ -215,13 +220,23 @@ export const ProjectsGrid: React.FC = () => {
                   ))}
                 </div>
 
-                {project.internalLink ? (
+                {project.customLink ? (
+                  <Link to={project.customLink} className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
+                    <span>View Software</span>
+                    <Code2 className="w-3.5 h-3.5" />
+                  </Link>
+                ) : project.internalLink ? (
                   <Link to={`/project/${project.id}`} className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
                     <span>View Project</span>
                     <Code2 className="w-3.5 h-3.5" />
                   </Link>
+                ) : project.link ? (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
+                    <span>Live Preview</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
                 ) : (
-                  <span className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
+                  <span className="text-[#FF5722] font-semibold flex items-center space-x-1 relative z-20">
                     <span>View Project</span>
                     <Code2 className="w-3.5 h-3.5" />
                   </span>

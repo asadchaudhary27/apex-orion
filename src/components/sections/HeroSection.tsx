@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Code2, ArrowRight, Server, Zap, GitBranch } from 'lucide-react';
 
 // The code snippet we want to type out
-const CODE_SNIPPET = `import { build } from '@apex-orion/core';
+const CODE_SNIPPET = `import { build } from '@apexoriontech/core';
 
 async function executeVision() {
   const product = await build({
@@ -47,11 +47,11 @@ export const HeroSection: React.FC = () => {
   // Simple syntax highlighting via regex replacement
   const renderHighlightedCode = (code: string) => {
     return code.split('\n').map((line, i) => {
-      // Very basic highlighter just for the visual effect
+      // Cyber-tech syntax highlighter aligned with brand aesthetic
       let html = line
-        .replace(/(import|from|async|function|await|const|return)/g, '<span class="text-pink-500">$1</span>')
-        .replace(/('[^']*')/g, '<span class="text-green-400">$1</span>')
-        .replace(/(build|executeVision|deploy)/g, '<span class="text-[#FF5722]">$1</span>')
+        .replace(/(import|from|async|function|await|const|return)/g, '<span class="text-[#FF8A65] font-semibold">$1</span>')
+        .replace(/('[^']*')/g, '<span class="text-amber-300">$1</span>')
+        .replace(/(build|executeVision|deploy)/g, '<span class="text-[#FF5722] font-bold">$1</span>')
         .replace(/({|}|\[|\]|\(|\))/g, '<span class="text-gray-400">$1</span>');
         
       return (
@@ -75,8 +75,8 @@ export const HeroSection: React.FC = () => {
       />
       
       {/* Radial Gradient for depth */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-900/10 rounded-full blur-[120px] pointer-events-none z-0" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-cyan-900/10 rounded-full blur-[120px] pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#FF5722]/10 rounded-full blur-[140px] pointer-events-none z-0" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[120px] pointer-events-none z-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
         
@@ -89,7 +89,7 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-[1.05]"
           >
-            We Build What Others Can't <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-[#FF8A65]">Compile.</span>
+            We Build What Others Can't <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-100 to-[#FF5722]">Compile.</span>
           </motion.h1>
 
           <motion.p

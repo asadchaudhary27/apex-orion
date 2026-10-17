@@ -3,10 +3,49 @@ import { motion } from 'framer-motion';
 import { MapPin, Mail, MessageCircle, Clock, Globe } from 'lucide-react';
 import GlassCard from '../components/common/GlassCard';
 import ContactForm from '../components/sections/ContactForm';
+import SEO from '../components/common/SEO';
+
+const CONTACT_SCHEMA = [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://apexoriontech.com/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Contact',
+        item: 'https://apexoriontech.com/contact'
+      }
+    ]
+  },
+  {
+    '@type': 'ContactPage',
+    name: 'Contact ApexOrion Tech',
+    description: 'Get in touch with ApexOrion Tech software engineers for custom software development, POS systems, mobile apps, and technical consultation.',
+    url: 'https://apexoriontech.com/contact',
+    mainEntity: {
+      '@type': 'ProfessionalService',
+      name: 'ApexOrion Tech',
+      telephone: '+923182834735',
+      email: 'apexorion69@gmail.com'
+    }
+  }
+];
 
 export const Contact: React.FC = () => {
   return (
     <div className="relative pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 overflow-hidden">
+      <SEO
+        title="Start a Project & Get a Quote"
+        description="Inquire about custom software development, offline-first POS systems, mobile applications, or SaaS engineering with ApexOrion Tech. Fast 24h response time."
+        canonical="/contact"
+        schema={CONTACT_SCHEMA}
+      />
       {/* Ambient background radial glow */}
       <div className="fixed top-1/3 right-10 w-[500px] h-[500px] bg-[radial-gradient(ellipse_at_center,rgba(255,87,34,0.15),transparent_70%)] rounded-full pointer-events-none -z-10" />
 
@@ -50,11 +89,11 @@ export const Contact: React.FC = () => {
           <div className="space-y-5 pt-2">
             {/* Global HQ */}
             <GlassCard variant="hover-glow" glowColor="orange" className="p-6 flex items-start space-x-4 rounded-2xl">
-              <div className="p-3 rounded-xl bg-[#FF5722]/10 border border-[#FF5722]/50/30 text-[#FF5722] flex-shrink-0">
+              <div className="p-3 rounded-xl bg-[#FF5722]/10 border border-[#FF5722]/30 text-[#FF5722] flex-shrink-0">
                 <MapPin className="w-6 h-6" />
               </div>
               <div className="space-y-1">
-                <h3 className="font-headline text-lg font-bold text-white">Apex Orion HQ</h3>
+                <h3 className="font-headline text-lg font-bold text-white">ApexOrion Tech HQ</h3>
                 <p className="text-gray-400 text-sm font-medium">Faisalabad, Pakistan</p>
                 <p className="text-gray-400 text-xs flex items-center space-x-1 pt-1">
                   <Globe className="w-3.5 h-3.5 text-[#FF5722]" />
@@ -65,7 +104,7 @@ export const Contact: React.FC = () => {
 
             {/* Direct Email */}
             <GlassCard variant="hover-glow" glowColor="orange" className="p-6 flex items-start space-x-4 rounded-2xl">
-              <div className="p-3 rounded-xl bg-[#FF5722]/10 border border-[#FF5722]/50/30 text-[#FF5722] flex-shrink-0">
+              <div className="p-3 rounded-xl bg-[#FF5722]/10 border border-[#FF5722]/30 text-[#FF5722] flex-shrink-0">
                 <Mail className="w-6 h-6" />
               </div>
               <div className="space-y-1">

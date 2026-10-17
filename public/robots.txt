@@ -1,0 +1,35 @@
+# ==============================================================================
+# ApexOrion Tech - Robots.txt
+# https://apexoriontech.com/
+# ==============================================================================
+
+User-agent: *
+Allow: /
+
+# Priority Core & Programmatic SEO Paths
+Allow: /services/
+Allow: /locations/
+Allow: /blog/
+Allow: /projects/
+Allow: /softwares/
+Allow: /contact
+
+# LLM Search Engine & AI Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemap Index Declaration
+Sitemap: https://apexoriontech.com/sitemap.xml
+Host: https://apexoriontech.com

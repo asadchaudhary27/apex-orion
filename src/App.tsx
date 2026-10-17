@@ -5,7 +5,6 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import SmoothScroll from './components/common/SmoothScroll';
 import WhatsAppButton from './components/common/WhatsAppButton';
-import IntroScreen from './components/common/IntroScreen';
 import PageWrapper from './components/common/PageWrapper';
 
 import LoadingFallback from './components/common/LoadingFallback';
@@ -18,6 +17,11 @@ const SoftwareDetail = lazy(() => import('./pages/SoftwareDetail'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 const Team = lazy(() => import('./pages/Team'));
 const Contact = lazy(() => import('./pages/Contact'));
+const LocationsHub = lazy(() => import('./pages/LocationsHub'));
+const CityServicePage = lazy(() => import('./pages/CityServicePage'));
+const Blogs = lazy(() => import('./pages/Blogs'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -32,22 +36,26 @@ const AnimatedRoutes = () => {
         <Route path="/softwares" element={<PageWrapper><Softwares /></PageWrapper>} />
         <Route path="/software/:id" element={<PageWrapper><SoftwareDetail /></PageWrapper>} />
         <Route path="/project/:id" element={<PageWrapper><ProjectDetail /></PageWrapper>} />
+        <Route path="/locations" element={<PageWrapper><LocationsHub /></PageWrapper>} />
+        <Route path="/locations/:countryCode/:citySlug" element={<PageWrapper><CityServicePage /></PageWrapper>} />
+        <Route path="/locations/:countryCode/:citySlug/:serviceSlug" element={<PageWrapper><CityServicePage /></PageWrapper>} />
+        <Route path="/services/:serviceSlug/:countryCode/:citySlug" element={<PageWrapper><CityServicePage /></PageWrapper>} />
+        <Route path="/blog" element={<PageWrapper><Blogs /></PageWrapper>} />
+        <Route path="/insights" element={<PageWrapper><Blogs /></PageWrapper>} />
+        <Route path="/blog/:slug" element={<PageWrapper><BlogPostPage /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
-        <Route path="*" element={<PageWrapper><Home /></PageWrapper>} />
+        <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );
 };
 
 export const App: React.FC = () => {
-  const [showIntro, setShowIntro] = useState(true);
-
   return (
     <Router>
       <SmoothScroll>
         <WhatsAppButton />
-        {showIntro && <IntroScreen onComplete={() => setShowIntro(false)} />}
-        <div className={`min-h-screen bg-black text-[#F5F5F5] font-sans antialiased selection:bg-[#FF5722] selection:text-white flex flex-col justify-between ${showIntro ? 'h-screen overflow-hidden' : ''}`}>
+        <div className="min-h-screen bg-black text-[#F5F5F5] font-sans antialiased selection:bg-[#FF5722] selection:text-white flex flex-col justify-between">
           <Navbar />
           <main className="flex-grow">
             <Suspense fallback={<LoadingFallback />}>

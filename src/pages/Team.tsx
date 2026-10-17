@@ -1,9 +1,40 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SEO from '../components/common/SEO';
 import '../styles/team.css';
 
 gsap.registerPlugin(ScrollTrigger);
+
+const TEAM_SCHEMA = [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://apexoriontech.com/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Team',
+        item: 'https://apexoriontech.com/team'
+      }
+    ]
+  },
+  {
+    '@type': 'AboutPage',
+    name: 'Leadership & Engineering Team',
+    description: 'Meet the founders and core engineering leadership behind ApexOrion Tech.',
+    publisher: {
+      '@type': 'Organization',
+      name: 'ApexOrion Tech',
+      url: 'https://apexoriontech.com/'
+    }
+  }
+];
 
 export const Team: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -289,6 +320,12 @@ export const Team: React.FC = () => {
 
   return (
     <div className="team-page-container" ref={containerRef}>
+      <SEO
+        title="Our Leadership & Engineering Powerhouse"
+        description="Meet the founders, engineers, and designers behind ApexOrion Tech, led by Asad Qaisar (Founder & CEO) and Ammar Saleem (Co-Founder & Project Manager)."
+        canonical="/team"
+        schema={TEAM_SCHEMA}
+      />
 
       {/* HERO SECTION */}
       <section className="team-hero" ref={heroRef}>

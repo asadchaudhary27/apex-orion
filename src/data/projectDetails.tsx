@@ -2,6 +2,8 @@ export interface ProjectDetailData {
   id: string;
   name: string;
   description: string;
+  category?: string;
+  tags?: string[];
   gallery: string[];
 }
 
@@ -9,7 +11,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   '3d-tile-visualizer-&-calculator': {
     id: '3d-tile-visualizer-&-calculator',
     name: '3D Tile Visualizer & Calculator',
-    description: 'Detailed showcase of 3D Tile Visualizer & Calculator.',
+    category: '3D Web Application',
+    tags: ['Three.js', 'WebGL', 'React', 'Calculators'],
+    description: 'An interactive 3D WebGL visualizer and precision surface tile calculator. Enables homeowners and contractors to configure tile layouts, simulate realistic room lighting in real time, and generate instantaneous area and material cost estimations.',
     gallery: [
       '/3d tile visualizer & calculator/3d-tile-visualizer-&-calculator-1.webp',
       '/3d tile visualizer & calculator/3d-tile-visualizer-&-calculator-2.webp',
@@ -19,7 +23,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   'acme-skill': {
     id: 'acme-skill',
     name: 'Acme Skill',
-    description: 'Detailed showcase of Acme Skill.',
+    category: 'Corporate EdTech Platform',
+    tags: ['React', 'LMS', 'UI/UX Design', 'Dashboards'],
+    description: 'A corporate skills development platform and training portal. Engineered with modern React state architecture, interactive course modules, and real-time competency assessments to accelerate enterprise team onboarding and technical upskilling.',
     gallery: [
       '/Acme skill/acme-skill-1.webp',
       '/Acme skill/acme-skill-2.webp',
@@ -28,8 +34,10 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   },
   'chicken-mashwi-pos': {
     id: 'chicken-mashwi-pos',
-    name: 'Chicken Mashwi Pos',
-    description: 'Detailed showcase of Chicken Mashwi Pos.',
+    name: 'Chicken Mashwi POS',
+    category: 'Restaurant Point of Sale',
+    tags: ['Electron', 'Offline SQLite', 'POS', 'Invoicing'],
+    description: 'Custom offline-first desktop point-of-sale system engineered specifically for Chicken Mashwi. Features high-velocity touch checkout, instant table order routing, daily closing drawer tallying, and thermal receipt printing without internet dependence.',
     gallery: [
       '/Apexrestu/apexrestu-1.webp',
       '/Apexrestu/apexrestu-2.webp',
@@ -39,7 +47,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   'chicken-mashwi-web': {
     id: 'chicken-mashwi-web',
     name: 'Chicken Mashwi Web',
-    description: 'Detailed showcase of Chicken Mashwi Web.',
+    category: 'Food Ordering Experience',
+    tags: ['React', 'Next-Gen UI', 'E-Commerce', 'Mobile First'],
+    description: 'A high-conversion online food ordering and digital menu platform for Chicken Mashwi. Engineered with sub-second page loads, sensory visual menus, seamless cart customization, and direct instant order routing via WhatsApp.',
     gallery: [
       '/Chicken mashwi web/chicken-mashwi-web-1.webp',
       '/Chicken mashwi web/chicken-mashwi-web-2.webp',
@@ -49,7 +59,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   'eduka': {
     id: 'eduka',
     name: 'Eduka',
-    description: 'Detailed showcase of Eduka.',
+    category: 'Education Management Portal',
+    tags: ['EdTech', 'React', 'Analytics', 'Enterprise'],
+    description: 'A modern educational management system and administrative portal. Centralizes student enrollments, attendance records, gradebook distributions, and curriculum tracking through high-clarity data dashboards and role-based permissions.',
     gallery: [
       '/eduka/eduka-1.webp',
       '/eduka/eduka-2.webp',
@@ -61,7 +73,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   'marhaba-home': {
     id: 'marhaba-home',
     name: 'Marhaba Home',
-    description: 'Detailed showcase of Marhaba Home.',
+    category: 'Real Estate Showcase',
+    tags: ['Real Estate', 'React', 'Property Filter', 'UI/UX'],
+    description: 'A luxury real estate property showcase and client acquisition platform. Features immersive property galleries, neighborhood amenity filters, virtual tour showcases, and high-conversion direct inquiry scheduling for buyers and investors.',
     gallery: [
       '/Marhaba Home/marhaba-home-1.webp',
       '/Marhaba Home/marhaba-home-2.webp',
@@ -72,7 +86,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   'oye-biryani': {
     id: 'oye-biryani',
     name: 'Oye Biryani',
-    description: 'Detailed showcase of Oye Biryani.',
+    category: 'Restaurant Web Platform',
+    tags: ['Food Delivery', 'Mobile Web', 'Framer Motion'],
+    description: 'A fast-loading, appetizing food delivery and takeout ordering platform for Oye Biryani. Designed with kinetic food imagery, streamlined combo builders, and direct mobile checkout for frictionless customer conversions.',
     gallery: [
       '/oye biryani/oye-biryani-1.webp',
       '/oye biryani/oye-biryani-2.webp',
@@ -83,7 +99,9 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
   'pollus': {
     id: 'pollus',
     name: 'Pollus',
-    description: 'Detailed showcase of Pollus.',
+    category: 'Business Operations Dashboard',
+    tags: ['Business Intelligence', 'Analytics', 'React', 'Charts'],
+    description: 'An executive business operations and team productivity intelligence dashboard. Transforms raw operational data into actionable revenue metrics, project velocity charts, and team KPI visualizations.',
     gallery: [
       '/pollus/pollus-1.webp',
       '/pollus/pollus-2.webp',

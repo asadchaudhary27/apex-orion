@@ -10,18 +10,23 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
 
   const handleDismiss = () => {
     if (isVisible) {
+      try {
+        sessionStorage.setItem('apex_intro_seen', 'true');
+      } catch {
+        // Safe fallback if sessionStorage is blocked
+      }
       setIsVisible(false);
       setTimeout(() => {
         onComplete();
-      }, 500); // Wait for exit animation
+      }, 400); // Wait for exit animation
     }
   };
 
   useEffect(() => {
-    // 10 second timeout
+    // 1.8 second max duration to preserve performance & UX
     const timer = setTimeout(() => {
       handleDismiss();
-    }, 10000);
+    }, 1800);
 
     // Scroll listener
     const handleScroll = () => {
@@ -66,7 +71,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
               className="relative flex flex-col items-center"
             >
               <div className="absolute inset-0 bg-[#FF5722] blur-[100px] opacity-20 rounded-full" />
-              <img src="/logo_transparent.png" alt="Apex Orion Logo" className="w-96 h-96 mb-6 relative z-10 object-contain drop-shadow-lg" />
+              <img src="/logo_transparent.png" alt="ApexOrion Tech Logo" className="w-96 h-96 mb-6 relative z-10 object-contain drop-shadow-lg" />
             </motion.div>
             
             <motion.div
@@ -83,7 +88,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: '100%' }}
-              transition={{ duration: 10, ease: 'linear' }}
+              transition={{ duration: 1.8, ease: 'linear' }}
               className="absolute bottom-0 left-0 h-1 bg-[#FF5722]"
             />
           </div>

@@ -1,0 +1,32 @@
+# ApexOrion Tech
+
+> Elite Software Engineering & Digital Transformation Agency
+
+ApexOrion Tech is a premier full-stack software development agency based in Faisalabad, Pakistan, serving visionary startups and international enterprises across the United States, United Kingdom, United Arab Emirates, Saudi Arabia, Canada, and Europe. We engineer custom web applications, cross-platform mobile apps, offline-first POS systems, SaaS platforms, and 3D WebGL experiences with sub-second performance.
+
+## Core Services
+- **Custom Web Application Development**: High-velocity React, Next.js, TypeScript, and Node.js enterprise systems.
+- **Offline-First POS & Inventory Systems**: Desktop and cloud point-of-sale solutions with zero-downtime offline capabilities.
+- **Mobile Application Development**: Native and hybrid iOS/Android apps built with React Native and Flutter.
+- **SaaS Architecture & Engineering**: Multi-tenant, scalable cloud software built for recurring revenue.
+- **UI/UX & Interactive Design**: Modern dark-mode spatial interfaces, design systems, and 3D WebGL visuals.
+- **Technical SEO & Performance Engineering**: Sub-second Core Web Vitals optimization and international search domination.
+
+## Proprietary Software Products
+- **ApexPure POS**: Offline-first POS, bottle tracking, and delivery route management for water purification & supply companies.
+- **Veloce**: Complete car rental fleet management, automated booking system, and dynamic invoice generation software.
+- **ApexRestu POS**: High-volume restaurant management system with KDS (Kitchen Display System), live recipe costing, and table management.
+- **ApexRx Manager**: Comprehensive pharmacy and clinical management system with prescription tracking and automated reordering.
+- **Bespoke Custom Software Development**: Tailor-made commercial desktop, web, and mobile systems with 100% offline-first speed, dynamic thermal invoicing engines, digital scale drivers, and centralized cloud branch sync.
+
+## Leadership & Founders
+- **Asad Qaisar**: Founder & CEO
+- **Ammar Saleem**: Co-Founder & Project Manager
+
+## Contact & Inquiries
+- **Official Website**: https://apexoriontech.com/
+- **Contact & Quotes**: https://apexoriontech.com/contact
+- **Direct WhatsApp**: +92 318 2834735
+- **Email**: apexorion69@gmail.com
+- **Headquarters**: Faisalabad, Punjab, Pakistan
+- **Operating Hours**: 24/7 Global Client Support

@@ -65,22 +65,23 @@ export const ServiceDetail: React.FC = () => {
         {/* Left Column: Sticky Title */}
         <div className="lg:w-1/3">
           <div className="sticky top-32 space-y-6">
-            <span className="px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-widest">
-              Capabilities
+            <span className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-[#FF5722]/10 border border-[#FF5722]/30 text-[#FF5722] text-xs font-mono font-semibold uppercase tracking-widest">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5722] animate-pulse" />
+              <span>Capabilities</span>
             </span>
             <h2 className="font-headline text-4xl sm:text-5xl font-bold text-white tracking-tight leading-tight">
-              Our Process <br />& Engineering <span className="text-cyan-400">Arsenal</span>
+              Our Process <br />& Engineering <span className="text-[#FF5722]">Arsenal</span>
             </h2>
-            <p className="text-gray-400 text-base leading-relaxed">
+            <p className="text-gray-400 text-base leading-relaxed font-body">
               We execute with military precision. Click any service domain to expand its technical capabilities, designed for speed, scale, and digital dominance.
             </p>
             <div className="pt-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-cyan-500/30 text-white font-semibold text-sm transition-all duration-300"
+                className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] hover:bg-[#FF5722]/10 border border-white/10 hover:border-[#FF5722]/40 text-white font-semibold text-sm transition-all duration-300"
               >
                 <span>Start a Project</span>
-                <ArrowRight className="w-4 h-4 text-cyan-400" />
+                <ArrowRight className="w-4 h-4 text-[#FF5722]" />
               </Link>
             </div>
           </div>
@@ -178,6 +179,15 @@ export const ServiceDetail: React.FC = () => {
                               </motion.li>
                             ))}
                           </ul>
+                          <div className="pt-4">
+                            <Link
+                              to="/contact"
+                              className="inline-flex items-center space-x-2 text-xs font-semibold text-[#FF5722] hover:text-white transition-colors"
+                            >
+                              <span>Start a project with {service.title}</span>
+                              <ArrowRight className="w-3.5 h-3.5" />
+                            </Link>
+                          </div>
                         </motion.div>
                       )}
                     </AnimatePresence>
