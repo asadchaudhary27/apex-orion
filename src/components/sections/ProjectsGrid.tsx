@@ -158,11 +158,9 @@ export const ProjectsGrid: React.FC = () => {
             <div className="p-6 h-full flex flex-col justify-between group cursor-pointer border-white/10 hover:border-[#FF5722]/40 transition-colors relative bg-black/40 border rounded-2xl">
               {project.customLink ? (
                 <Link to={project.customLink} className="absolute inset-0 z-10 block" aria-label={`View ${project.title}`} />
-              ) : project.link ? (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 block" aria-label={`Open ${project.title}`} />
-              ) : project.internalLink ? (
+              ) : (
                 <Link to={`/project/${project.id}`} className="absolute inset-0 z-10 block" aria-label={`View ${project.title}`} />
-              ) : null}
+              )}
               <div className="space-y-6">
                 {/* Header: Category & Icon */}
                 <div className="flex justify-between items-start">
@@ -231,7 +229,7 @@ export const ProjectsGrid: React.FC = () => {
                     <Code2 className="w-3.5 h-3.5" />
                   </Link>
                 ) : project.link ? (
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="text-[#FF5722] font-semibold group-hover:translate-x-1 transition-transform flex items-center space-x-1 relative z-20">
                     <span>Live Preview</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>

@@ -57,7 +57,7 @@ export const SoftwareDetail: React.FC = () => {
         priceCurrency: 'USD'
       } : {
         '@type': 'Offer',
-        price: '150.00',
+        price: '30.00',
         priceCurrency: 'USD'
       },
       description: software.tagline
@@ -142,12 +142,19 @@ export const SoftwareDetail: React.FC = () => {
                 <span className="text-gray-400">Full Source Code Ownership</span>
               </div>
             ) : (
-              <div className="flex items-center space-x-3 px-5 py-3 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-300">
-                <span className="font-bold text-white">$3/mo</span>
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 px-5 py-3 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-300">
+                <span className="font-bold text-[#FF5722] font-mono">$30 / Year</span>
                 <span className="text-gray-500">•</span>
-                <span className="font-bold text-[#FF5722]">$150 Lifetime</span>
-                <span className="text-gray-500">•</span>
-                <span className="text-gray-400">Windows PC (.exe)</span>
+                <a
+                  href={`https://wa.me/923182834735?text=Hi!%20I%20want%20to%20discuss%20the%20Lifetime%20License%20for%20${encodeURIComponent(software.name)}.`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-semibold text-white hover:text-[#FF5722] transition-colors underline underline-offset-2"
+                >
+                  Lifetime License: Talk to Us
+                </a>
+                <span className="text-gray-500 hidden sm:inline">•</span>
+                <span className="text-gray-400 hidden sm:inline">Windows PC (.exe)</span>
               </div>
             )}
           </motion.div>

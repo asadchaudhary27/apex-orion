@@ -8,8 +8,8 @@ export interface SoftwareProduct {
   id: string;
   name: string;
   tagline: string;
-  priceMonthly: string;
-  priceLifetime: string;
+  priceYearly: string;
+  lifetimeNote: string;
   features: string[];
   gradient: string;
   iconPath: string;
@@ -38,8 +38,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'apexrestu-pos',
     name: 'APEX POS - Restaurant & Retail Operating System',
     tagline: 'Enterprise-grade, 100% offline-first POS suite with multi-station KOT routing, recipe BOM food costing, and AI WhatsApp automation.',
-    priceMonthly: '$3',
-    priceLifetime: '$150',
+    priceYearly: '$30',
+    lifetimeNote: 'Talk to Us',
     features: ['100% Offline-First (SQLite)', 'KDS & Multi-Station KOT', 'Recipe BOM & Food Costing', 'Automated WhatsApp Receipts'],
     gradient: 'from-[#FF5722] to-orange-600',
     iconPath: '/apexrestu.ico'
@@ -48,8 +48,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'apexpure-pos',
     name: 'ApexPure POS - Water Delivery & Plant Management',
     tagline: 'Comprehensive plant operations & route delivery management with bottle tracking, rider ledger, and SMS/WhatsApp bills.',
-    priceMonthly: '$3',
-    priceLifetime: '$150',
+    priceYearly: '$30',
+    lifetimeNote: 'Talk to Us',
     features: ['Bottle Deposits & Returns', 'Delivery Route Optimization', 'Daily Rider Cash Handover', 'Customer Udhar/Ledger System'],
     gradient: 'from-amber-500 to-[#FF5722]',
     iconPath: '/apex_pure.ico'
@@ -58,8 +58,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'veloce',
     name: 'Veloce - Car Rental & Fleet Operations Platform',
     tagline: 'Heavy-duty car rental & fleet tracking software with meter-in/meter-out logging, dynamic contract generation, and expense tracking.',
-    priceMonthly: '$3',
-    priceLifetime: '$150',
+    priceYearly: '$30',
+    lifetimeNote: 'Talk to Us',
     features: ['Vehicle Fleet Status Grid', 'Meter & Damage In/Out Logs', 'Dynamic Rental Agreements', 'Automated Driver & Fuel Dues'],
     gradient: 'from-[#FF5722] to-amber-500',
     iconPath: '/veloce.ico'
@@ -68,8 +68,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'apexrx-manager',
     name: 'ApexRx - Pharmacy & Healthcare Clinic Manager',
     tagline: 'Fast prescription dispensing, batch & near-expiry tracking, supplier GRN orders, and daily pharmacy profit margins.',
-    priceMonthly: '$3',
-    priceLifetime: '$150',
+    priceYearly: '$30',
+    lifetimeNote: 'Talk to Us',
     features: ['Batch & Expiry Alert Engine', 'Doctor Prescription Archive', 'Supplier GRN & Bonus Stocks', 'Daily Z-Report Shift Audit'],
     gradient: 'from-orange-600 to-amber-600',
     iconPath: '/apexrx.ico'
@@ -78,8 +78,8 @@ const SOFTWARES_DATA: SoftwareProduct[] = [
     id: 'custom-software',
     name: 'Bespoke Custom Software Development',
     tagline: 'Tailor-made commercial desktop, web & mobile applications designed specifically for your proprietary business workflows.',
-    priceMonthly: 'Custom',
-    priceLifetime: 'Quote',
+    priceYearly: 'Custom',
+    lifetimeNote: 'Quote',
     features: ['100% Custom Business Logic', 'Dynamic Thermal & PDF Invoicing', 'Digital Weighing Scale Drivers', 'Central Cloud Head-Office Sync'],
     gradient: 'from-amber-600 to-[#FF5722]',
     iconPath: '/custom_software.ico'
@@ -174,13 +174,19 @@ export const Softwares: React.FC = () => {
                         </span>
                       </div>
                     ) : (
-                      <div className="flex flex-col items-end gap-2">
-                        <span className="text-lg font-bold text-white tracking-tight bg-white/[0.03] border border-white/5 px-3 py-1 rounded-full shadow-sm font-mono">
-                          {software.priceLifetime} <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider ml-1">Lifetime</span>
+                      <div className="flex flex-col items-end gap-1.5">
+                        <span className="text-base sm:text-lg font-bold text-white tracking-tight bg-white/[0.04] border border-[#FF5722]/40 px-3.5 py-1 rounded-full shadow-sm font-mono flex items-center">
+                          <span className="text-[#FF5722]">{software.priceYearly}</span>
+                          <span className="text-[10px] text-gray-300 font-medium uppercase tracking-wider ml-1">/ Year</span>
                         </span>
-                        <span className="text-sm font-semibold text-gray-300 tracking-tight bg-white/[0.03] border border-white/5 px-3 py-1 rounded-full shadow-sm font-mono">
-                          {software.priceMonthly} <span className="text-[10px] text-gray-400 font-normal uppercase tracking-wider ml-1">/ Month</span>
-                        </span>
+                        <a
+                          href={`https://wa.me/923182834735?text=Hi!%20I%20am%20interested%20in%20the%20Lifetime%20License%20for%20${encodeURIComponent(software.name)}.`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-xs font-semibold text-gray-300 hover:text-[#FF5722] tracking-tight bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 hover:border-[#FF5722]/30 px-3 py-1 rounded-full shadow-sm font-mono transition-all duration-200"
+                        >
+                          Lifetime: <span className="text-white underline underline-offset-2 ml-1">Talk to Us</span>
+                        </a>
                       </div>
                     )}
                   </div>
@@ -222,13 +228,15 @@ export const Softwares: React.FC = () => {
                       <Lock className="w-3.5 h-3.5" />
                       <span>Live Demo</span>
                     </a>
-                    <Link 
-                      to="/contact" 
-                      className="w-full py-3 rounded-xl bg-white/5 border border-white/10 text-white font-bold text-xs sm:text-sm hover:bg-white/10 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-1.5"
+                    <a 
+                      href={`https://wa.me/923182834735?text=Hi!%20I%20want%20to%20discuss%20Lifetime%20License%20or%20Yearly%20Subscription%20for%20${encodeURIComponent(software.name)}.`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-full py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-xs sm:text-sm hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-1.5"
                     >
                       <MessageSquare className="w-3.5 h-3.5 text-[#FF5722]" />
-                      <span>Custom Quote</span>
-                    </Link>
+                      <span>Talk to Us</span>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Layers, CheckCircle2 } from 'lucide-react';
+import { ExternalLink, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
 import GlassCard from '../common/GlassCard';
 
 export interface FeaturedProject {
@@ -46,7 +46,7 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     displayLink: 'https://techteamdesigns.com',
   },
   {
-    id: '3d-tile-visualizer',
+    id: '3d-tile-visualizer-&-calculator',
     title: '3D Tile Visualizer & Calculator',
     category: 'Interactive 3D Web Application',
     description: 'A cutting-edge WebGL 3D architectural visualizer allowing contractors and homeowners to map room surface areas, preview textures in real time, and calculate instant material costs.',
@@ -100,9 +100,11 @@ export const FeaturedWork: React.FC = () => {
                 <span className="text-xs font-semibold text-[#FF5722] uppercase tracking-wider px-3 py-1 rounded-full bg-[#FF5722]/10 border border-[#FF5722]/20">
                   {project.category}
                 </span>
-                <h3 className="font-headline text-2xl sm:text-3xl font-bold text-white">
-                  {project.title}
-                </h3>
+                <Link to={`/project/${project.id}`} className="block group/title">
+                  <h3 className="font-headline text-2xl sm:text-3xl font-bold text-white group-hover/title:text-[#FF5722] transition-colors">
+                    {project.title}
+                  </h3>
+                </Link>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                   {project.description}
                 </p>
@@ -126,39 +128,39 @@ export const FeaturedWork: React.FC = () => {
                 ))}
               </div>
 
-              <div className="pt-2">
-                {project.link ? (
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                {project.link && (
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     data-cursor="view-project"
-                    className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-semibold text-sm hover:bg-[#FF5722] hover:border-[#FF5722]/50 transition-all duration-300 shadow-lg"
+                    className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#FF5722] to-[#FF7043] border border-[#FF5722]/60 text-white font-bold text-sm shadow-[0_0_25px_rgba(255,87,34,0.4)] hover:shadow-[0_0_35px_rgba(255,87,34,0.7)] hover:scale-105 transition-all duration-300"
                   >
                     <span>Visit Website</span>
                     <ExternalLink className="w-4 h-4" />
                   </a>
-                ) : (
-                  <Link
-                    to={project.link || '/projects'}
-                    data-cursor="view-project"
-                    className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.03] border border-white/10 text-white font-semibold text-sm hover:bg-[#FF5722] hover:border-[#FF5722]/50 transition-all duration-300 shadow-lg"
-                  >
-                    <span>Explore Project</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </Link>
                 )}
+                <Link
+                  to={`/project/${project.id}`}
+                  data-cursor="view-project"
+                  className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 text-white font-semibold text-sm transition-all duration-300 shadow-md"
+                >
+                  <span>Project Details</span>
+                  <ArrowRight className="w-4 h-4 text-[#FF5722]" />
+                </Link>
               </div>
             </div>
 
             {/* Overlapping Stylized 3D Mockup Container */}
             <div className={`lg:col-span-7 ${idx % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
-              <GlassCard
-                variant="hover-glow"
-                glowColor="orange"
-                data-cursor="view-project"
-                className="relative overflow-hidden p-4 sm:p-6 rounded-3xl group shadow-2xl"
-              >
+              <Link to={`/project/${project.id}`} className="block cursor-pointer" aria-label={`View ${project.title} details`}>
+                <GlassCard
+                  variant="hover-glow"
+                  glowColor="orange"
+                  data-cursor="view-project"
+                  className="relative overflow-hidden p-4 sm:p-6 rounded-3xl group shadow-2xl"
+                >
                 {/* Device Frame Window */}
                 <div
                   className={`w-full aspect-[16/10] rounded-2xl bg-gradient-to-br ${project.mockupBg} border border-white/10 p-4 sm:p-6 flex flex-col justify-between relative overflow-hidden transition-transform duration-500 group-hover:scale-[1.02]`}
@@ -258,6 +260,7 @@ export const FeaturedWork: React.FC = () => {
                   </div>
                 </div>
               </GlassCard>
+              </Link>
             </div>
           </motion.div>
         ))}

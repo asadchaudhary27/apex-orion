@@ -108,4 +108,46 @@ export const PROJECT_DETAILS: Record<string, ProjectDetailData> = {
       '/pollus/pollus-3.webp'
     ]
   },
+  'zarcostar': {
+    id: 'zarcostar',
+    name: 'Zarco Star Building LLC',
+    category: 'Global Construction Platform',
+    tags: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Lenis'],
+    description: 'A multi-lingual digital platform created in 3 different languages, featuring a highly intuitive and awesome user interface for global clients. Built with sub-second performance, international SEO, and interactive corporate showcases.',
+    gallery: [
+      '/zarcostar-building-llc.png',
+      '/zarco-star.png'
+    ]
+  },
+  'zarco-star': {
+    id: 'zarco-star',
+    name: 'Zarco Star Building LLC',
+    category: 'Global Construction Platform',
+    tags: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Lenis'],
+    description: 'A multi-lingual digital platform created in 3 different languages, featuring a highly intuitive and awesome user interface for global clients. Built with sub-second performance, international SEO, and interactive corporate showcases.',
+    gallery: [
+      '/zarcostar-building-llc.png',
+      '/zarco-star.png'
+    ]
+  },
+  'tech-team-designs': {
+    id: 'tech-team-designs',
+    name: 'Tech Team Designs',
+    category: 'Creative 3D Web Agency',
+    tags: ['Three.js', 'React Three Fiber', 'GSAP', 'WebGL', 'Tailwind'],
+    description: 'A fully immersive 3D website featuring interactive 3D design cards, smooth scroll animations, and a cutting-edge creative portfolio showcasing technical excellence and design innovation.',
+    gallery: [
+      '/techteamdesigns.png'
+    ]
+  },
+  'techteamdesigns': {
+    id: 'techteamdesigns',
+    name: 'Tech Team Designs',
+    category: 'Creative 3D Web Agency',
+    tags: ['Three.js', 'React Three Fiber', 'GSAP', 'WebGL', 'Tailwind'],
+    description: 'A fully immersive 3D website featuring interactive 3D design cards, smooth scroll animations, and a cutting-edge creative portfolio showcasing technical excellence and design innovation.',
+    gallery: [
+      '/techteamdesigns.png'
+    ]
+  },
 };
