@@ -4,19 +4,15 @@ import { Link } from 'react-router-dom';
 import { Code2, ArrowRight, Server, Zap, GitBranch } from 'lucide-react';
 
 // The code snippet we want to type out
-const CODE_SNIPPET = `import { build } from '@apexoriontech/core';
+const CODE_SNIPPET = `import { deploy } from '@apex-orion/core';
 
-async function executeVision() {
-  const product = await build({
-    vision: 'extraordinary',
-    founders: ['Asad Qaisar (CEO)', 'Ammar Saleem (Co-Founder)'],
-    performance: 'sub-second',
-    stack: ['React', 'Node.js', 'Rust'],
-    design: '2026_future_proof'
+async function execute() {
+  const app = await deploy({
+    stack: ['React', 'TypeScript', 'Node.js'],
+    performance: 'sub-second'
   });
 
-  await product.deploy();
-  return { status: 200, system: 'online' };
+  return { status: 200, live: true };
 }`;
 
 export const HeroSection: React.FC = () => {
@@ -51,7 +47,7 @@ export const HeroSection: React.FC = () => {
       let html = line
         .replace(/(import|from|async|function|await|const|return)/g, '<span class="text-[#FF8A65] font-semibold">$1</span>')
         .replace(/('[^']*')/g, '<span class="text-amber-300">$1</span>')
-        .replace(/(build|executeVision|deploy)/g, '<span class="text-[#FF5722] font-bold">$1</span>')
+        .replace(/(build|execute|deploy)/g, '<span class="text-[#FF5722] font-bold">$1</span>')
         .replace(/({|}|\[|\]|\(|\))/g, '<span class="text-gray-400">$1</span>');
         
       return (
@@ -168,7 +164,7 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Terminal Body */}
-            <div className="p-6 h-[380px] overflow-hidden bg-transparent">
+            <div className="p-6 h-[290px] overflow-hidden bg-transparent">
               <div className="font-mono text-sm leading-loose">
                 {renderHighlightedCode(typedCode)}
                 <AnimatePresence>
@@ -191,13 +187,9 @@ export const HeroSection: React.FC = () => {
                   transition={{ delay: 0.5 }}
                   className="mt-6 pt-4 border-t border-white/10 font-mono text-sm"
                 >
-                  <div className="flex items-center space-x-2 text-green-400">
+                  <div className="flex items-center space-x-2 text-emerald-400">
                     <Zap className="w-4 h-4" />
-                    <span>Deployment successful. Systems nominal.</span>
-                  </div>
-                  <div className="text-gray-500 mt-2 pl-6">
-                    Ready for input...
-                    <span className="inline-block w-2.5 h-4 bg-gray-500 ml-2 animate-pulse" />
+                    <span>Deployment successful. Systems online (0 errors).</span>
                   </div>
                 </motion.div>
               )}
