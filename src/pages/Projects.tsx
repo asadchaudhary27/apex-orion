@@ -29,7 +29,7 @@ export const Projects: React.FC = () => {
     <div className="pt-28 pb-20 space-y-16 sm:space-y-20 overflow-hidden">
       <SEO
         title="Featured Client Projects & Engineering Case Studies"
-        description="Explore real-world software deployments, corporate web platforms, 3D visualizers, and POS solutions engineered by ApexOrion Tech."
+        description="Explore real-world software deployments, corporate web platforms, 3D visualizers, and POS solutions engineered by Apex Orion Global Solutions."
         canonical="/projects"
         schema={PROJECTS_SCHEMA}
       />

@@ -17,9 +17,13 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand & Slogan */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-20 h-20 flex items-center justify-center">
-                <img src="/logo_transparent.png" alt="ApexOrion Tech Logo" className="w-full h-full object-contain" />
-              </div>
+              <Link to="/" onClick={scrollToTop} className="inline-block">
+                <img
+                  src="/logo_transparent.png"
+                  alt="Apex Orion Global Solutions Logo"
+                  className="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                />
+              </Link>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               We don't just write code; we engineer digital dominance. High-performance software by Gen-Z innovators.
@@ -208,7 +212,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Section */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} ApexOrion Tech. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Apex Orion Global Solutions. All rights reserved.</p>
           <div className="flex items-center space-x-6 mt-4 sm:mt-0">
             <a href="#" className="hover:text-white transition-colors">
               Privacy Policy

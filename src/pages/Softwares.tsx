@@ -91,7 +91,7 @@ export const Softwares: React.FC = () => {
     <div className="pt-28 pb-20 space-y-16 sm:space-y-20 overflow-hidden">
       <SEO
         title="Commercial Offline POS & Custom Software Development"
-        description="Discover ApexOrion Tech's proprietary enterprise software suites: APEX POS for restaurants, ApexPure POS for water delivery, Veloce Car Rental platform, and Bespoke Custom Software Development."
+        description="Discover Apex Orion Global Solutions' proprietary enterprise software suites: APEX POS for restaurants, ApexPure POS for water delivery, Veloce Car Rental platform, and Bespoke Custom Software Development."
         canonical="/softwares"
         schema={SOFTWARES_SCHEMA}
       />
@@ -251,7 +251,7 @@ export const Softwares: React.FC = () => {
                 Bespoke Software <span className="text-[#FF5722]">Engineered To Your Exact Spec</span>
               </h2>
               <p className="text-gray-300 text-base leading-relaxed">
-                When off-the-shelf software falls short, ApexOrion Tech engineers 100% custom commercial software tailored to your company's proprietary workflows — including hardware-integrated thermal invoicing, digital scale (kanta) drivers, biometric authentication, and multi-branch cloud sync.
+                When off-the-shelf software falls short, Apex Orion Global Solutions engineers 100% custom commercial software tailored to your company's proprietary workflows — including hardware-integrated thermal invoicing, digital scale (kanta) drivers, biometric authentication, and multi-branch cloud sync.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 <div className="flex items-center space-x-2 text-sm text-gray-300">
@@ -281,7 +281,7 @@ export const Softwares: React.FC = () => {
                 Custom Software Overview
               </Link>
               <a
-                href="https://wa.me/923182834735?text=Hi%20ApexOrion%20Tech!%20I%20want%20to%20discuss%20a%20custom%20software%20requirement%20for%20my%20business."
+                href="https://wa.me/923182834735?text=Hi%20Apex%20Orion%20Global%20Solutions!%20I%20want%20to%20discuss%20a%20custom%20software%20requirement%20for%20my%20business."
                 target="_blank"
                 rel="noreferrer"
                 className="px-8 py-4 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm text-center transition-all duration-300"

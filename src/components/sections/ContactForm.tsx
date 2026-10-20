@@ -136,7 +136,7 @@ ${data.details}`;
           transition={{ delay: 0.3 }}
           className="text-gray-400 text-sm sm:text-base max-w-md mx-auto leading-relaxed"
         >
-          Thank you for reaching out. The ApexOrion Tech engineering team will review your project details and get back to you within 24 hours.
+          Thank you for reaching out. The Apex Orion Global Solutions engineering team will review your project details and get back to you within 24 hours.
         </motion.p>
 
         <motion.button

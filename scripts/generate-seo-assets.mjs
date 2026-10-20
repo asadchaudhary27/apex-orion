@@ -1,5 +1,5 @@
 /**
- * Automated XML Sitemap & robots.txt Generator for ApexOrion Tech
+ * Automated XML Sitemap & robots.txt Generator for Apex Orion Global Solutions
  * Generates public/sitemap.xml and public/robots.txt (and copies to dist/ if present)
  * Covers core routes, all 22 city overview pages, all 132 city+service pages, and all 6 blog guides.
  */
@@ -147,7 +147,7 @@ ${urlNodes.join('\n')}
 
 export function generateRobotsTxt() {
   return `# ==============================================================================
-# ApexOrion Tech - Robots.txt
+# Apex Orion Global Solutions - Robots.txt
 # https://apexoriontech.com/
 # ==============================================================================
 

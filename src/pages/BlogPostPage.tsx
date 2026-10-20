@@ -93,7 +93,7 @@ export const BlogPostPage: React.FC = () => {
       },
       publisher: {
         '@type': 'Organization',
-        name: 'ApexOrion Tech',
+        name: 'Apex Orion Global Solutions',
         url: BASE_SITE_URL,
         logo: {
           '@type': 'ImageObject',
@@ -355,7 +355,7 @@ export const BlogPostPage: React.FC = () => {
                 </h3>
 
                 <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-6 max-w-3xl">
-                  ApexOrion Tech provides senior engineering squads, sub-second performance, and
+                  Apex Orion Global Solutions provides senior engineering squads, sub-second performance, and
                   transparent milestone contracting across key commercial hubs in the US and UK.
                   Explore localized pricing, regional client FAQs, and custom deliverables for your market:
                 </p>
@@ -479,7 +479,7 @@ export const BlogPostPage: React.FC = () => {
               <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 text-xs text-gray-400">
                 <span className="text-white font-medium block mb-1">Written by {post.author.name}</span>
                 <p className="leading-relaxed">
-                  {post.author.role} at ApexOrion Tech. Specializing in high-performance web systems,
+                  {post.author.role} at Apex Orion Global Solutions. Specializing in high-performance web systems,
                   offline-first POS software, and scalable cloud engineering.
                 </p>
               </div>

@@ -194,7 +194,7 @@ export const CityServicePage: React.FC = () => {
                 </Link>
 
                 <a
-                  href={`https://wa.me/923182834735?text=Hello%20ApexOrion!%20I'm%20inquiring%20about%20${encodeURIComponent(
+                  href={`https://wa.me/923182834735?text=Hello%20Apex%20Orion%20Global%20Solutions!%20I'm%20inquiring%20about%20${encodeURIComponent(
                     service.name
                   )}%20for%20our%20business%20in%20${encodeURIComponent(location.name)}.`}
                   target="_blank"
@@ -298,7 +298,7 @@ export const CityServicePage: React.FC = () => {
                 <div className="p-5 rounded-2xl bg-gradient-to-b from-white/[0.04] to-black border border-white/10">
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-3 flex items-center space-x-2">
                     <Sparkles className="w-4 h-4 text-[#FF5722]" />
-                    <span>ApexOrion Guarantee</span>
+                    <span>Apex Orion Guarantee</span>
                   </h4>
                   <ul className="space-y-2.5 text-xs sm:text-sm text-gray-300">
                     {service.coreBenefits.map((benefit, idx) => (
@@ -313,7 +313,7 @@ export const CityServicePage: React.FC = () => {
             </div>
           </section>
 
-          {/* Section: Why Choose ApexOrion in [City] (Cost & Speed Comparison) */}
+          {/* Section: Why Choose Apex Orion in [City] (Cost & Speed Comparison) */}
           <section className="mb-16 p-6 sm:p-8 rounded-2xl bg-white/[0.02] border border-white/10 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-80 h-80 bg-[#FF5722]/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -322,7 +322,7 @@ export const CityServicePage: React.FC = () => {
               <span>Commercial Advantage</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Why {location.name} Businesses Partner with ApexOrion Tech
+              Why {location.name} Businesses Partner with Apex Orion Global Solutions
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-6">

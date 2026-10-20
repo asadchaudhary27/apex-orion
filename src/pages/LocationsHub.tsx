@@ -37,7 +37,7 @@ const HUB_SCHEMA = [
   },
   {
     '@type': 'CollectionPage',
-    name: 'Global Engineering Hubs | ApexOrion Tech',
+    name: 'Global Engineering Hubs | Apex Orion Global Solutions',
     description:
       'Regional directory of software engineering, custom web development, mobile apps, and offline POS systems across 32 key commercial centers in the US, UK, Middle East, Canada, Australia, and Europe.',
     url: `${BASE_SITE_URL}/locations`,
@@ -157,10 +157,10 @@ export const LocationsHub: React.FC = () => {
     <div className="min-h-screen bg-black text-[#F5F5F5] pt-24 pb-20 selection:bg-[#FF5722] selection:text-white">
       <SEO
         title="Global Locations & Regional Engineering Hubs (US, UK, UAE, KSA, CA, AU, DE)"
-        description="Explore ApexOrion Tech's regional software engineering and custom web development hubs across 32 premier commercial cities across the United States, United Kingdom, Middle East, Canada, Australia, and Germany."
+        description="Explore Apex Orion Global Solutions' regional software engineering and custom web development hubs across 32 premier commercial cities across the United States, United Kingdom, Middle East, Canada, Australia, and Germany."
         canonicalUrl="/locations"
         keywords={[
-          'ApexOrion Tech locations',
+          'Apex Orion Global Solutions locations',
           'software agency US cities',
           'software agency UK cities',
           'custom software Dubai',
@@ -204,7 +204,7 @@ export const LocationsHub: React.FC = () => {
           </h1>
 
           <p className="text-base sm:text-xl text-gray-300 max-w-3xl leading-relaxed mb-8 font-light">
-            ApexOrion Tech delivers sub-second web platforms, cross-platform mobile apps, offline-first
+            Apex Orion Global Solutions delivers sub-second web platforms, cross-platform mobile apps, offline-first
             POS systems, and scalable SaaS solutions tailored to the distinct commercial landscapes of
             the United States, United Kingdom, Middle East, Canada, Australia, and Germany.
           </p>

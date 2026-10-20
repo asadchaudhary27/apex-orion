@@ -23,9 +23,9 @@ export interface SEOProps {
   schema?: Record<string, any> | Array<Record<string, any>>;
 }
 
-const DEFAULT_TITLE = 'ApexOrion Tech | Custom Software, Web & POS Development Agency';
+const DEFAULT_TITLE = 'Apex Orion Global Solutions | Custom Software, Web & POS Development Agency';
 const DEFAULT_DESCRIPTION =
-  'ApexOrion Tech is a premier software engineering agency delivering high-performance web applications, mobile apps, SaaS products, and custom POS systems with sub-second performance.';
+  'Apex Orion Global Solutions is an elite software engineering agency delivering high-performance web applications, mobile apps, SaaS products, and custom POS systems with sub-second performance.';
 const DEFAULT_IMAGE = 'https://apexoriontech.com/og-image.png';
 const BASE_URL = 'https://apexoriontech.com';
 const SCHEMA_SCRIPT_ID = 'route-specific-schema-jsonld';
@@ -40,12 +40,12 @@ export const SEO: React.FC<SEOProps> = ({
   ogLocale = 'en_US',
   twitterCard = 'summary_large_image',
   keywords,
-  author = 'ApexOrion Tech',
+  author = 'Apex Orion Global Solutions',
   noindex = false,
   hreflangLinks,
   schema,
 }) => {
-  const fullTitle = title ? `${title} | ApexOrion Tech` : DEFAULT_TITLE;
+  const fullTitle = title ? `${title} | Apex Orion Global Solutions` : DEFAULT_TITLE;
 
   // Resolve canonical URL safely
   const effectiveCanonical = canonicalUrl || canonical;
@@ -94,7 +94,7 @@ export const SEO: React.FC<SEOProps> = ({
     setMetaTag('property', 'og:type', ogType);
     setMetaTag('property', 'og:image', ogImage);
     setMetaTag('property', 'og:locale', ogLocale);
-    setMetaTag('property', 'og:site_name', 'ApexOrion Tech');
+    setMetaTag('property', 'og:site_name', 'Apex Orion Global Solutions');
 
     // 4. Twitter Card Tags
     setMetaTag('property', 'twitter:card', twitterCard);

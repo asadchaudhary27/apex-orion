@@ -1,7 +1,7 @@
-# ApexOrion Tech — Comprehensive Knowledge Base & Agency Specification
+# Apex Orion Global Solutions — Comprehensive Knowledge Base & Agency Specification
 
 ## Entity Overview
-- **Legal & Brand Name**: ApexOrion Tech
+- **Legal & Brand Name**: Apex Orion Global Solutions
 - **Industry**: Software Development, Cloud Computing, Point of Sale (POS) Systems, SaaS Architecture, UI/UX Design
 - **Domain**: https://apexoriontech.com/
 - **Headquarters**: Faisalabad, Punjab, Pakistan (Postal Code 38000)

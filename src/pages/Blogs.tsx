@@ -48,7 +48,7 @@ const BLOGS_SCHEMA = [
   },
   {
     '@type': 'CollectionPage',
-    name: 'ApexOrion Tech Engineering Insights & Software Guides',
+    name: 'Apex Orion Global Solutions Engineering Insights & Software Guides',
     description:
       'In-depth software engineering guides, SaaS MVP cost breakdowns, POS architecture comparisons, and technical SEO strategies for US, UK, Middle East, Canadian, Australian, and European founders.',
     url: `${BASE_SITE_URL}/blog`,
@@ -94,7 +94,7 @@ export const Blogs: React.FC = () => {
           'Flutter vs React Native Canada',
           'software outsourcing Australia',
           'GDPR enterprise web platforms Germany',
-          'ApexOrion Tech insights',
+          'Apex Orion Global Solutions insights',
         ]}
         schema={BLOGS_SCHEMA}
       />

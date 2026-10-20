@@ -27,10 +27,10 @@ const TEAM_SCHEMA = [
   {
     '@type': 'AboutPage',
     name: 'Leadership & Engineering Team',
-    description: 'Meet the founders and core engineering leadership behind ApexOrion Tech.',
+    description: 'Meet the founders and core engineering leadership behind Apex Orion Global Solutions.',
     publisher: {
       '@type': 'Organization',
-      name: 'ApexOrion Tech',
+      name: 'Apex Orion Global Solutions',
       url: 'https://apexoriontech.com/'
     }
   }
@@ -322,7 +322,7 @@ export const Team: React.FC = () => {
     <div className="team-page-container" ref={containerRef}>
       <SEO
         title="Our Leadership & Engineering Powerhouse"
-        description="Meet the founders, engineers, and designers behind ApexOrion Tech, led by Asad Qaisar (Founder & CEO) and Ammar Saleem (Co-Founder & Project Manager)."
+        description="Meet the founders, engineers, and designers behind Apex Orion Global Solutions, led by Asad Qaisar (Founder & CEO) and Ammar Saleem (Co-Founder & Project Manager)."
         canonical="/team"
         schema={TEAM_SCHEMA}
       />

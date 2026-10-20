@@ -6,7 +6,7 @@ const TESTIMONIALS = [
   {
     name: 'Sarah Jenkins',
     role: 'CTO, OmniTech Solutions',
-    content: 'ApexOrion Tech completely transformed our digital infrastructure. Their engineering speed and attention to detail in the dark mode UI resulted in a 40% increase in user retention.',
+    content: 'Apex Orion Global Solutions completely transformed our digital infrastructure. Their engineering speed and attention to detail in the dark mode UI resulted in a 40% increase in user retention.',
     rating: 5,
   },
   {
@@ -18,7 +18,7 @@ const TESTIMONIALS = [
   {
     name: 'David Chen',
     role: 'VP of Product, FinStream',
-    content: 'We needed a high-frequency trading dashboard that wouldn\'t lag under load. ApexOrion Tech engineered a sub-second React architecture that exceeded all our performance benchmarks.',
+    content: 'We needed a high-frequency trading dashboard that wouldn\'t lag under load. Apex Orion Global Solutions engineered a sub-second React architecture that exceeded all our performance benchmarks.',
     rating: 5,
   }
 ];

@@ -69,14 +69,16 @@ export const Navbar: React.FC = () => {
         <Link
           to="/"
           onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior })}
-          className="flex items-center space-x-2 group flex-shrink-0"
+          className="flex items-center group flex-shrink-0"
         >
-          <div className={cn(
-            "flex items-center justify-center transition-all duration-500",
-            isScrolled ? "w-32 h-8 sm:w-40 sm:h-10" : "w-40 h-10 sm:w-48 sm:h-12"
-          )}>
-            <img src="/logo_transparent.png" alt="ApexOrion Tech Logo" className="w-full h-full object-contain" />
-          </div>
+          <img
+            src="/nav_logo_transparent.png"
+            alt="Apex Orion Global Solutions Logo"
+            className={cn(
+              "object-contain w-auto transition-all duration-300",
+              isScrolled ? "h-7 sm:h-8 md:h-9" : "h-8 sm:h-10 md:h-11"
+            )}
+          />
         </Link>
 
         {/* Desktop Nav Links */}

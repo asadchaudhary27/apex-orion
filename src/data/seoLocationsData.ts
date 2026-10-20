@@ -1,5 +1,5 @@
 /**
- * Programmatic Local SEO Architecture for ApexOrion Tech
+ * Programmatic Local SEO Architecture for Apex Orion Global Solutions
  * Centralized, strictly-typed dataset and template generator
  * Targeting Tier-1 commercial tech hubs across the United States and the United Kingdom.
  */
@@ -964,8 +964,8 @@ export function generateLocationServiceContent(
   const canonicalUrl = `${BASE_SITE_URL}${canonicalPath}`;
 
   // Unique Headings and Meta Content
-  const pageTitle = `${service.name} in ${cityName}, ${stateOrRegion} | ApexOrion Tech`;
-  const metaDescription = `Premier ${service.shortTitle.toLowerCase()} services in ${cityName}, ${stateOrRegion}. ApexOrion Tech delivers high-performance digital solutions tailored for ${cityName}'s ${localIndustries[0]} and ${localIndustries[1]} sectors. Starting from ${formattedStartingPrice}.`;
+  const pageTitle = `${service.name} in ${cityName}, ${stateOrRegion} | Apex Orion Global Solutions`;
+  const metaDescription = `Premier ${service.shortTitle.toLowerCase()} services in ${cityName}, ${stateOrRegion}. Apex Orion Global Solutions delivers high-performance digital solutions tailored for ${cityName}'s ${localIndustries[0]} and ${localIndustries[1]} sectors. Starting from ${formattedStartingPrice}.`;
   
   const keywords = [
     `${service.shortTitle} ${cityName}`,
@@ -983,7 +983,7 @@ export function generateLocationServiceContent(
   const heroSubtitle = `High-velocity software engineering, sub-second performance, and custom enterprise architectures tailored specifically for businesses in ${cityName}.`;
 
   // Deep Local Context Narrative (Prevents Doorway Page Penalties)
-  const localContextNarrative = `Operating at the forefront of modern software engineering, ApexOrion Tech partners with innovative founders, established enterprises, and fast-scaling teams across ${cityName} and the wider ${stateOrRegion} region. As ${techEcosystemNote} our engineering team delivers bespoke ${service.shortTitle.toLowerCase()} solutions calibrated precisely to the competitive pressures of the ${cityName} market—particularly within prominent regional pillars such as ${localIndustries.join(', ')}. By combining senior full-stack craftsmanship with rapid milestone-driven sprints, we help ${cityName} organizations modernize legacy systems, automate complex workflows, and establish unshakeable digital dominance.`;
+  const localContextNarrative = `Operating at the forefront of modern software engineering, Apex Orion Global Solutions partners with innovative founders, established enterprises, and fast-scaling teams across ${cityName} and the wider ${stateOrRegion} region. As ${techEcosystemNote} our engineering team delivers bespoke ${service.shortTitle.toLowerCase()} solutions calibrated precisely to the competitive pressures of the ${cityName} market—particularly within prominent regional pillars such as ${localIndustries.join(', ')}. By combining senior full-stack craftsmanship with rapid milestone-driven sprints, we help ${cityName} organizations modernize legacy systems, automate complex workflows, and establish unshakeable digital dominance.`;
 
   // Localized Market Challenge & Solution
   const challengeTitle = `The Digital Engineering Challenge in ${cityName}`;
@@ -1004,14 +1004,14 @@ export function generateLocationServiceContent(
     challengeDescription = `Enterprises in ${cityName} require strict GDPR compliance, robust data residency, and sub-second performance, but local European development consultancies frequently bill €120 to €220/hour with months-long project backlogs.`;
   }
 
-  const solutionTitle = `How ApexOrion Tech Solves This for ${cityName} Businesses`;
-  const solutionDescription = `ApexOrion Tech breaks the traditional agency paradigm. We assign a dedicated squad of senior software architects, UI/UX designers, and QA engineers working directly with your stakeholders in ${cityName}. With transparent milestone pricing starting from ${formattedStartingPrice}, daily asynchronous updates, scheduled timezone-aligned standups, and rigorous automated testing, you receive Silicon Valley-caliber ${service.shortTitle.toLowerCase()} without local agency overheads.`;
+  const solutionTitle = `How Apex Orion Global Solutions Solves This for ${cityName} Businesses`;
+  const solutionDescription = `Apex Orion Global Solutions breaks the traditional agency paradigm. We assign a dedicated squad of senior software architects, UI/UX designers, and QA engineers working directly with your stakeholders in ${cityName}. With transparent milestone pricing starting from ${formattedStartingPrice}, daily asynchronous updates, scheduled timezone-aligned standups, and rigorous automated testing, you receive Silicon Valley-caliber ${service.shortTitle.toLowerCase()} without local agency overheads.`;
 
   // 4 City-Specific Contextualized FAQs
   const faqs: LocalizedFAQ[] = [
     {
-      question: `Why should our ${cityName}-based business choose ApexOrion Tech for ${service.shortTitle.toLowerCase()}?`,
-      answer: `ApexOrion Tech gives ${cityName} companies direct access to senior full-stack engineers and certified technical architects without the inflated overhead of local agency retainers. We have extensive experience building scalable solutions tailored for ${cityName}'s dominant industries—including ${localIndustries[0]} and ${localIndustries[1]}—delivering sub-second performance, bulletproof security, and full code ownership.`,
+      question: `Why should our ${cityName}-based business choose Apex Orion Global Solutions for ${service.shortTitle.toLowerCase()}?`,
+      answer: `Apex Orion Global Solutions gives ${cityName} companies direct access to senior full-stack engineers and certified technical architects without the inflated overhead of local agency retainers. We have extensive experience building scalable solutions tailored for ${cityName}'s dominant industries—including ${localIndustries[0]} and ${localIndustries[1]}—delivering sub-second performance, bulletproof security, and full code ownership.`,
     },
     {
       question: `How do you handle time zone differences and project communication with teams in ${cityName}?`,
@@ -1077,7 +1077,7 @@ export function generateLocationServiceContent(
     {
       '@type': 'Organization',
       '@id': `${BASE_SITE_URL}/#organization`,
-      name: 'ApexOrion Tech',
+      name: 'Apex Orion Global Solutions',
       url: BASE_SITE_URL,
       logo: `${BASE_SITE_URL}/logo_transparent.png`,
       email: 'contact@apexoriontech.com',
@@ -1092,7 +1092,7 @@ export function generateLocationServiceContent(
     {
       '@type': 'ProfessionalService',
       '@id': `${canonicalUrl}#provider`,
-      name: `ApexOrion Tech - ${service.name} (${cityName})`,
+      name: `Apex Orion Global Solutions - ${service.name} (${cityName})`,
       url: canonicalUrl,
       email: 'contact@apexoriontech.com',
       telephone: '+923182834735',
@@ -1228,14 +1228,14 @@ export function generateCityHubContent(citySlug: string): CityHubContent | null 
   const canonicalPath = `/locations/${countryCode}/${location.slug}`;
   const canonicalUrl = `${BASE_SITE_URL}${canonicalPath}`;
 
-  const pageTitle = `Software Development & Engineering in ${cityName}, ${stateOrRegion} | ApexOrion Tech`;
+  const pageTitle = `Software Development & Engineering in ${cityName}, ${stateOrRegion} | Apex Orion Global Solutions`;
   const metaDescription = `Elite software engineering, bespoke web development, mobile apps, and custom offline POS systems for enterprises and startups in ${cityName}, ${stateOrRegion}.`;
 
   const h1 = `Software Development & Engineering in ${cityName}`;
   const heroBadge = `Regional Technology Hub • ${cityName}, ${stateOrRegion}`;
-  const heroSubtitle = `ApexOrion Tech delivers sub-second digital products, cloud platforms, and offline-first software designed for ${cityName}'s competitive enterprise ecosystem.`;
+  const heroSubtitle = `Apex Orion Global Solutions delivers sub-second digital products, cloud platforms, and offline-first software designed for ${cityName}'s competitive enterprise ecosystem.`;
 
-  const localContextNarrative = `Operating across ${cityName} and the wider ${stateOrRegion} commercial corridor, ApexOrion Tech delivers end-to-end software engineering for fast-scaling companies and market leaders. As ${techEcosystemNote} We engineer digital solutions built to dominate in ${localIndustries.join(', ')}.`;
+  const localContextNarrative = `Operating across ${cityName} and the wider ${stateOrRegion} commercial corridor, Apex Orion Global Solutions delivers end-to-end software engineering for fast-scaling companies and market leaders. As ${techEcosystemNote} We engineer digital solutions built to dominate in ${localIndustries.join(', ')}.`;
 
   const services: CityHubServiceSummary[] = SERVICES.map((srv) => {
     const basePrice = getLocalizedStartingPrice(currencyCode, srv);
@@ -1264,7 +1264,7 @@ export function generateCityHubContent(citySlug: string): CityHubContent | null 
     {
       '@type': 'ProfessionalService',
       '@id': `${canonicalUrl}#organization`,
-      name: `ApexOrion Tech - ${cityName}`,
+      name: `Apex Orion Global Solutions - ${cityName}`,
       url: canonicalUrl,
       email: 'contact@apexoriontech.com',
       telephone: '+923182834735',

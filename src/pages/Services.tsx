@@ -123,7 +123,7 @@ export const Services: React.FC = () => {
     <div className="services-page-container" ref={containerRef}>
       <SEO
         title="Custom Software & Web Development Services"
-        description="Explore ApexOrion Tech's full suite of software development services: custom React web applications, offline-first POS systems, mobile apps, SaaS engineering, 3D WebGL, and UI/UX design."
+        description="Explore Apex Orion Global Solutions' full suite of software development services: custom React web applications, offline-first POS systems, mobile apps, SaaS engineering, 3D WebGL, and UI/UX design."
         canonical="/services"
         schema={SERVICES_SCHEMA}
       />
@@ -185,7 +185,7 @@ export const Services: React.FC = () => {
               </h2>
 
               <p className="text-gray-300 text-base sm:text-xl leading-relaxed font-body">
-                Partner with ApexOrion Tech for high-velocity engineering, custom software solutions, and sub-second performance.
+                Partner with Apex Orion Global Solutions for high-velocity engineering, custom software solutions, and sub-second performance.
               </p>
 
               <div className="pt-4 flex justify-center">

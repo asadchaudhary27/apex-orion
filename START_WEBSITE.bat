@@ -1,9 +1,9 @@
 @echo off
-title ApexOrion Tech - Website Launcher
+title Apex Orion Global Solutions - Website Launcher
 cd /d "%~dp0"
 
 echo ===================================================
-echo           APEXORION TECH WEBSITE LAUNCHER
+echo           Apex Orion Global Solutions WEBSITE LAUNCHER
 echo ===================================================
 echo.
 

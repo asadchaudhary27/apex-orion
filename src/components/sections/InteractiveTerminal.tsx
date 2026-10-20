@@ -10,7 +10,7 @@ interface TerminalOutput {
 export const InteractiveTerminal: React.FC = () => {
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<TerminalOutput[]>([
-    { id: '1', type: 'output', content: 'ApexOrion Tech OS v2.0.26 initialized.' },
+    { id: '1', type: 'output', content: 'Apex Orion Global Solutions OS v2.0.26 initialized.' },
     { id: '2', type: 'output', content: 'Type "help" to see available commands.' }
   ]);
   
@@ -39,7 +39,7 @@ export const InteractiveTerminal: React.FC = () => {
     switch (lowerCmd) {
       case 'help':
         response = `Available commands:
-  about      - Learn about ApexOrion Tech
+  about      - Learn about Apex Orion Global Solutions
   services   - View our core capabilities
   projects   - View our latest works
   softwares  - View our SaaS products
@@ -49,7 +49,7 @@ export const InteractiveTerminal: React.FC = () => {
   sudo       - Execute command as superuser`;
         break;
       case 'about':
-        response = 'ApexOrion Tech is an elite software engineering agency based in Faisalabad, Pakistan. We specialize in high-performance web applications, custom POS systems, and premium UI/UX design. We build what others can\'t compile.';
+        response = 'Apex Orion Global Solutions is an elite software engineering agency based in Faisalabad, Pakistan. We specialize in high-performance web applications, custom POS systems, and premium UI/UX design. We build what others can\'t compile.';
         break;
       case 'services':
         response = `Core Capabilities:

@@ -1,5 +1,5 @@
 /**
- * Build-Time Pre-Rendering & Static HTML Hydrator for ApexOrion Tech
+ * Build-Time Pre-Rendering & Static HTML Hydrator for Apex Orion Global Solutions
  * Generates static index.html files inside dist/ for all 240+ routes:
  * - 192 City + Service money pages
  * - 32 City overview hub pages
@@ -362,21 +362,21 @@ export function prerender() {
   writeRouteHtml(
     'locations',
     renderStaticHtml({
-      title: 'Global Locations & Regional Engineering Hubs (32 Cities Worldwide) | ApexOrion Tech',
+      title: 'Global Locations & Regional Engineering Hubs (32 Cities Worldwide) | Apex Orion Global Solutions',
       description:
-        'Explore ApexOrion Tech’s regional software engineering and custom web development hubs across 32 premier commercial cities in the United States, United Kingdom, Middle East, Canada, Australia, and Germany.',
+        'Explore Apex Orion Global Solutions’s regional software engineering and custom web development hubs across 32 premier commercial cities in the United States, United Kingdom, Middle East, Canada, Australia, and Germany.',
       canonicalUrl: `${BASE_SITE_URL}/locations`,
       schemaGraph: [
         {
           '@type': 'CollectionPage',
-          name: 'Global Engineering Hubs | ApexOrion Tech',
+          name: 'Global Engineering Hubs | Apex Orion Global Solutions',
           url: `${BASE_SITE_URL}/locations`,
         },
       ],
       semanticBodyHtml: `
 <main style="padding: 40px 20px; max-width: 1200px; margin: 0 auto; font-family: sans-serif;">
   <h1>Global Engineering Hubs — 32 Cities Worldwide</h1>
-  <p>ApexOrion Tech delivers sub-second web platforms, cross-platform mobile apps, and offline POS systems across 32 key commercial centers across North America, Europe, the Middle East, and Asia-Pacific.</p>
+  <p>Apex Orion Global Solutions delivers sub-second web platforms, cross-platform mobile apps, and offline POS systems across 32 key commercial centers across North America, Europe, the Middle East, and Asia-Pacific.</p>
   <h2>United States (12 Hubs)</h2>
   <ul>${LOCATIONS.filter((l) => l.countryCode === 'us').map((l) => `<li><a href="/locations/us/${l.slug}">${l.name}, ${l.stateOrRegion}</a></li>`).join('')}</ul>
   <h2>United Kingdom (10 Hubs)</h2>
@@ -396,14 +396,14 @@ export function prerender() {
   writeRouteHtml(
     'blog',
     renderStaticHtml({
-      title: 'Engineering Insights, SaaS Cost Guides & Architecture | ApexOrion Tech',
+      title: 'Engineering Insights, SaaS Cost Guides & Architecture | Apex Orion Global Solutions',
       description:
         'Technical guides, cost breakdowns, and architectural comparisons for custom web applications, offline POS systems, and programmatic SEO in the US and UK.',
       canonicalUrl: `${BASE_SITE_URL}/blog`,
       schemaGraph: [
         {
           '@type': 'CollectionPage',
-          name: 'Engineering Insights | ApexOrion Tech',
+          name: 'Engineering Insights | Apex Orion Global Solutions',
           url: `${BASE_SITE_URL}/blog`,
         },
       ],

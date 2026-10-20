@@ -51,7 +51,7 @@ export const ProjectDetail: React.FC = () => {
       description: project.description,
       creator: {
         '@type': 'Organization',
-        name: 'ApexOrion Tech'
+        name: 'Apex Orion Global Solutions'
       },
       keywords: project.tags ? project.tags.join(', ') : undefined
     }

@@ -51,7 +51,7 @@ export const TeamSection: React.FC = () => {
         </div>
 
         <h2 className="font-headline text-3xl sm:text-5xl font-bold text-white tracking-tight">
-          The Powerhouse Behind <span className="text-[#FF5722]">ApexOrion Tech</span>
+          The Powerhouse Behind <span className="text-[#FF5722]">Apex Orion Global Solutions</span>
         </h2>
 
         {/* Featured Quote Callout */}

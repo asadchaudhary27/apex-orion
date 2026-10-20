@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
     <div className="space-y-12 sm:space-y-20 bg-black pb-20">
       <SEO
         title="Custom Software, Web & POS Development Agency"
-        description="ApexOrion Tech is an elite software engineering agency delivering high-performance web applications, mobile apps, SaaS products, and custom POS systems with sub-second speed."
+        description="Apex Orion Global Solutions is an elite software engineering agency delivering high-performance web applications, mobile apps, SaaS products, and custom POS systems with sub-second speed."
         canonical="/"
       />
       <HeroSection />

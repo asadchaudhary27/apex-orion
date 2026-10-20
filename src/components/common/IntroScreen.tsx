@@ -71,7 +71,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onComplete }) => {
               className="relative flex flex-col items-center"
             >
               <div className="absolute inset-0 bg-[#FF5722] blur-[100px] opacity-20 rounded-full" />
-              <img src="/logo_transparent.png" alt="ApexOrion Tech Logo" className="w-96 h-96 mb-6 relative z-10 object-contain drop-shadow-lg" />
+              <img src="/logo_transparent.png" alt="Apex Orion Global Solutions Logo" className="w-96 h-96 mb-6 relative z-10 object-contain drop-shadow-lg" />
             </motion.div>
             
             <motion.div

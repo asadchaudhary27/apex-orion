@@ -9,7 +9,7 @@ export const NotFound: React.FC = () => {
     <div className="min-h-[80vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-28 relative overflow-hidden bg-black">
       <SEO
         title="Page Not Found (404)"
-        description="The page you requested could not be found on ApexOrion Tech."
+        description="The page you requested could not be found on Apex Orion Global Solutions."
         canonical="/404"
       />
       {/* Ambient background glow */}

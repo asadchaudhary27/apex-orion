@@ -25,12 +25,12 @@ const CONTACT_SCHEMA = [
   },
   {
     '@type': 'ContactPage',
-    name: 'Contact ApexOrion Tech',
-    description: 'Get in touch with ApexOrion Tech software engineers for custom software development, POS systems, mobile apps, and technical consultation.',
+    name: 'Contact Apex Orion Global Solutions',
+    description: 'Get in touch with Apex Orion Global Solutions software engineers for custom software development, POS systems, mobile apps, and technical consultation.',
     url: 'https://apexoriontech.com/contact',
     mainEntity: {
       '@type': 'ProfessionalService',
-      name: 'ApexOrion Tech',
+      name: 'Apex Orion Global Solutions',
       telephone: '+923182834735',
       email: 'apexorion69@gmail.com'
     }
@@ -42,7 +42,7 @@ export const Contact: React.FC = () => {
     <div className="relative pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-12 overflow-hidden">
       <SEO
         title="Start a Project & Get a Quote"
-        description="Inquire about custom software development, offline-first POS systems, mobile applications, or SaaS engineering with ApexOrion Tech. Fast 24h response time."
+        description="Inquire about custom software development, offline-first POS systems, mobile applications, or SaaS engineering with Apex Orion Global Solutions. Fast 24h response time."
         canonical="/contact"
         schema={CONTACT_SCHEMA}
       />
@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
                 <MapPin className="w-6 h-6" />
               </div>
               <div className="space-y-1">
-                <h3 className="font-headline text-lg font-bold text-white">ApexOrion Tech HQ</h3>
+                <h3 className="font-headline text-lg font-bold text-white">Apex Orion Global Solutions HQ</h3>
                 <p className="text-gray-400 text-sm font-medium">Faisalabad, Pakistan</p>
                 <p className="text-gray-400 text-xs flex items-center space-x-1 pt-1">
                   <Globe className="w-3.5 h-3.5 text-[#FF5722]" />

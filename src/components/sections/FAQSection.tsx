@@ -10,8 +10,8 @@ export interface FAQItem {
 
 export const FAQS_DATA: FAQItem[] = [
   {
-    question: "What software and web development services does ApexOrion Tech provide?",
-    answer: "ApexOrion Tech offers end-to-end software engineering including custom web applications (React, Next.js, Node.js), mobile applications (React Native, Flutter), desktop & cloud POS systems, SaaS product engineering, 3D WebGL experiences, UI/UX brand design, and technical SEO optimization."
+    question: "What software and web development services does Apex Orion Global Solutions provide?",
+    answer: "Apex Orion Global Solutions offers end-to-end software engineering including custom web applications (React, Next.js, Node.js), mobile applications (React Native, Flutter), desktop & cloud POS systems, SaaS product engineering, 3D WebGL experiences, UI/UX brand design, and technical SEO optimization."
   },
   {
     question: "Do your custom POS systems operate 100% offline?",
